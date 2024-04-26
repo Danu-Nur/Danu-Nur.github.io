@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SUPRESSO &bull; UI Forgot Password</title>
+    <meta name="keywords" content="supresso, Supresso, SUPRESSO">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- add head component -->
+    <script src="component/head.js"></script>
+
+    <style type="text/css">
+        * {
+            /* outline: solid 1px green; */
+            outline: solid 1px transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-white">
+        <!-- navtop -->
+        <script src="component/navtop.js"></script>
+    </header>
+
+    <main class="wrapper">
+
+        <section>
+            <div class="container">
+                <header class="mb-5">
+                    <h6 class="fw-medium mb-0" style="font-size: 1.75rem;">Forgot Password ?</h6>
+                    <p>Type your email and we will send you letter to reset your password.</p>
+                </header>
+                <div class="form-group border-bottom mb-5">
+                    <label class="form-label small mb-0">*Email</label>
+                    <input class="form-control rounded-0 bg-transparent text-reset px-0 border-0" type="email" placeholder="Type Your Email Address">
+                </div>
+                <div class="mb-5">
+                    <a class="btn btn-lg btn-dark w-100" href="#">Reset</a>
+                </div>
+                <div class="text-center">
+                    <span class="me-2">Remember It ?</span> <a class="text-primary text-decoration-none fw-medium" href="signin.html">Sign In</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- copyright -->
+    <script src="component/copyright.js"></script>
+
+    <!-- navdown -->
+    <script src="component/navdown.js"></script>
+
+    <!-- modal search -->
+    <script src="component/modal-searching.js"></script>
+
+    <!-- add footer component -->
+    <script src="component/footer.js"></script>
+
+    <!-- custom script -->
+    <script typ>
+        const activePage = document.querySelectorAll("#navtop-account, #navdown-account").forEach((el) => {
+            el.classList.add('active');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SUPRESSO &bull; UI Checkout</title>
+    <meta name="keywords" content="supresso, Supresso, SUPRESSO">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- add head component -->
+    <script src="component/head.js"></script>
+
+    <style type="text/css">
+        * {
+            /* outline: solid 1px green; */
+            outline: solid 1px transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-white">
+        <!-- navtop -->
+        <script src="component/navtop.js"></script>
+    </header>
+
+    <main class="wrapper">
+
+        <section>
+            <form action="">
+                <div class="container">
+                    <div class="row gy-5 justify-content-between">
+
+                        <div class="col col-12 col-md-auto" style="width: 100%; max-width: 560px;">
+                            <header class="mb-4">
+                                <h6 class="fw-medium mb-0" style="font-size: 1.75rem;">Checkout.</h6>
+                            </header>
+
+                            <div class="mb-5">
+                                <div class="border-bottom mb-3">
+                                    <label for="" class="form-label small opacity-50 mb-0">*Full Name</label>
+                                    <input type="text" class="form-control rounded-0 bg-transparent border-0 px-0 text-reset" placeholder="Type your full name">
+                                </div>
+                                <div class="border-bottom mb-3">
+                                    <label for="" class="form-label small opacity-50 mb-0">*Email Address</label>
+                                    <input type="email" class="form-control rounded-0 bg-transparent border-0 px-0 text-reset" placeholder="Type your email address">
+                                </div>
+                                <div class="border-bottom mb-3">
+                                    <label for="" class="form-label small opacity-50 mb-0">*Phone Number</label>
+                                    <input type="number" class="form-control rounded-0 bg-transparent border-0 px-0 text-reset" placeholder="+62">
+                                </div>
+                            </div>
+
+                            <h6 class="fs-5 mb-5">Where would you like your item(s) to be sent?</h6>
+
+                            <div class="mb-5">
+                                <div class="border-bottom mb-3">
+                                    <label for="" class="form-label small opacity-50 mb-0">*Shipping To :</label>
+                                    <select name="" class="form-select text-reset rounded-0 bg-transparent px-0 border-0" id="">
+                                        <option value="1">New Address</option>
+                                        <option value="2">New Address</option>
+                                        <option value="3">New Address</option>
+                                    </select>
+                                </div>
+                                <div class="border-bottom mb-3">
+                                    <label for="" class="form-label small opacity-50 mb-0">*Subject Name</label>
+                                    <input type="text" class="form-control rounded-0 bg-transparent border-0 px-0 text-reset" placeholder="Type your subject name">
+                                </div>
+                                <div class="border-bottom mb-3">
+                                    <label for="" class="form-label small opacity-50 mb-0">*Recipients Name</label>
+                                    <input type="text" class="form-control rounded-0 bg-transparent border-0 px-0 text-reset" placeholder="Type your recipients name">
+                                </div>
+                                <div class="border-bottom mb-3">
+                                    <label for="" class="form-label small opacity-50 mb-0">*Province :</label>
+                                    <select name="" class="form-select text-reset rounded-0 bg-transparent px-0 border-0" id="">
+                                        <option value="1">Jawa Timur</option>
+                                        <option value="2">New Address</option>
+                                        <option value="3">New Address</option>
+                                    </select>
+                                </div>
+                                <div class="border-bottom mb-3">
+                                    <label for="" class="form-label small opacity-50 mb-0">*City :</label>
+                                    <select name="" class="form-select text-reset rounded-0 bg-transparent px-0 border-0" id="">
+                                        <option value="1">Surabaya</option>
+                                        <option value="2">New Address</option>
+                                        <option value="3">New Address</option>
+                                    </select>
+                                </div>
+                                <div class="border-bottom mb-3">
+                                    <label for="" class="form-label small opacity-50 mb-0">*District :</label>
+                                    <select name="" class="form-select text-reset rounded-0 bg-transparent px-0 border-0" id="">
+                                        <option value="1">Sukolilo</option>
+                                        <option value="2">New Address</option>
+                                        <option value="3">New Address</option>
+                                    </select>
+                                </div>
+                                <div class="border-bottom mb-3">
+                                    <label for="" class="form-label small opacity-50 mb-0">*Subdistrict :</label>
+                                    <select name="" class="form-select text-reset rounded-0 bg-transparent px-0 border-0" id="">
+                                        <option value="1">Kenjeran</option>
+                                        <option value="2">New Address</option>
+                                        <option value="3">New Address</option>
+                                    </select>
+                                </div>
+                                <div class="border-bottom mb-3">
+                                    <label for="" class="form-label small opacity-50 mb-0">*Post Code</label>
+                                    <input type="number" class="form-control rounded-0 bg-transparent border-0 px-0 text-reset" placeholder="Post Code">
+                                </div>
+                            </div>
+
+                            <button class="btn btn-secondary">
+                                <i class="bi bi-save-fill"></i> Save New Recipients
+                            </button>
+                        </div>
+
+                        <div class="col col-12 col-lg-auto" style="width: 100%; max-width: 420px;">
+
+                            <div class="card bg-light border-0 text-reset mb-5">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size: 1.25rem;">
+                                        <strong class="fw-medium">Summary</strong>
+                                    </h5>
+                                    <ul class="product-list list-unstyled mb-4">
+
+                                        <li class="product-item row gx-3 mb-3">
+                                            <div class="col col-3" style="padding-top: .375rem;">
+                                                <div class="ratio ratio-1x1 bg-white rounded overflow-hidden">
+                                                    <img src="assets/img/product/no_images.svg" class="img-fluid opacity-50" alt="">
+                                                    <div class="img-loading d-flex justify-content-center align-items-center w-100 h-100">
+                                                        <div class="spinner-border text-dark" style="width: 30px; height: 30px;" role="status">
+                                                            <span class="visually-hidden">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                    <img src="assets/img/product/supresso_sumatra_mandheling_coffee_beans_200g_1.png" class="img-fluid bg-white" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col col-7 text-capitalize small">
+                                                <p class="mb-0"><small>single origin</small></p>
+                                                <h4 class="mb-0 fs-reset">
+                                                    <strong class="fw-medium">sumatra mandheling coffee capsules</strong>
+                                                </h4>
+                                                <p class="mb-2"><small>200g</small></p>
+                                                <div class="product-price">
+                                                    <div class="normal-price fw-medium">
+                                                        <span>Rp&nbsp;95.000,-</span>
+                                                    </div>
+                                                    <div class="special-price d-flex flex-wrap align-items-center column-gap-2 d-none">
+                                                        <div class="discount-price text-primary fw-medium">
+                                                            <span>Rp&nbsp;75.000,-</span>
+                                                        </div>
+                                                        <div class="regular-price">
+                                                            <span class="opacity-50"><small>Rp&nbsp;95.000,-</small></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="product-item row gx-3 mb-3">
+                                            <div class="col col-3" style="padding-top: .375rem;">
+                                                <div class="ratio ratio-1x1 bg-white rounded overflow-hidden">
+                                                    <img src="assets/img/product/no_images.svg" class="img-fluid opacity-50" alt="">
+                                                    <div class="img-loading d-flex justify-content-center align-items-center w-100 h-100">
+                                                        <div class="spinner-border text-dark" style="width: 30px; height: 30px;" role="status">
+                                                            <span class="visually-hidden">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                    <img src="assets/img/product/supresso_sumatra_mandheling_coffee_beans_200g_1.png" class="img-fluid bg-white" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col col-7 text-capitalize small">
+                                                <p class="mb-0"><small>single origin</small></p>
+                                                <h4 class="mb-0 fs-reset">
+                                                    <strong class="fw-medium">sumatra mandheling coffee capsules</strong>
+                                                </h4>
+                                                <p class="mb-2"><small>200g</small></p>
+                                                <div class="product-price">
+                                                    <div class="normal-price fw-medium">
+                                                        <span>Rp&nbsp;95.000,-</span>
+                                                    </div>
+                                                    <div class="special-price d-flex flex-wrap align-items-center column-gap-2 d-none">
+                                                        <div class="discount-price text-primary fw-medium">
+                                                            <span>Rp&nbsp;75.000,-</span>
+                                                        </div>
+                                                        <div class="regular-price">
+                                                            <span class="opacity-50"><small>Rp&nbsp;95.000,-</small></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="product-item row gx-3 mb-3">
+                                            <div class="col col-3" style="padding-top: .375rem;">
+                                                <div class="ratio ratio-1x1 bg-white rounded overflow-hidden">
+                                                    <img src="assets/img/product/no_images.svg" class="img-fluid opacity-50" alt="">
+                                                    <div class="img-loading d-flex justify-content-center align-items-center w-100 h-100">
+                                                        <div class="spinner-border text-dark" style="width: 30px; height: 30px;" role="status">
+                                                            <span class="visually-hidden">Loading...</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <img src="assets/img/product/supresso_sumatra_mandheling_coffee_beans_200g_1.png" class="img-fluid bg-white" alt=""> -->
+                                                </div>
+                                            </div>
+                                            <div class="col col-7 text-capitalize small">
+                                                <p class="mb-0"><small>single origin</small></p>
+                                                <h4 class="mb-0 fs-reset">
+                                                    <strong class="fw-medium">sumatra mandheling coffee capsules</strong>
+                                                </h4>
+                                                <p class="mb-2"><small>200g</small></p>
+                                                <div class="product-price">
+                                                    <div class="normal-price fw-medium">
+                                                        <span>Rp&nbsp;95.000,-</span>
+                                                    </div>
+                                                    <div class="special-price d-flex flex-wrap align-items-center column-gap-2 d-none">
+                                                        <div class="discount-price text-primary fw-medium">
+                                                            <span>Rp&nbsp;75.000,-</span>
+                                                        </div>
+                                                        <div class="regular-price">
+                                                            <span class="opacity-50"><small>Rp&nbsp;95.000,-</small></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                    <div class="text-end">
+                                        <a class="text-reset text-decoration-none" href="cart.html">[EDIT CART]</a>
+                                    </div>
+                                    <hr class="opacity-50">
+                                    <div class="row g-0 row-cols-2 mb-2">
+                                        <div class="col">
+                                            <strong class="fw-medium">Subtotal</strong>
+                                        </div>
+                                        <div class="col d-flex justify-content-between">
+                                            <strong class="fw-medium">Rp</strong>
+                                            <strong class="fw-medium">330.000,-</strong>
+                                        </div>
+                                    </div>
+                                    <div class="row g-0 row-cols-2">
+                                        <div class="col">
+                                            <span>Discount</span>
+                                        </div>
+                                        <div class="col d-flex justify-content-between">
+                                            <span>Rp</span>
+                                            <span>0,-</span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row g-0 row-cols-2">
+                                        <div class="col">
+                                            <span>Shipping</span>
+                                        </div>
+                                        <div class="col d-flex justify-content-between">
+                                            <span>Rp</span>
+                                            <span>0,-</span>
+                                        </div>
+                                    </div>
+                                    <hr class="opacity-100">
+                                    <div class="row g-0 row-cols-2 fs-5">
+                                        <div class="col">
+                                            <strong class="fw-medium">Total</strong>
+                                        </div>
+                                        <div class="col d-flex justify-content-between">
+                                            <strong class="fw-medium">Rp</strong>
+                                            <strong class="fw-medium">330.000,-</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-5">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input rounded-circle" type="radio" name="radio" id="checkoutPayment1">
+                                    <label class="form-check-label w-100 text-start" for="checkoutPayment1">
+                                        Paypal
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input rounded-circle" type="radio" name="radio" id="checkoutPayment2" checked>
+                                    <label class="form-check-label w-100 text-start" for="checkoutPayment2">
+                                        Bank Transfer or Credit Card
+                                    </label>
+                                </div>
+                                <hr>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input rounded-circle" type="checkbox" value="" id="checkoutTC1" checked>
+                                    <label class="form-check-label w-100 text-start" for="checkoutTC1">
+                                        I want the latest news, innovations and offers from Supresso
+                                    </label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input rounded-circle" type="checkbox" value="" id="checkoutTC2">
+                                    <label class="form-check-label w-100 text-start" for="checkoutTC2">
+                                        I accept Supresso <a class="text-reset text-primary" href="#"><u>Terms & Conditions</u></a>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="alertPayment"></div>
+                            <a class="btn btn-lg btn-dark w-100" id="togglerPayment" href="#">
+                                Proceed To Payment
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- copyright -->
+    <script src="component/copyright.js"></script>
+
+    <!-- navdown -->
+    <script src="component/navdown.js"></script>
+
+    <!-- modal search -->
+    <script src="component/modal-searching.js"></script>
+
+    <!-- add footer component -->
+    <script src="component/footer.js"></script>
+
+    <!-- custom script -->
+    <script>
+        const activePage = document.querySelectorAll("#navdown-cart, #navtop-cart").forEach((el) => {
+            el.classList.add('active');
+        });
+
+        // script alert payments
+        const alertPlaceholder = document.getElementById('alertPayment')
+        const appendAlert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible my-1" role="alert">`,
+                `   <div><i class="bi bi-exclamation-triangle me-2"></i>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+                ].join('')
+
+            alertPlaceholder.append(wrapper)
+        }
+
+        const alertTrigger = document.getElementById('togglerPayment')
+        if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                appendAlert('Please complete the form and terms of approval from us!', 'danger')
+            })
+        }
+    </script>
+
+</body>
+
+</html>

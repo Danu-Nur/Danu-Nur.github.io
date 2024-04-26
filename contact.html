@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SUPRESSO &bull; UI Contact Us</title>
+    <meta name="keywords" content="supresso, Supresso, SUPRESSO">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- add head component -->
+    <script src="component/head.js"></script>
+
+    <style type="text/css">
+        * {
+            /* outline: solid 1px green; */
+            outline: solid 1px transparent;
+        }
+    
+        .display-1 {
+            font-size: calc(1.625em + 4.5vw) !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-white">
+        <!-- navtop -->
+        <script src="component/navtop.js"></script>
+    </header>
+
+    <main class="wrapper">
+
+        <section id="contacts">
+            <div class="container">
+                <header class="position-relative" style="margin-bottom: calc(1rem + 5vw);">
+                    <img src="assets/img/maps/peta_indo.png" class="img-fluid w-100" alt="">
+                    <button class="btn position-absolute" data-bs-toggle="collapse" data-bs-target="#contactSby" style="top: 82%; left: 38%;">
+                        <i class="bi bi-geo-alt-fill" style="transform: scale(1.5);"></i>
+                    </button>
+                    <button class="btn position-absolute collapsed" data-bs-toggle="collapse" data-bs-target="#contactSg" style="top: 23%; left: 16%;">
+                        <i class="bi bi-geo-alt-fill" style="transform: scale(1.5);"></i>
+                    </button>
+                </header>
+                <style type="text/css">
+                    #contacts header .btn {
+                        background-color: #fd4f00;
+                        color: white;
+                        transform: translate(-50%, -50%) scale(1);
+                        transition: all .36s;
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 100%;
+                        padding: .5rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    #contacts header .btn:hover {
+                        transform: translate(-50%, -50%) scale(1.25);
+                    }
+
+                    #contacts header .btn.collapsed {
+                        background-color: #878787;
+                    }
+                </style>
+
+                <div>
+                    <div id="contactSby" class="collapse fade show" data-bs-parent="#contacts">
+                        <div class="row row-cols-1 row-cols-lg-2 gy-4 gy-lg-0 gx-lg-5">
+                            <div class="col order-lg-2">
+                                <img src="assets/img/contact/contact_sby.jpg" width="100%" height="auto">
+                            </div>
+                            <div class="col order-lg-1">
+                                <h2 class="fw-medium text-uppercase mb-0">Pt. Indraco Global Indonesia</h2>
+                                <h3 class="fw-medium text-capitalize mb-4 fs-5">head office and F&B Outlet</h3>
+                                <h4 class="lh-sm fs-reset">
+                                    Jl. Raya Mayjend. Yono Soewoyo No. 66, Pakuwon Square AK1-37,
+                                    <br>
+                                    Surabaya Barat 60227 - Indonesia
+                                    <br>
+                                    T. +62 31 9900 0033, 9900 0303
+                                    <br>
+                                    F. +62 31 9900 0075
+                                    <br>
+                                    E. info@indraco.com
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="contactSg" class="collapse fade" data-bs-parent="#contacts">
+                        <div class="row row-cols-1 row-cols-lg-2 gy-4 gy-lg-0 gx-lg-5">
+                            <div class="col">
+                                <img src="assets/img/contact/contact_sg.jpg" width="100%" height="auto">
+                            </div>
+                            <div class="col">
+                                <h2 class="fw-medium text-uppercase mb-0">Indraco PTE. LTD.</h2>
+                                <h3 class="fw-medium text-capitalize mb-4 fs-5">singapore office and supresso coffee gallery</h3>
+                                <h4 class="lh-sm fs-reset">
+                                    333A Orchard Road #03-11 Mandarin Gallery Singapore 238897
+                                    <br>
+                                    T. +65 6250 2000
+                                    <br>
+                                    E. sg@supresso.com
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- copyright -->
+    <script src="component/copyright.js"></script>
+    
+    <!-- navdown -->
+    <script src="component/navdown.js"></script>
+
+    <!-- modal search -->
+    <script src="component/modal-searching.js"></script>
+
+    <!-- add footer component -->
+    <script src="component/footer.js"></script>
+
+    <!-- custom script -->
+    <script typ>
+        const activePage = document.querySelectorAll("#copyright-contact, #navtop-contact").forEach((el) => {
+            el.classList.add('active');
+        });
+    </script>
+
+</body>
+
+</html>

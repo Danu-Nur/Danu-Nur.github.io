@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SUPRESSO &bull; UI Dashboard Landing</title>
+    <meta name="keywords" content="supresso, Supresso, SUPRESSO">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- add head component -->
+    <script src="component/head.js"></script>
+
+    <style type="text/css">
+        * {
+            /* outline: solid 1px green; */
+            outline: solid 1px transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="bg-white sticky-top">
+        <!-- navtop -->
+        <script src="component/navtop.js"></script>
+        <style type="text/css">
+            @media (max-width: 991.98px) {
+                .navbar-toggler-menu-dashboard {
+                    display: block !important;
+                }
+            }
+        </style>
+    </header>
+
+    <main class="wrapper">
+
+        <section>
+            <div class="container">
+                <div class="row gx-lg-5">
+
+                    <!-- sidebar menu -->
+                    <div class="col col-12 col-lg-auto">
+                        <div class="offcanvas-lg offcanvas-start" data-bs-backdrop="static" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="sidebarDashboard" aria-labelledby="sidebarDashboardLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title fw-medium fs-2" id="sidebarDashboardLabel">Welcome</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#sidebarDashboard"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item p-0">
+                                        <button class="btn btn-lg w-100 border-0 text-start rounded-0 text-capitalize ps-0 active">dashboard</button>
+                                    </li>
+                                    <li class="list-group-item p-0">
+                                        <button class="btn btn-lg w-100 border-0 text-start rounded-0 text-capitalize ps-0">redeem</button>
+                                    </li>
+                                    <li class="list-group-item p-0">
+                                        <button class="btn btn-lg w-100 border-0 text-start rounded-0 text-capitalize ps-0">my account information</button>
+                                    </li>
+                                    <li class="list-group-item p-0">
+                                        <button class="btn btn-lg w-100 border-0 text-start rounded-0 text-capitalize ps-0">my orders</button>
+                                    </li>
+                                    <li class="list-group-item p-0">
+                                        <button class="btn btn-lg w-100 border-0 text-start rounded-0 text-capitalize ps-0">my machines</button>
+                                    </li>
+                                    <li class="list-group-item p-0">
+                                        <button class="btn btn-lg w-100 border-0 text-start rounded-0 text-capitalize ps-0">my whislist</button>
+                                    </li>
+                                    <li class="list-group-item p-0">
+                                        <button class="btn btn-lg w-100 border-0 text-start rounded-0 text-capitalize ps-0">logout</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- body menu -->
+                    <div class="col col-12 col-lg">
+                        <p style="height: 1200px;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aspernatur at praesentium magni odit ipsum molestias nobis temporibus? Ut quisquam, nihil iusto harum dolorem delectus rerum deserunt illum commodi nesciunt.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- copyright -->
+    <script src="component/copyright.js"></script>
+    
+    <!-- navdown -->
+    <script src="component/navdown.js"></script>
+
+    <!-- modal search -->
+    <script src="component/modal-searching.js"></script>
+
+    <!-- add footer component -->
+    <script src="component/footer.js"></script>
+
+    <!-- custom script -->
+    <script typ>
+        const activePage = document.querySelectorAll("#copyright-news, #navtop-news").forEach((el) => {
+            el.classList.add('active');
+        });
+    </script>
+
+</body>
+
+</html>

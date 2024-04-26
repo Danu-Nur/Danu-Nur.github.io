@@ -1,0 +1,78 @@
+/*----------------------- nav dot*/
+.nav-dot .nav-link {
+	position: relative;
+}
+
+.nav-dot .nav-link::before {
+	content: "\f287";
+	font-family: "bootstrap-icons";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	font-size: .325rem;
+	line-height: 1;
+	color: #fd4f00;
+	display: none;
+}
+
+.nav-dot .nav-link.active::before {
+	display: block;
+}
+
+
+/*----------------------- nav hover*/
+.nav-hover .nav-link {
+	opacity: .5;
+	transition: all .36s;
+}
+
+.nav-hover .nav-link:hover,
+.nav-hover .nav-link.active {
+	opacity: 1;
+}
+
+.nav-hover .nav-link.active {
+	font-family: 'gotham medium' !important;
+}
+
+
+/*----------------------- navtop*/
+#navtop .navbar-brand img {
+	width: 50px;
+}
+
+@media (min-width: 992px) {
+	#navtop .navbar-brand img {
+		width: 80px;
+	}
+}
+
+
+/*----------------------- navdown*/
+@media (max-width: 991.98px) {
+	#navdown .navbar .nav-link::before {
+		bottom: unset;
+		left: 0;
+		top: 50%;
+	}
+
+	#navdown .navbar .nav-link {
+		padding-left: .875rem;
+		padding-right: .875rem;
+	}
+
+	#navcol > div {
+		height: calc(100vh - 56.5px);
+	}
+}
+
+#navdown #navdownToggler.collapsed {
+	transform: rotate(0);
+	opacity: .5;
+}
+
+#navdown #navdownToggler {
+	transform: rotate(90deg);
+	opacity: 1;
+}
