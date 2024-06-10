@@ -5,6 +5,8 @@ body {
     color: #797979;
     background: #ffffff;
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 h1,
@@ -211,17 +213,17 @@ a:focus {
 
     .navbar-light.nav-sticky .navbar-nav .nav-link,
     .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
-        color: #00B87B;
+        color: #2C3E50;
     }
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #111111;
+        color: #00B87B;
     }
 
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #2C3E50;
+        color: #00B87B;
     }
 }
 
@@ -1178,10 +1180,14 @@ a:focus {
 /*******************************/
 .portfolio {
     position: relative;
-    padding: 45px 0 15px 0;
+    padding: 45px 0 0 0;
+    min-height: 100vh;
+    /* Ensure the portfolio takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
 }
 
-.portfolio #portfolio-filter {
+/* .portfolio #portfolio-filter {
     padding: 0;
     margin: -15px 0 25px 0;
     list-style: none;
@@ -1277,7 +1283,7 @@ a:focus {
     background: transparent;
     box-shadow: inset 0 0 0 0 #2C3E50;
     border-color: #2C3E50;
-}
+} */
 
 
 /*******************************/
@@ -1832,8 +1838,10 @@ a:focus {
 /********* Footer CSS **********/
 /*******************************/
 .footer {
+    /* bottom: 0; */
     position: relative;
     margin-top: 45px;
+
     background: #2C3E50;
 }
 
