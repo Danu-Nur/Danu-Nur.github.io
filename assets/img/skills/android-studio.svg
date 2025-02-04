@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+	<title>android-studio</title>
+	<defs>
+		<image  width="128" height="128" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAAXNSR0IB2cksfwAAAThQTFRF+f/o7/jU6fTH4u+55/PE1+ij8/vdxNt69/7l3u2x9fzf4/C82emm0+ab3eyu3+6z0uWYtdFcpMY5qclEwtp44O60wdl1rMtJ7/jVvtdv6/bMsc9U8fnXrcxMpcY7s9BZ9v3iu9Zqxdx90eSVx96Cxt2A2+ur5fG+ss9XzeGNsM5Rv9hypcc7zuKQutVnstBXwdp27vfR5fG/6PPFs9BYx92C9Pvess9W9/3krs1O8vraq8tIwNhy4e+33eyv0eSX8PnX1+ii0uWZx92B1+ih0uWXx92A6PTG3+2z2uqpz+OS7/jT9fzgq8pH7PbNpsg+ttJe+f/n6vXKtNFb4O61rs1PutRmyuCIxt1/qMhBq8tJ1uigudRk7vjSz+OT1eeey+CKt9NhqspG4e+26/XL+P7m5vLA4/C6RgelIwAAAbZJREFUeJztmddSwkAUhg9ICRgQFhRQVAR7RxF777333t//DdwszMBEkwtncnSY/7vI2c3F/t9MdifZDREAAAAAAAAAAAAAAOB3uMw33MwCdaa+x8ss4DMZ+DVmAQoEpUW9HvKG3TLb28CdT1ooEhUlYvHGJv78SExUkdCZ85NRYSLl48xvTpjzhWhJ8+WnW2VgW3W60WnPsAl0yLgIZSv5OeqU1y6u/G4j00PhikAPBUr3eFATsLevah70lzoDPPnu7xOwzCDPSghZCogAi4DfWmCIRWDYWoBtHfwRyfjIaJ4orFsyRjSeKkwUncnXjOU3OUXT1o/ATzOzssw5IzCvMhbsBRZVXXJEYFmNvWIvsKqqMx+Ia2rsdXuBDVU3IQABCEAAArUpsKXG3rYX2FF11xGBPWM/tF+0Fzg4lOXo2BEBOjkVBfmitRWgs3Nx4fAu0V6Agf8skGURuLQW4Dkp0q6uf46/uWXJL6GrSLUVu1PNe8ZwCEAAAgbqpEzkKgIZZgGXOqdUm9AHoxVlzid6lAZPqhV8FuKF+4eJJP/6Vm69f3wG+fMBAAAAAAAAAAAAAKgZvgAtYHzsU1K5MgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>
