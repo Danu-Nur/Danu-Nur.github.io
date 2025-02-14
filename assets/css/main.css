@@ -144,6 +144,20 @@ h6 {
   /* transform-origin: left; */
 }
 
+/* Tablet (Lebih dari 600px, kurang dari 1024px) */
+@media (max-width: 1024px) {
+  .circle {
+    background: radial-gradient(circle at 30% 30%, rgba(0, 0, 0, 1) 13%, rgb(172, 74, 4) 18%, rgba(0, 0, 0, 1) 25%) no-repeat;
+  }
+}
+
+/* Mobile (Maksimal 600px) */
+@media (max-width: 600px) {
+  .circle {
+    background: radial-gradient(circle at 50% 30%, rgba(0, 0, 0, 1) 13%, rgb(172, 74, 4) 18%, rgba(0, 0, 0, 1) 25%) no-repeat;
+  }
+}
+
 @keyframes slide-in-out {
   0% {
     transform: translate(0%);
@@ -269,7 +283,7 @@ h6 {
     width: 300px;
     left: -100%;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-    
+
     /* backdrop-filter: blur(15px); */
   }
 
