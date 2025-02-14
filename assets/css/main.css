@@ -114,9 +114,10 @@ h6 {
 .glassmorphism {
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.209);
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  position: relative;
+  /* backdrop-filter: blur(3px); */
 }
 
 .antiquewhite {
@@ -136,7 +137,7 @@ h6 {
 .circle {
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at 50% 0%, rgba(0, 0, 0, 1) 30%, rgb(172, 74, 4) 45%, rgba(0, 0, 0, 1) 55%) no-repeat;
+  background: radial-gradient(circle at 50% 0%, rgba(0, 0, 0, 1) 30%, rgb(172, 74, 4) 40%, rgba(0, 0, 0, 1) 55%) no-repeat;
   background-size: cover;
   position: absolute;
   animation: slide-in-out 40s linear infinite;
