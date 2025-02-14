@@ -29,7 +29,7 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
 
-    <style>
+    <!-- <style>
         .ce {
             color: #fff;
         }
@@ -45,18 +45,23 @@
         .ce3 {
             color: rgba(251, 251, 252, 0.427);
         }
-    </style>
+    </style> -->
 
     <style>
         .hover-rotate:hover .hover-rotate-img {
-          transition: transform 0.4s ease; /* Menambahkan transisi untuk efek yang halus */
-          transform: rotate(-28deg); /* Mengubah gambar menjadi berotasi 10 derajat saat dihover */
+            transition: transform 0.4s ease;
+            /* Menambahkan transisi untuk efek yang halus */
+            transform: rotate(-28deg);
+            /* Mengubah gambar menjadi berotasi 10 derajat saat dihover */
         }
     </style>
 </head>
 
 <body class="index-page">
-
+    <div class="circle-container">
+        <div class="circle"></div>
+        <div class="stars"></div>
+    </div>
     <header id="header" class="header d-flex flex-column justify-content-center">
 
         <i class="header-toggle d-xl-none bi bi-list"></i>
@@ -77,9 +82,10 @@
     <main class="main">
 
         <!-- Hero Section -->
-        <section id="hero" class="hero section bg-light">
+        <section id="hero" class="hero section">
+            <!-- <section id="hero" class="hero section bg-light"> -->
 
-            <img src="assets/img/hero-bg2.jpg" alt="" class="bg-image" data-aos="zoom-out" data-aos-delay="100">
+            <!-- <img src="assets/img/hero-bg2.jpg" alt="" class="bg-image" data-aos="zoom-out" data-aos-delay="100"> -->
 
             <div class="container" data-aos="zoom-out">
                 <div class="row justify-content-center">
@@ -89,18 +95,23 @@
                         <p>I'm <span class="typed"
                                 data-typed-items="Web Developer, Mobile Developer, Back-End Developer, Front-End Developer, Full-Stack Developer, Freelancer"></span><span
                                 class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-                        <div class="social-links ">
-                            <a href="assets/cv/CV-DANU NUR IRWANTO.pdf" download="CV - Danu Nur Irwanto.pdf" type="button" class="btn btn-outline-dark">Download CV
-                            </a>
-                            <a href="https://github.com/Danu-Nur" target="_blank"><i class="bi bi-github"></i></a>
-                            <a href="https://danu-nur.github.io/" target="_blank"><i class="bi bi-globe"></i></a>
-                            <a href="https://instagram.com/danu_irwant" target="_blank"><i
-                                    class="bi bi-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/danu-nur-irwanto-36a03811b" target="_blank"><i
-                                    class="bi bi-linkedin"></i></a>
-                            <a href="mailto:danudirwan@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
-                            <a href="https://msng.link/o?danu191024=tg" target="_blank"><i
-                                    class="bi bi-telegram"></i></a>
+                        <div class="row row-cols-1 d-flex justify-content-start">
+                            <div class="col col-sm-3 social-links">
+                                <a href="assets/cv/CV-DANU NUR IRWANTO.pdf" download="CV - Danu Nur Irwanto.pdf"
+                                    type="button" class="btn btn-outline-light">Download CV
+                                </a>
+                            </div>
+                            <div class="col col-sm-6 social-links">
+                                <a href="https://github.com/Danu-Nur" target="_blank"><i class="bi bi-github"></i></a>
+                                <a href="https://danu-nur.github.io/" target="_blank"><i class="bi bi-globe"></i></a>
+                                <a href="https://instagram.com/danu_irwant" target="_blank"><i
+                                        class="bi bi-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/danu-nur-irwanto-36a03811b" target="_blank"><i
+                                        class="bi bi-linkedin"></i></a>
+                                <a href="mailto:danudirwan@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+                                <a href="https://msng.link/o?danu191024=tg" target="_blank"><i
+                                        class="bi bi-telegram"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -109,7 +120,7 @@
         </section><!-- /Hero Section -->
 
         <!-- About Section -->
-        <section id="about" class="about section ">
+        <section id="about" class="about section pt-5">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
@@ -133,7 +144,7 @@
                     <div class="col-lg-4">
                         <img src="assets/img/DANU_NUR_IRWANTO.png" class="img-fluid glassmorphism pb-3" alt="">
                     </div>
-                    <div class="col-lg-8 content">
+                    <div class="col-lg-8 content antiquewhite position-relative">
                         <h2>Web Developer &amp; Mobile Developer.</h2>
                         <p class="fst-italic py-3">
                             Here is a summary about myself.
@@ -147,7 +158,7 @@
                                     <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
                                     </ul>
                                 </div> -->
-                            <div class="col-lg-10">
+                            <div class="col-lg-10 antiquewhite">
                                 <ul>
                                     <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span
                                             id="year-age">30</span></li>
@@ -168,7 +179,7 @@
         </section><!-- /About Section -->
 
         <!-- Skills Section -->
-        <section id="skills" class="skills section ">
+        <section id="skills" class="skills section pt-5">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
@@ -211,7 +222,7 @@
         </section><!-- /Skills Section -->
 
         <!-- Resume Section -->
-        <section id="resume" class="resume section ">
+        <section id="resume" class="resume section pt-5">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
@@ -225,7 +236,7 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-                        <div class="mb-4 glassmorphism">
+                        <div class="mb-4 glassmorphism pe-4" style="text-align: justify;">
                             <h3 class="ms-4 resume-title">Education</h3>
                             <div class="ms-4 resume-item">
                                 <h4>Bachelor's degree in Informatics Engineering</h4>
@@ -240,7 +251,7 @@
                             </div><!-- Edn Resume Item -->
                         </div>
 
-                        <div class="mb-4 glassmorphism">
+                        <div class="mb-4 glassmorphism pe-4" style="text-align: justify;">
                             <h3 class="ms-4 resume-title">Course</h3>
                             <div class="ms-4 resume-item">
                                 <a href="https://freecodecamp.org/certification/fcc249e1ede-d5d2-4bf3-b6b3-2988ee203dfa/responsive-web-design"
@@ -287,7 +298,8 @@
                             <div class="ms-4 resume-item">
                                 <a href="https://www.udemy.com/certificate/UC-3a8bb83e-abf0-4e44-a292-b5e8dac5373f/"
                                     title="View Certificate" class="details-link" target="_blank">
-                                    <h4 class="text-capitalize">The Complete Android Developer Course - Java & Kotlin</h4>
+                                    <h4 class="text-capitalize">The Complete Android Developer Course - Java & Kotlin
+                                    </h4>
                                     <p><em>Udemy</em></p>
                                 </a>
                             </div><!-- Edn Resume Item -->
@@ -302,7 +314,7 @@
                     </div>
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="glassmorphism">
+                        <div class="glassmorphism pe-4" style="text-align: justify;">
                             <h3 class="ms-4 resume-title">Work Experience</h3>
                             <div class="ms-4 resume-item">
                                 <h4>Web Developer</h4>
@@ -313,17 +325,23 @@
                                     <li>Laravel Web Application Development including e-commerce, company profile, HRIS,
                                         recruitment system, EDM, and REST API for mobile.</li>
                                     <li>Website performance and SEO optimization.</li>
-                                    <li>Third-party API integration such as Doku, Midtrans, Stripe, LOCAD, and Raja Ongkir.
+                                    <li>Third-party API integration such as Doku, Midtrans, Stripe, LOCAD, and Raja
+                                        Ongkir.
                                     </li>
                                     <li>Maintain application security with security implementations such as SSL,
-                                        XSS/CSRF/SQL Injection protection, data encryption, and JWT/OAuth for authentication
+                                        XSS/CSRF/SQL Injection protection, data encryption, and JWT/OAuth for
+                                        authentication
                                     </li>
-                                    <li>System Maintenance and Upgrades including bug fixes, error resolution, performance
-                                        monitoring, application performance improvement, and regular backups to keep system
+                                    <li>System Maintenance and Upgrades including bug fixes, error resolution,
+                                        performance
+                                        monitoring, application performance improvement, and regular backups to keep
+                                        system
                                         data secure.</li>
                                     <li>Team Collaboration and Documentation by working closely with designers, QA, and
-                                        product managers, managing code versions using Git (GitHub, GitLab), and creating
-                                        technical documentation for application development, maintenance, and integration.
+                                        product managers, managing code versions using Git (GitHub, GitLab), and
+                                        creating
+                                        technical documentation for application development, maintenance, and
+                                        integration.
                                     </li>
                                     <li>Analytics and Reporting by integrating Google Analytics tools to monitor user
                                         activity and website performance.</li>
@@ -339,23 +357,32 @@
                                     <li>Laravel Web Application Development including e-commerce, company profile, HRIS,
                                         recruitment system, EDM, and REST API for mobile.</li>
                                     <li>Website performance and SEO optimization.</li>
-                                    <li>Third-party API integration such as Doku, Midtrans, Stripe, LOCAD, and Raja Ongkir.
+                                    <li>Third-party API integration such as Doku, Midtrans, Stripe, LOCAD, and Raja
+                                        Ongkir.
                                     </li>
                                     <li>Maintain application security with security implementations such as SSL,
-                                        XSS/CSRF/SQL Injection protection, data encryption, and JWT/OAuth for authentication
+                                        XSS/CSRF/SQL Injection protection, data encryption, and JWT/OAuth for
+                                        authentication
                                     </li>
-                                    <li>System Maintenance and Upgrades including bug fixes, error resolution, performance
-                                        monitoring, application performance improvement, and regular backups to keep system
+                                    <li>System Maintenance and Upgrades including bug fixes, error resolution,
+                                        performance
+                                        monitoring, application performance improvement, and regular backups to keep
+                                        system
                                         data secure.</li>
                                     <li>Team Collaboration and Documentation by working closely with designers, QA, and
-                                        product managers, managing code versions using Git (GitHub, GitLab), and creating
-                                        technical documentation for application development, maintenance, and integration.
+                                        product managers, managing code versions using Git (GitHub, GitLab), and
+                                        creating
+                                        technical documentation for application development, maintenance, and
+                                        integration.
                                     </li>
                                     <li>Analytics and Reporting by integrating Google Analytics tools to monitor user
                                         activity and website performance.</li>
-                                    <li>Shopify Development includes creating custom web views according to company needs on
-                                        the Shopify platform, managing product data including stock settings, prices, and
-                                        discounts, and integrating Shopify with logistics services such as LOCAD/BEHIVE</li>
+                                    <li>Shopify Development includes creating custom web views according to company
+                                        needs on
+                                        the Shopify platform, managing product data including stock settings, prices,
+                                        and
+                                        discounts, and integrating Shopify with logistics services such as LOCAD/BEHIVE
+                                    </li>
                                 </ul>
                             </div><!-- Edn Resume Item -->
 
@@ -381,10 +408,10 @@
         </section><!-- /Resume Section -->
 
         <!-- Portfolio Section -->
-        <section id="portfolio" class="portfolio section ">
+        <section id="portfolio" class="portfolio section pt-5">
 
             <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
+            <div class="container section-title mb-0" data-aos="fade-up">
                 <h2>Portfolio</h2>
                 <p>My Excellent Portfolio</p>
             </div><!-- End Section Title -->
@@ -393,7 +420,7 @@
 
                 <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+                    <ul class="portfolio-filters isotope-filters position-relative">
                         <li data-filter="*" class="filter-active">All</li>
                         <li data-filter=".filter-ecommerce">E-commerce</li>
                         <li data-filter=".filter-landing">Landing Pages</li>
@@ -414,7 +441,7 @@
         </section><!-- /Portfolio Section -->
 
         <!-- Services Section -->
-        <section id="services" class="services section ">
+        <section id="services" class="services section pt-5 pb-5">
 
             <!-- Section Title -->
             <div class="container section-title">
@@ -435,40 +462,53 @@
 
         </section><!-- /Services Section -->
 
-        <section id="stats" class="stats section mb-5"">
+        <section id="stats" class="stats section pt-5 pb-5">
 
-      <!-- Section Title -->
-      <div class=" container section-title">
-            <h2>Contact Me</h2>
+            <!-- Section Title -->
+            <div class=" container section-title">
+                <h2>Contact Me</h2>
             </div><!-- End Section Title -->
 
             <!-- <img src="assets/img/bg-contact.jpg" class="img-fluid mb-5" width="100%" height="auto" alt=""> -->
 
             <div class="container">
 
-                <div class="row gy-4">
+                <div class="row row-cols-2 g-4 gy-4">
 
-                    <!-- <div> -->
-                        <a class="col-lg-6 col-md-6 d-flex flex-column align-items-center conta glassmorphism" href="https://instagram.com/danu_irwant" target="_blank">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                    <!-- </div> -->
+                    <div class="col">
+                        <div class="position-relative h-100">
+                            <a class="d-flex flex-column align-items-center conta glassmorphism"
+                                href="https://instagram.com/danu_irwant" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
                     <!-- End Stats Item -->
 
-                    <!-- <div> -->
-                        <a class="col-lg-6 col-md-6 d-flex flex-column align-items-center conta glassmorphism" href="https://www.linkedin.com/in/danu-nur-irwanto-36a03811b" target="_blank"><i
-                                class="bi bi-linkedin"></i></a>
-                    <!-- </div> -->
+                    <div class="col">
+                        <div class="position-relative h-100">
+                            <a class="d-flex flex-column align-items-center conta glassmorphism"
+                                href="https://www.linkedin.com/in/danu-nur-irwanto-36a03811b" target="_blank"><i
+                                    class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
                     <!-- End Stats Item -->
 
-                    <!-- <div> -->
-                        <a class="col-lg-6 col-md-6 d-flex flex-column align-items-center conta glassmorphism" href="mailto:diramadhan13@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
-                    <!-- </div> -->
+                    <div class="col">
+                        <div class="position-relative h-100">
+                            <a class="d-flex flex-column align-items-center conta glassmorphism"
+                                href="mailto:diramadhan13@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+                        </div>
+                    </div>
                     <!-- End Stats Item -->
 
-                    <!-- <div> -->
-                        <a class="col-lg-6 col-md-6 d-flex flex-column align-items-center conta glassmorphism" href="https://msng.link/o?danu191024=tg" target="_blank"><i class="bi bi-telegram"></i></a>
-                    <!-- </div> -->
+                    <div class="col">
+                        <div class="position-relative h-100">
+                            <a class="d-flex flex-column align-items-center conta glassmorphism"
+                                href="https://msng.link/o?danu191024=tg" target="_blank"><i
+                                    class="bi bi-telegram"></i></a>
+                        </div>
+                    </div>
                     <!-- End Stats Item -->
 
                 </div>
@@ -479,8 +519,8 @@
 
     </main>
 
-    <footer id="footer" class="footer position-relative light-background">
-        <div class="container">
+    <footer id="footer" class="footer position-relative">
+        <div class="container glassmorphism p-4">
             <h3 class="sitename">Danu Nur Irwanto</h3>
 
             <div class="social-links d-flex justify-content-center">
@@ -492,11 +532,9 @@
                 <a href="mailto:diramadhan13@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
                 <a href="https://msng.link/o?danu191024=tg" target="_blank"><i class="bi bi-telegram"></i></a>
             </div>
-            <div class="container">
-                <div class="copyright">
-                    <span>Copyright</span> <strong class="px-1 sitename">Danu Nur Irwanto</strong> <span>All Rights
-                        Reserved</span>
-                </div>
+            <div class="copyright pb-4">
+                <span>Copyright</span> <strong class="px-1 sitename">Danu Nur Irwanto</strong> <span>All Rights
+                    Reserved</span>
             </div>
         </div>
     </footer>
@@ -710,7 +748,7 @@
                     <noscript><img class="w-100 rounded hover-rotate-img" src="${skill.img}"></noscript>
                     </div>
                     <div class="w-75 d-flex align-items-center flex-row">
-                    <span class="line-clamp-2">${skill.name}</span>
+                    <span class="line-clamp-2 antiquewhite">${skill.name}</span>
                     </div>
                 </div>
                 </div>
@@ -922,11 +960,11 @@
             const randomColor = colors[Math.floor(Math.random() * colors.length)];
             const randomBg = bgClasses[Math.floor(Math.random() * bgClasses.length)];
             return `
-        <div class="col-lg-4 col-md-6"">
-            <div class="service-item ${randomBg} position-relative">
+        <div class="col-lg-4 col-md-6">
+            <div class="service-item ${randomBg} position-relative glassmorphism">
             <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="none" stroke-width="0" fill="#f5f5f5"
+                <path stroke="none" stroke-width="0" fill="color-mix(in srgb, var(--default-color), transparent 10%)"
                     d="${randomColor}">
                 </path>
                 </svg>
@@ -951,7 +989,26 @@
 
         window.addEventListener("load", showServiceItem);
     </script>
-    
+
+    <script>
+        function createStars(count) {
+            const starsContainer = document.querySelector('.stars');
+
+            for (let i = 0; i < count; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                const size = Math.random() * 5;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+                star.style.left = `${Math.random() * 100}vw`;
+                star.style.top = `${Math.random() * 100}vh`;
+                starsContainer.appendChild(star);
+            }
+        }
+
+        createStars(200);
+    </script>
+
 </body>
 
 </html>
