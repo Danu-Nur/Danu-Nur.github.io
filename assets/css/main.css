@@ -930,7 +930,7 @@ section,
   font-weight: 500;
   line-height: 1;
   margin-bottom: 5px;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   transition: all 0.3s ease-in-out;
   font-family: var(--heading-font);
 }
@@ -938,7 +938,10 @@ section,
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
   color: var(--contrast-color);
-  background-color: var(--accent-color);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.25);
+  /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); */
 }
 
 .portfolio .portfolio-filters li:first-child {
