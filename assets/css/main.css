@@ -11,6 +11,12 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+
+@font-face {
+  font-family: "Neon Glow";
+  src: url(https://assets.codepen.io/230569/NeonGlow-8VLz.ttf);
+}
+
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Raleway", sans-serif;
@@ -112,12 +118,17 @@ h6 {
 }
 
 .glassmorphism {
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  --blur: 1.75rem;
+  --box-blur: calc(0.5 * var(--blur));
+  --glow: var(--color);
+  --color: #c4c4c6;
+  border: 3px solid white;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-sizing: inherit;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.15), 0 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 var(--box-blur) var(--glow), 0 0 var(--box-blur) var(--glow);
   position: relative;
-  /* backdrop-filter: blur(3px); */
+  filter: brightness(105%);
 }
 
 .antiquewhite {
@@ -140,6 +151,7 @@ h6 {
   background: radial-gradient(circle at 50% 0%, rgba(0, 0, 0, 1) 30%, rgb(172, 74, 4) 40%, rgba(0, 0, 0, 1) 55%) no-repeat;
   background-size: cover;
   position: absolute;
+  transform-style: preserve-3d;
   animation: slide-in-out 40s linear infinite;
   /* transform-origin: left; */
 }
@@ -181,81 +193,33 @@ h6 {
 }
 
 .stars {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  /* overflow: hidden; */
+  transform: rotate(-50deg);
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .star {
   position: absolute;
-  background-color: white;
+  top: var(--top-offset);
+  left: 0;
+  width: var(--star-tail-length);
+  height: 3px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 1), transparent);
   border-radius: 50%;
-  box-shadow: 0 0 5px white;
   opacity: 0.8;
-  animation: twinkle 2s infinite alternate;
+  transform: translate3d(100vw, 0, 0);
+  animation: fall linear infinite;
 }
 
-@keyframes twinkle {
-  from {
-    opacity: 0.3;
-  }
-
+@keyframes fall {
   to {
-    opacity: 1;
-  }
-}
-
-
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
+    transform: translate3d(-20vw, 0, 0);
+    opacity: 0;
   }
 }
 
@@ -464,40 +428,6 @@ h6 {
   padding-top: 5px;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 999999;
-  overflow: hidden;
-  background: var(--background-color);
-  transition: all 0.6s ease-out;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1.5s linear infinite;
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Scroll Top Button
@@ -607,6 +537,11 @@ section,
 }
 
 .section-title h2 {
+  --blur: 1.75rem;
+  --box-blur: calc(0.5 * var(--blur));
+  --glow: var(--color);
+  font-family: "Neon Glow";
+  text-shadow: 0 0 var(--blur) var(--glow);
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -638,6 +573,7 @@ section,
   right: 0;
   bottom: 0;
   margin: auto;
+
 }
 
 .section-title p {
@@ -898,7 +834,7 @@ section,
   border: 2px solid var(--accent-color);
 }
 
-.resume-item a em{
+.resume-item a em {
   box-shadow: inset 0 0 0 0 chartreuse;
   color: chartreuse;
   padding: 0.5rem;
@@ -907,10 +843,11 @@ section,
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.resume-item a:hover em{
+.resume-item a:hover em {
   color: #000000;
   box-shadow: inset 200px 0 0 0 chartreuse;
 }
+
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
@@ -937,11 +874,17 @@ section,
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  color: var(--contrast-color);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.25);
-  /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); */
+  --blur: 1.75rem;
+  --box-blur: calc(0.5 * var(--blur));
+  --glow: var(--color);
+  --color: #c4c4c6;
+  border: 3px solid white;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-sizing: inherit;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.15), 0 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 var(--box-blur) var(--glow), 0 0 var(--box-blur) var(--glow);
+  position: relative;
+  filter: brightness(105%);
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -1020,12 +963,12 @@ section,
 --------------------------------------------------------------*/
 .services .service-item {
   /* background-color: var(--surface-color); */
-  box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1); */
   height: 100%;
   padding: 60px 30px;
   text-align: center;
   transition: 0.3s;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 
 .services .service-item .icon {
