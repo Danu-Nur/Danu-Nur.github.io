@@ -898,6 +898,19 @@ section,
   border: 2px solid var(--accent-color);
 }
 
+.resume-item a em{
+  box-shadow: inset 0 0 0 0 chartreuse;
+  color: chartreuse;
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+  border-radius: 16px;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.resume-item a:hover em{
+  color: #000000;
+  box-shadow: inset 200px 0 0 0 chartreuse;
+}
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
