@@ -693,15 +693,8 @@ section,
 # Stats Section
 --------------------------------------------------------------*/
 .stats i {
-  background-color: var(--accent-color);
   color: var(--contrast-color);
-  width: 54px;
-  height: 54px;
-  font-size: 24px;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 50px;
   position: relative;
   z-index: 1;
 }
