@@ -36,22 +36,22 @@
     <meta name="theme-color" content="#ffffff">
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Danu Nur Irwanto",
-      "url": "https://danu-nur.github.io/",
-      "image": "https://danu-nur.github.io/assets/img/DANU_NUR_IRWANTO.png",
-      "jobTitle": "Full-Stack Developer",
-      "description": "Professional IT & Full-Stack Developer spesialis Laravel, Flutter, dan Web Development.",
-      "knowsAbout": ["Web Development", "Laravel", "Flutter", "PHP", "JavaScript", "IT Infrastructure"],
-      "sameAs": [
-        "https://github.com/danu-nur",
-        "https://www.linkedin.com/in/danu-nur-irwanto/" 
-        // Tambahkan link sosial media lain di sini jika ada
-      ]
-    }
-    </script>
+            {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Danu Nur Irwanto",
+            "url": "https://danu-nur.github.io/",
+            "image": "https://danu-nur.github.io/assets/img/DANU_NUR_IRWANTO.png",
+            "jobTitle": "Full-Stack Developer",
+            "description": "Professional IT & Full-Stack Developer spesialis Laravel, Flutter, dan Web Development.",
+            "knowsAbout": ["Web Development", "Laravel", "Flutter", "PHP", "JavaScript", "IT Infrastructure"],
+            "sameAs": [
+                "https://github.com/danu-nur",
+                "https://www.linkedin.com/in/danu-nur-irwanto/" 
+                // Tambahkan link sosial media lain di sini jika ada
+            ]
+            }
+            </script>
 
     <!-- Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -122,27 +122,43 @@
     </script>
 
     <style>
-        /* Glassmorphism Utilities */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Glassmorphism Utilities (note: @apply hanya jalan kalau pakai build Tailwind) */
         .glass-panel {
-            @apply bg-white/40 dark:bg-slate-900/40 backdrop-blur-xl border border-white/40 dark:border-white/10 shadow-xl rounded-2xl;
+            /* fallback manual kalau @apply tidak diproses */
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+        }
+
+        .dark .glass-panel {
+            background-color: rgba(15, 23, 42, 0.4);
+            border-color: rgba(148, 163, 184, 0.3);
         }
 
         .glass-nav {
-            @apply bg-white/70 dark:bg-slate-900/70 backdrop-blur-lg border-b border-white/20 dark:border-white/5;
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(148, 163, 184, 0.4);
         }
 
-        /* Gradient Text */
+        .dark .glass-nav {
+            background-color: rgba(15, 23, 42, 0.7);
+            border-bottom-color: rgba(30, 64, 175, 0.4);
+        }
+
         .text-gradient {
-            @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400;
-        }
-
-        /* Filter Button Active State */
-        .filter-btn-active {
-            @apply bg-indigo-600 text-white shadow-lg shadow-indigo-500/30 border-transparent;
-        }
-
-        .filter-btn-inactive {
-            @apply bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700;
+            background-image: linear-gradient(to right, #2563eb, #4f46e5);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
         }
 
         /* Custom Scrollbar */
@@ -186,12 +202,26 @@
         }
 
         .chip {
-            @apply inline-flex items-center px-3 py-1 rounded-full text-lg font-medium;
+            display: inline-flex;
+            align-items: center;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 1rem;
+            font-weight: 500;
         }
 
         .timeline-item:not(:last-child)::after {
             content: '';
-            @apply absolute left-5 top-8 h-full w-0.5 bg-gray-200 dark:bg-gray-700;
+            position: absolute;
+            left: 1.25rem;
+            top: 2rem;
+            height: 100%;
+            width: 2px;
+            background-color: rgb(229 231 235);
+        }
+
+        .dark .timeline-item:not(:last-child)::after {
+            background-color: rgb(55 65 81);
         }
     </style>
 </head>
@@ -199,8 +229,8 @@
 <body
     class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-300 relative overflow-x-hidden selection:bg-indigo-500 selection:text-white">
     <!-- <div class="blob bg-primary-400 w-64 h-64 top-20 left-10"></div>
-    <div class="blob bg-secondary-400 w-72 h-72 bottom-20 right-10"></div>
-    <div class="blob bg-primary-300 w-80 h-80 top-1/2 left-1/3"></div> -->
+            <div class="blob bg-secondary-400 w-72 h-72 bottom-20 right-10"></div>
+            <div class="blob bg-primary-300 w-80 h-80 top-1/2 left-1/3"></div> -->
 
     <!-- Ambient Background Blobs -->
     <div class="fixed inset-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
@@ -1321,16 +1351,32 @@
                     Saya terbuka untuk peluang kerja baik remote maupun onsite sebagai Full-Stack Developer atau Web
                     Developer. Mari diskusikan bagaimana saya bisa membantu bisnis Anda.
                 </p>
+                <!-- GANTI BAGIAN INI DI DALAM SECTION #contact -->
+
                 <div class="flex flex-col sm:flex-row justify-center gap-6">
                     <a href="mailto:danudirwan@gmail.com"
                         class="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium transition">
-                        <i data-lucide="mail" class="w-5 h-5"></i> Kirim Email
+                        <i data-lucide="mail" class="w-5 h-5"></i> Email
                     </a>
-                    <a href="tel:+6283856764585"
-                        class="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 font-medium transition">
-                        <i data-lucide="phone" class="w-5 h-5"></i> Hubungi via Telepon
-                    </a>
+
+                    <!-- WA + Telepon -->
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <!-- WhatsApp -->
+                        <a href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20tertarik%20dengan%20profil%20Anda."
+                            class="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-medium transition">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            WhatsApp
+                        </a>
+
+                        <!-- Telegram -->
+                        <a href="https://t.me/yourusername"
+                            class="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-sky-500 hover:bg-sky-600 text-white font-medium transition">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            Telegram
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -1339,7 +1385,7 @@
     <!-- Footer -->
     <footer class="text-center py-8 text-slate-500 dark:text-slate-400 text-lg">
         <p class="mb-2">© <span id="year"></span> Danu Nur Irwanto. All rights reserved.</p>
-        <p class="text-xs opacity-70">Built with HTML, Tailwind CSS, and soft glassmorphism design.</p>
+        <!-- <p class="text-xs opacity-70">Built with HTML, Tailwind CSS, and soft glassmorphism design.</p> -->
     </footer>
 
     <!-- Scripts -->

@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Jasa Pembuatan Website & Mobile Apps | Multiverse Code </title>
+    <meta name="description"
+        content="Jasa pembuatan website & mobile apps profesional untuk bisnis, personal brand, dan startup. Custom Laravel, Vue, React, dan Flutter.">
+    <meta name="keywords"
+        content="jasa pembuatan website, jasa buat web, jasa pembuatan aplikasi, mobile apps, Laravel, Flutter, Surabaya, Indonesia">
+    <meta name="author" content="Danu Nur Irwanto" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://danu-nur.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jasa Pembuatan Website & Mobile Apps | Danu Nur Irwanto" />
+    <meta property="og:description"
+        content="Bangun website & mobile apps profesional yang siap scale untuk bisnis Anda." />
+    <meta property="og:url" content="https://danu-nur.github.io/" />
+    <meta property="og:image" content="https://danu-nur.github.io/assets/img/DANU_NUR_IRWANTO.png" />
+    <meta property="og:image:alt" content="Foto Profil Danu Nur Irwanto" />
+    <meta property="og:locale" content="id_ID" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jasa Pembuatan Website & Mobile Apps | Danu Nur Irwanto" />
+    <meta name="twitter:description"
+        content="Full-Stack Developer yang siap bantu build website & mobile apps untuk bisnis Anda." />
+    <meta name="twitter:image" content="https://danu-nur.github.io/assets/img/DANU_NUR_IRWANTO.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://danu-nur.github.io/assets/img/DANU_NUR_IRWANTO.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://danu-nur.github.io/assets/img/DANU_NUR_IRWANTO.png">
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        secondary: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        }
+                    },
+                    animation: {
+                        blob: 'blob 7s infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -40px) scale(1.05)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.95)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        /* Glass Panel - Light Mode Default */
+        .glass-panel {
+            background-color: rgba(255, 255, 255, 0.6);
+            border-radius: 1.25rem;
+            border: 1px solid rgba(226, 232, 240, 0.6);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            box-shadow:
+                0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+
+        /* Glass Panel - Dark Mode */
+        .dark .glass-panel {
+            background-color: rgba(15, 23, 42, 0.6);
+            border-color: rgba(148, 163, 184, 0.15);
+            box-shadow:
+                0 18px 40px rgba(15, 23, 42, 0.2),
+                0 0 0 1px rgba(15, 23, 42, 0.3);
+        }
+
+        /* Nav - Light Mode */
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 9999px;
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            backdrop-filter: blur(12px) saturate(180%);
+            -webkit-backdrop-filter: blur(12px) saturate(180%);
+        }
+
+        /* Nav - Dark Mode */
+        .dark .glass-nav {
+            background-color: rgba(15, 23, 42, 0.8);
+            border-color: rgba(71, 85, 105, 0.5);
+        }
+
+        .text-gradient {
+            background-image: linear-gradient(to right, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            z-index: -10;
+            border-radius: 9999px;
+            /* Light mode blobs are softer */
+            opacity: 0.15;
+            mix-blend-mode: multiply;
+        }
+
+        .dark .blob {
+            mix-blend-mode: screen;
+            opacity: 0.25;
+            filter: blur(64px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 999px;
+        }
+
+        .dark ::-webkit-scrollbar-thumb {
+            background: #475569;
+        }
+
+        /* Simple fade-in animation */
+        .fade-section {
+            opacity: 0;
+            transform: translateY(12px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        .fade-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <style>
+        .infinite-slider {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .infinite-track {
+            display: flex;
+            width: max-content;
+            animation: marquee 40s linear infinite;
+        }
+
+        .infinite-track:hover {
+            animation-play-state: paused;
+            /* berhenti kalau di-hover */
+        }
+
+        .testimonial-card {
+            width: 20rem;
+            /* kira-kira 320px */
+            max-width: 100%;
+            flex-shrink: 0;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+
+</head>
+
+<!-- Updated Body Classes for Light/Dark Backgrounds and Text -->
+
+<body
+    class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 relative overflow-x-hidden selection:bg-primary-500 selection:text-white transition-colors duration-300">
+
+    <!-- Ambient Blobs -->
+    <div class="fixed inset-0 -z-20 overflow-hidden pointer-events-none">
+        <div class="blob w-80 h-80 bg-primary-400 dark:bg-primary-600 top-0 left-1/4 animate-blob"></div>
+        <div class="blob w-96 h-96 bg-secondary-400 dark:bg-secondary-600 top-32 right-1/4 animate-blob"
+            style="animation-delay: 2s"></div>
+        <div class="blob w-96 h-96 bg-pink-400 dark:bg-pink-600 bottom-0 left-1/3 animate-blob"
+            style="animation-delay: 4s"></div>
+    </div>
+
+    <!-- Gradient overlay: Adjusted for Light/Dark -->
+    <div
+        class="fixed inset-0 -z-10 bg-gradient-to-b from-transparent via-white/80 to-white dark:from-slate-950/20 dark:via-slate-950/95 dark:to-slate-950 pointer-events-none">
+    </div>
+
+    <!-- Navbar -->
+    <header class="fixed top-4 left-0 right-0 z-50">
+        <nav
+            class="glass-nav container mx-auto max-w-7xl px-4 sm:px-6 py-3 flex items-center justify-between gap-4 shadow-sm dark:shadow-lg/40 transition-all duration-300">
+            <!-- Logo -->
+            <a href="#hero" data-scroll class="flex items-center gap-3 group">
+                <div
+                    class="w-10 h-10 rounded-2xl bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center text-white font-bold shadow-lg shadow-primary-500/20 group-hover:scale-105 transition-transform">
+                    MC
+                </div>
+                <div class="hidden sm:flex flex-col">
+                    <span class="text-sm font-medium tracking-wide text-slate-700 dark:text-slate-200">
+                        Multiverse <span class="text-gradient"> Code</span>
+                    </span>
+                    <span class="text-slate-500 dark:text-slate-400">
+                        Website & Mobile Apps Studio
+                    </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="#services" data-scroll
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
+                    Layanan
+                </a>
+                <a href="#saas" data-scroll
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
+                    SaaS Siap Pakai
+                </a>
+                <a href="#packages" data-scroll
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
+                    Paket
+                </a>
+                <a href="#portfolio" data-scroll
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
+                    Portofolio
+                </a>
+                <a href="#testimonials" data-scroll
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
+                    Testimoni
+                </a>
+                <a href="#faq" data-scroll
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
+                    FAQ
+                </a>
+                <a href="#contact" data-scroll
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
+                    Kontak
+                </a>
+
+                <!-- Dark Mode Toggle -->
+                <button id="theme-toggle"
+                    class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition flex items-center justify-center">
+                    <i data-lucide="moon" class="w-4 h-4 hidden dark:block"></i>
+                    <i data-lucide="sun" class="w-4 h-4 block dark:hidden"></i>
+                </button>
+
+                <!-- CTA -->
+                <a href="#contact" data-scroll
+                    class="inline-flex items-center gap-2 rounded-full bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-400 text-white px-4 py-2 font-semibold shadow-md shadow-primary-500/30 transition-transform hover:scale-105">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    Konsultasi Gratis
+                </a>
+            </div>
+
+            <!-- Mobile Buttons -->
+            <div class="flex items-center gap-2 md:hidden">
+                <button id="theme-toggle-mobile"
+                    class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 transition">
+                    <i data-lucide="moon" class="w-4 h-4 hidden dark:block"></i>
+                    <i data-lucide="sun" class="w-4 h-4 block dark:hidden"></i>
+                </button>
+                <button id="mobile-menu-btn"
+                    class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 transition">
+                    <i data-lucide="menu" class="w-5 h-5"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden mt-2 container mx-auto max-w-7xl px-4 sm:px-6 hidden">
+            <div
+                class="glass-panel px-4 py-3 rounded-2xl bg-white/90 dark:bg-slate-900/95 border border-slate-200 dark:border-slate-700/70">
+                <div class="flex flex-col gap-3 text-sm font-medium">
+                    <a href="#services" data-scroll
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
+                        Layanan
+                    </a>
+                    <a href="#saas" data-scroll
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
+                        SaaS Siap Pakai
+                    </a>
+                    <a href="#packages" data-scroll
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
+                        Paket
+                    </a>
+                    <a href="#portfolio" data-scroll
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
+                        Portofolio
+                    </a>
+                    <a href="#testimonials" data-scroll
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
+                        Testimoni
+                    </a>
+                    <a href="#faq" data-scroll
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
+                        FAQ
+                    </a>
+                    <a href="#contact" data-scroll
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
+                        Kontak
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Main -->
+    <main class="pt-28 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-20">
+
+            <!-- HERO -->
+            <section id="hero" class="min-h-[75vh] flex items-center fade-section">
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <!-- Left -->
+                    <div class="space-y-6">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300  font-medium">
+                            <i data-lucide="shield-check" class="w-4 h-4"></i>
+                            Custom Development • Bukan Template Biasa
+                        </div>
+
+                        <h1
+                            class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-slate-900 dark:text-white">
+                            Website & Mobile Apps
+                            <span class="text-gradient">yang Bikin Bisnis
+                                Naik Kelas.</span>
+                        </h1>
+
+                        <p class="text-slate-600 dark:text-slate-300 text-sm md:text-base leading-relaxed max-w-xl">
+                            Saya membantu pemilik bisnis, UMKM, dan startup membangun
+                            <span class="font-semibold text-slate-900 dark:text-white">website & aplikasi mobile</span>
+                            yang cepat, aman, dan siap scale—mulai dari company profile,
+                            landing page, dashboard internal, hingga sistem custom.
+                        </p>
+
+                        <!-- Badges -->
+                        <div class="flex flex-wrap gap-2 text-[11px]">
+                            <span
+                                class="px-3 py-1 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-200 shadow-sm">
+                                Company Profile
+                            </span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-200 shadow-sm">
+                                Landing Page & Sales Funnel
+                            </span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-200 shadow-sm">
+                                Custom Web App
+                            </span>
+                            <span
+                                class="px-3 py-1 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-200 shadow-sm">
+                                Mobile Apps
+                            </span>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <a href="https://wa.me/6283856764585?text=Halo%20%2C%20saya%20ingin%20diskusi%20tentang%20pembuatan%20website%2Fapps."
+                                target="_blank"
+                                class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-400 text-white text-sm font-semibold shadow-lg shadow-primary-500/30 transition">
+                                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                                Konsultasi via WhatsApp
+                            </a>
+                            <a href="#packages" data-scroll
+                                class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-transparent border border-slate-300 hover:border-slate-500 dark:border-slate-600 dark:hover:border-slate-400 text-slate-700 dark:text-slate-100 text-sm font-medium transition">
+                                <i data-lucide="layers" class="w-5 h-5"></i>
+                                Lihat Paket & Estimasi
+                            </a>
+                        </div>
+
+                        <!-- Quick Stats -->
+                        <div class="grid grid-cols-3 gap-4 pt-3  md:text-sm">
+                            <div>
+                                <p class="text-lg md:text-xl font-semibold text-primary-600 dark:text-primary-300">
+                                    2+ Tahun
+                                </p>
+                                <p class="text-slate-500 dark:text-slate-400">Pengalaman Dev</p>
+                            </div>
+                            <div>
+                                <p class="text-lg md:text-xl font-semibold text-primary-600 dark:text-primary-300">
+                                    20+ Project
+                                </p>
+                                <p class="text-slate-500 dark:text-slate-400">Web & Apps</p>
+                            </div>
+                            <div>
+                                <p class="text-lg md:text-xl font-semibold text-primary-600 dark:text-primary-300">
+                                    End-to-End
+                                </p>
+                                <p class="text-slate-500 dark:text-slate-400">Dari ide sampai live</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right / Card -->
+                    <div class="glass-panel p-6 md:p-7 relative overflow-hidden">
+                        <!-- subtle gradient inside -->
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-primary-500/5 via-transparent to-secondary-500/5 pointer-events-none">
+                        </div>
+
+                        <div class="relative space-y-5">
+                            <div class="flex items-center justify-between gap-3">
+                                <div>
+                                    <p class=" text-slate-500 dark:text-slate-400 uppercase tracking-[0.2em]">
+                                        SERVICE SNAPSHOT
+                                    </p>
+                                    <p class="text-sm font-semibold text-slate-900 dark:text-slate-100">
+                                        Apa yang bisa saya bantu?
+                                    </p>
+                                </div>
+                                <div
+                                    class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-300 text-[11px] flex items-center gap-1">
+                                    <i data-lucide="sparkles" class="w-3 h-3"></i>
+                                    Done-for-you
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+                                <!-- Card Item 1 -->
+                                <div
+                                    class="rounded-2xl border border-slate-200 dark:border-slate-700/70 bg-white/50 dark:bg-slate-900/60 p-4 flex flex-col gap-2">
+                                    <div class="flex items-center justify-between">
+                                        <span
+                                            class="inline-flex items-center gap-1 text-[11px] font-semibold text-primary-600 dark:text-primary-300">
+                                            <i data-lucide="globe-2" class="w-3 h-3"></i>
+                                            Website
+                                        </span>
+                                        <span
+                                            class="text-[10px] px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                                            Laravel • CI • Vue • React
+                                        </span>
+                                    </div>
+                                    <ul class="space-y-1 text-slate-600 dark:text-slate-300 mt-1 text-xs">
+                                        <li>• Company profile & landing page</li>
+                                        <li>• Dashboard & sistem internal</li>
+                                        <li>• Optimasi kecepatan & SEO basic</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Card Item 2 -->
+                                <div
+                                    class="rounded-2xl border border-slate-200 dark:border-slate-700/70 bg-white/50 dark:bg-slate-900/60 p-4 flex flex-col gap-2">
+                                    <div class="flex items-center justify-between">
+                                        <span
+                                            class="inline-flex items-center gap-1 text-[11px] font-semibold text-secondary-600 dark:text-secondary-300">
+                                            <i data-lucide="smartphone" class="w-3 h-3"></i>
+                                            Mobile Apps
+                                        </span>
+                                        <span
+                                            class="text-[10px] px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
+                                            Flutter • Java • Kotlin
+                                        </span>
+                                    </div>
+                                    <ul class="space-y-1 text-slate-600 dark:text-slate-300 mt-1 text-xs">
+                                        <li>• Aplikasi Android & iOS</li>
+                                        <li>• Integrasi API & notifikasi</li>
+                                        <li>• Publikasi ke Play Store</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div
+                                class="rounded-2xl border border-slate-200 dark:border-slate-700/70 bg-white/50 dark:bg-slate-900/60 p-4 flex flex-col gap-2 ">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="shield" class="w-4 h-4 text-emerald-500 dark:text-emerald-300"></i>
+                                    <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                        Keamanan & Maintenance
+                                    </p>
+                                </div>
+                                <p class="text-slate-600 dark:text-slate-300">
+                                    Implementasi best practice keamanan (auth, proteksi basic),
+                                    backup, plus opsi maintenance bulanan agar sistem tetap
+                                    stabil & update.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center justify-between pt-1 text-[11px]">
+                                <div class="flex items-center gap-2 text-slate-500 dark:text-slate-400">
+                                    <i data-lucide="clock" class="w-3 h-3"></i>
+                                    <span>Estimasi mulai 7–30 hari.</span>
+                                </div>
+                                <a href="#process" data-scroll
+                                    class="inline-flex items-center gap-1 text-primary-600 dark:text-primary-300 hover:text-primary-500 transition">
+                                    Lihat alur kerja
+                                    <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES -->
+            <section id="services" class="space-y-8 fade-section scroll-mt-28">
+                <div class="flex items-center justify-between gap-4 flex-wrap">
+                    <div>
+                        <p class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                            Layanan
+                        </p>
+                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
+                            Fokus ke <span class="text-gradient">hasil yang
+                                ngasih impact bisnis,</span> bukan sekadar tampil keren.
+                        </h2>
+                    </div>
+                    <p class=" md:text-sm text-slate-600 dark:text-slate-400 max-w-md">
+                        Saya bantu dari tahap ide sampai sistem live, dengan komunikasi
+                        yang rapi dan dokumentasi yang jelas—jadi gampang di-maintain
+                        ke depannya.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-5">
+                    <!-- Web -->
+                    <div
+                        class="glass-panel p-5 flex flex-col gap-3 text-sm hover:border-primary-300 dark:hover:border-primary-700 transition-colors duration-300">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <div
+                                    class="w-8 h-8 rounded-xl bg-primary-100 dark:bg-primary-500/10 border border-primary-200 dark:border-primary-500/40 flex items-center justify-center text-primary-600 dark:text-primary-200">
+                                    <i data-lucide="globe-2" class="w-4 h-4"></i>
+                                </div>
+                                <h3 class="font-semibold text-slate-900 dark:text-slate-100">
+                                    Website Bisnis & Brand
+                                </h3>
+                            </div>
+                            <span class="text-[11px] text-slate-500 dark:text-slate-400">Web</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 ">
+                            Cocok untuk company profile, landing page campaign,
+                            hingga microsite produk.
+                        </p>
+                        <ul class="space-y-1  text-slate-600 dark:text-slate-300">
+                            <li>• Desain modern & mobile-first</li>
+                            <li>• Optimasi kecepatan & SEO basic</li>
+                            <li>• Integrasi formulir & WhatsApp</li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Apps -->
+                    <div
+                        class="glass-panel p-5 flex flex-col gap-3 text-sm hover:border-secondary-300 dark:hover:border-secondary-700 transition-colors duration-300">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <div
+                                    class="w-8 h-8 rounded-xl bg-secondary-100 dark:bg-secondary-500/10 border border-secondary-200 dark:border-secondary-500/40 flex items-center justify-center text-secondary-600 dark:text-secondary-200">
+                                    <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+                                </div>
+                                <h3 class="font-semibold text-slate-900 dark:text-slate-100">
+                                    Custom Web App
+                                </h3>
+                            </div>
+                            <span class="text-[11px] text-slate-500 dark:text-slate-400">Web App</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 ">
+                            Cocok untuk sistem internal, CRM sederhana, booking, atau
+                            dashboard analitik.
+                        </p>
+                        <ul class="space-y-1  text-slate-600 dark:text-slate-300">
+                            <li>• Laravel, Node.js, Vue, React</li>
+                            <li>• Role & permission, autentikasi aman</li>
+                            <li>• Log aktivitas & basic reporting</li>
+                        </ul>
+                    </div>
+
+                    <!-- Mobile Apps -->
+                    <div
+                        class="glass-panel p-5 flex flex-col gap-3 text-sm hover:border-emerald-300 dark:hover:border-emerald-700 transition-colors duration-300">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <div
+                                    class="w-8 h-8 rounded-xl bg-emerald-100 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-500/40 flex items-center justify-center text-emerald-600 dark:text-emerald-200">
+                                    <i data-lucide="smartphone" class="w-4 h-4"></i>
+                                </div>
+                                <h3 class="font-semibold text-slate-900 dark:text-slate-100">
+                                    Mobile Apps
+                                </h3>
+                            </div>
+                            <span class="text-[11px] text-slate-500 dark:text-slate-400">Mobile</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 ">
+                            Cocok untuk aplikasi customer, katalog, booking, loyalty,
+                            atau companion app.
+                        </p>
+                        <ul class="space-y-1  text-slate-600 dark:text-slate-300">
+                            <li>• Flutter (Android & iOS)</li>
+                            <li>• Integrasi REST API / GraphQL</li>
+                            <li>• Push notification & analytics</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="glass-panel p-5  flex flex-col md:flex-row items-start md:items-center justify-between gap-4 bg-slate-50/50 dark:bg-slate-900/50">
+                    <div class="flex items-start gap-3">
+                        <i data-lucide="info" class="w-4 h-4 text-primary-500 dark:text-primary-300 mt-0.5"></i>
+                        <p class="text-slate-600 dark:text-slate-300">
+                            Belum yakin butuh website atau apps duluan? Kita bisa
+                            mulai dari sesi konsultasi singkat (15–30 menit) untuk
+                            mapping kebutuhan dan prioritas bisnis Anda.
+                        </p>
+                    </div>
+                    <a href="https://wa.me/6283856764585?text=Halo%20%2C%20saya%20ingin%20konsultasi%20singkat%20tentang%20kebutuhan%20website%2Fapps."
+                        target="_blank"
+                        class="inline-flex items-center text-nowrap gap-2 px-4 py-2 rounded-full bg-slate-200 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 hover:border-primary-400 text-[11px] font-medium text-slate-800 dark:text-slate-100 transition">
+                        <i data-lucide="phone-outgoing" class="w-3 h-3"></i>
+                        Jadwalkan Konsultasi
+                    </a>
+                </div>
+            </section>
+
+            <!-- PROCESS -->
+            <section id="process" class="fade-section scroll-mt-32 space-y-6">
+                <div class="flex items-center justify-between gap-4 flex-wrap">
+                    <div>
+                        <p class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                            Alur Kerja
+                        </p>
+                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
+                            Workflow jelas, <span class="text-gradient">tanpa drama
+                                “tiba-tiba berubah”.</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-5 ">
+                    <!-- Step 1-2 -->
+                    <div class="glass-panel p-5 space-y-4">
+                        <div class="flex items-center gap-2">
+                            <span
+                                class="w-7 h-7 flex items-center justify-center rounded-full bg-primary-100 dark:bg-primary-500/10 border border-primary-300 dark:border-primary-500/50 text-primary-700 dark:text-primary-200 text-[11px] font-semibold">
+                                1
+                            </span>
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                Discover & Requirement
+                            </h3>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300">
+                            Kita mulai dari ngobrol santai: tujuan, tipe user, fitur
+                            utama, dan batasan (waktu/biaya).
+                        </p>
+
+                        <div
+                            class="flex items-center gap-2 pt-2 border-t border-dashed border-slate-200 dark:border-slate-700">
+                            <span
+                                class="w-7 h-7 flex items-center justify-center rounded-full bg-secondary-100 dark:bg-secondary-500/10 border border-secondary-300 dark:border-secondary-500/50 text-secondary-700 dark:text-secondary-200 text-[11px] font-semibold">
+                                2
+                            </span>
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                Planning & Wireframe
+                            </h3>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300">
+                            Saya buat struktur halaman, flow user, dan rekomendasi
+                            teknologi.
+                        </p>
+                    </div>
+
+                    <!-- Step 3-4 -->
+                    <div class="glass-panel p-5 space-y-4">
+                        <div class="flex items-center gap-2">
+                            <span
+                                class="w-7 h-7 flex items-center justify-center rounded-full bg-primary-100 dark:bg-primary-500/10 border border-primary-300 dark:border-primary-500/50 text-primary-700 dark:text-primary-200 text-[11px] font-semibold">
+                                3
+                            </span>
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                Design & Frontend
+                            </h3>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300">
+                            Implementasi UI dengan Tailwind / komponen modern yang
+                            responsif.
+                        </p>
+
+                        <div
+                            class="flex items-center gap-2 pt-2 border-t border-dashed border-slate-200 dark:border-slate-700">
+                            <span
+                                class="w-7 h-7 flex items-center justify-center rounded-full bg-secondary-100 dark:bg-secondary-500/10 border border-secondary-300 dark:border-secondary-500/50 text-secondary-700 dark:text-secondary-200 text-[11px] font-semibold">
+                                4
+                            </span>
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                Backend Integration
+                            </h3>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300">
+                            Pengerjaan logic, database, API, payment gateway, dll.
+                        </p>
+                    </div>
+
+                    <!-- Step 5-6 -->
+                    <div class="glass-panel p-5 space-y-4">
+                        <div class="flex items-center gap-2">
+                            <span
+                                class="w-7 h-7 flex items-center justify-center rounded-full bg-primary-100 dark:bg-primary-500/10 border border-primary-300 dark:border-primary-500/50 text-primary-700 dark:text-primary-200 text-[11px] font-semibold">
+                                5
+                            </span>
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                Testing & Launch
+                            </h3>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300">
+                            Uji fungsionalitas, perbaikan bug, lalu deploy ke server.
+                        </p>
+
+                        <div
+                            class="flex items-center gap-2 pt-2 border-t border-dashed border-slate-200 dark:border-slate-700">
+                            <span
+                                class="w-7 h-7 flex items-center justify-center rounded-full bg-secondary-100 dark:bg-secondary-500/10 border border-secondary-300 dark:border-secondary-500/50 text-secondary-700 dark:text-secondary-200 text-[11px] font-semibold">
+                                6
+                            </span>
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                Handover
+                            </h3>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300">
+                            Dokumentasi singkat + video walkthrough, dan opsi maintenance.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PACKAGES -->
+            <section id="packages" class="fade-section scroll-mt-32 space-y-6">
+                <div class="flex items-center justify-between gap-4 flex-wrap">
+                    <div>
+                        <p
+                            class="text-xs text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                            Paket & Estimasi
+                        </p>
+                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
+                            Dari <span class="text-gradient">pelajar sampai enterprise,</span> tinggal pilih levelnya.
+                        </h2>
+                    </div>
+                    <p class="text-xs md:text-sm text-slate-600 dark:text-slate-400 max-w-md">
+                        Rentang harga mulai sekitar <span class="font-semibold">Rp100.000 s/d puluhan juta</span>.
+                        Angka di bawah adalah kisaran awal, bisa disesuaikan dengan fitur, kompleksitas, dan deadline.
+                    </p>
+                </div>
+
+                <!-- Cards Paket -->
+                <div class="grid md:grid-cols-4 gap-5 text-xs">
+                    <!-- Pelajar / Personal -->
+                    <div class="glass-panel p-5 flex flex-col border border-slate-200 dark:border-slate-700/80">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                Paket Pelajar
+                            </h3>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-[10px] text-slate-600 dark:text-slate-300">
+                                Personal / Portfolio
+                            </span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 mb-3">
+                            Cocok untuk CV online, portfolio, atau landing sederhana satu halaman.
+                        </p>
+                        <p class="text-sm font-semibold text-primary-600 dark:text-primary-300">
+                            ± Rp100.000 – 750.000
+                        </p>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400 mb-3">
+                            Estimasi 2–4 hari kerja
+                        </p>
+                        <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                            <li>• Web statis 1 halaman (HTML + Tailwind)</li>
+                            <li>• Desain responsif & rapi</li>
+                            <li>• Integrasi tombol WhatsApp / email</li>
+                            <li>• Deploy ke GitHub Pages / Netlify</li>
+                            <li>• 1x revisi minor</li>
+                        </ul>
+                        <div class="mt-4 pt-3 border-t border-slate-200 dark:border-slate-700/60">
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400 mb-2">
+                                Hosting: static (GitHub/Netlify) – gratis, domain custom opsional.
+                            </p>
+                            <a href="https://wa.me/6283856764585?text=Halo%20%2C%20saya%20tertarik%20Paket%20Pelajar%20untuk%20portfolio%20%2F%20CV%20online."
+                                target="_blank"
+                                class="inline-flex items-center justify-center gap-2 w-full px-4 py-2 rounded-full bg-primary-600 dark:bg-primary-500 hover:bg-primary-500 text-white font-semibold text-[11px] transition">
+                                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                                Tanya Paket Pelajar
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Starter UMKM -->
+                    <div class="glass-panel p-5 flex flex-col border border-slate-200 dark:border-slate-700/80">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                Paket Starter UMKM
+                            </h3>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-400/60 text-[10px] text-emerald-700 dark:text-emerald-200">
+                                Toko / Jasa Kecil
+                            </span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 mb-3">
+                            Company profile + halaman layanan, cocok untuk UMKM yang butuh online presence.
+                        </p>
+                        <p class="text-sm font-semibold text-primary-600 dark:text-primary-300">
+                            ± Rp1,5 – 3 juta
+                        </p>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400 mb-3">
+                            Estimasi 7–14 hari kerja
+                        </p>
+                        <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                            <li>• 3–5 halaman (Home, About, Service, Kontak, dsb.)</li>
+                            <li>• Web statis / semi-dinamis (form kontak)</li>
+                            <li>• Integrasi WhatsApp, Google Maps, dan form email</li>
+                            <li>• Basic SEO & Google Analytics</li>
+                            <li>• 1x revisi mayor + 2x revisi minor</li>
+                        </ul>
+                        <div class="mt-4 pt-3 border-t border-slate-200 dark:border-slate-700/60">
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400 mb-2">
+                                Hosting opsional: shared hosting + domain .com mulai ± Rp300–600rb/tahun.<br>
+                                Perpanjangan: mengikuti paket hosting (& bisa dibantu kelola).
+                            </p>
+                            <a href="https://wa.me/6283856764585?text=Halo%20%2C%20saya%20ingin%20diskusi%20Paket%20Starter%20UMKM."
+                                target="_blank"
+                                class="inline-flex items-center justify-center gap-2 w-full px-4 py-2 rounded-full bg-primary-600 dark:bg-primary-500 hover:bg-primary-500 text-white font-semibold text-[11px] transition">
+                                <i data-lucide="store" class="w-4 h-4"></i>
+                                Diskusi Paket Starter
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bisnis Pro -->
+                    <div
+                        class="glass-panel p-5 flex flex-col border border-primary-200 dark:border-primary-500/60 ring-1 ring-primary-100 dark:ring-primary-500/40 relative overflow-hidden">
+                        <div
+                            class="absolute inset-x-0 -top-5 h-16 bg-gradient-to-br from-primary-500/10 via-secondary-500/10 to-transparent pointer-events-none">
+                        </div>
+
+                        <div class="relative flex items-center justify-between mb-2">
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                Paket Bisnis Pro
+                            </h3>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-primary-50 dark:bg-primary-500/20 border border-primary-200 dark:border-primary-400/60 text-[10px] text-primary-700 dark:text-primary-100">
+                                Paling Banyak Dipilih
+                            </span>
+                        </div>
+                        <p class="relative text-slate-600 dark:text-slate-300 mb-3">
+                            Web dinamis dengan dashboard sederhana, cocok untuk bisnis yang butuh sistem internal
+                            ringan.
+                        </p>
+                        <p class="relative text-sm font-semibold text-primary-700 dark:text-primary-200">
+                            ± Rp5 – 12 juta
+                        </p>
+                        <p class="relative text-[11px] text-slate-500 dark:text-slate-300 mb-3">
+                            Estimasi 3–6 minggu
+                        </p>
+                        <ul class="relative space-y-1 text-slate-600 dark:text-slate-200">
+                            <li>• Web dinamis (Laravel / Node.js + Vue/React)</li>
+                            <li>• Auth, role & permission (admin/user)</li>
+                            <li>• CRUD data & laporan dasar</li>
+                            <li>• Integrasi pihak ketiga (payment, email, chat widget, dsb.)</li>
+                            <li>• 2x revisi mayor + 3x revisi minor</li>
+                        </ul>
+                        <div class="relative mt-4 pt-3 border-t border-slate-200 dark:border-slate-700/60">
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400 mb-2">
+                                Hosting rekomendasi: VPS ringan / cloud (mulai ± Rp150–400rb/bulan).<br>
+                                Perpanjangan hosting: sesuai provider, bisa dibantu pengelolaan.
+                            </p>
+                            <a href="https://wa.me/6283856764585?text=Halo%20%2C%20saya%20ingin%20diskusi%20Paket%20Bisnis%20Pro."
+                                target="_blank"
+                                class="inline-flex items-center justify-center gap-2 w-full px-4 py-2 rounded-full bg-primary-600 dark:bg-primary-500 hover:bg-primary-500 text-white font-semibold text-[11px] transition">
+                                <i data-lucide="briefcase" class="w-4 h-4"></i>
+                                Diskusi Paket Bisnis Pro
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise -->
+                    <div class="glass-panel p-5 flex flex-col border border-slate-200 dark:border-slate-700/80">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                Paket Enterprise
+                            </h3>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-500/15 border border-amber-200 dark:border-amber-400/60 text-[10px] text-amber-700 dark:text-amber-200">
+                                Korporasi / Integrasi Berat
+                            </span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 mb-3">
+                            Sistem custom dengan banyak modul & integrasi pihak ketiga level perusahaan.
+                        </p>
+                        <p class="text-sm font-semibold text-primary-600 dark:text-primary-300">
+                            ± Rp15 – 40+ juta
+                        </p>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400 mb-3">
+                            Estimasi 6–12 minggu
+                        </p>
+                        <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                            <li>• Multi-module web app (HR, sales, ops, dsb.)</li>
+                            <li>• Integrasi pihak ketiga kompleks (payment, logistik, ERP, SSO, dsb.)</li>
+                            <li>• Audit log, akses multi-branch / multi-company</li>
+                            <li>• Staging environment & UAT bersama tim Anda</li>
+                            <li>• Revisi fleksibel per sprint (disepakati di awal)</li>
+                        </ul>
+                        <div class="mt-4 pt-3 border-t border-slate-200 dark:border-slate-700/60">
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400 mb-2">
+                                Hosting: VPS / cloud dedicated, bisa multi-server & auto backup.<br>
+                                Perpanjangan & maintenance bisa dibuat per kontrak tahunan.
+                            </p>
+                            <a href="https://wa.me/6283856764585?text=Halo%20%2C%20saya%20ingin%20diskusi%20Paket%20Enterprise%20untuk%20perusahaan."
+                                target="_blank"
+                                class="inline-flex items-center justify-center gap-2 w-full px-4 py-2 rounded-full bg-white dark:bg-transparent border border-primary-600 dark:border-primary-400/60 hover:bg-primary-50 dark:hover:bg-primary-500/10 text-primary-700 dark:text-primary-100 font-semibold text-[11px] transition">
+                                <i data-lucide="building-2" class="w-4 h-4"></i>
+                                Jadwalkan Diskusi Enterprise
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tabel Perbandingan Paket -->
+                <div class="glass-panel p-5 space-y-3 mt-4">
+                    <div class="flex items-center justify-between gap-3 flex-wrap mb-2">
+                        <h3 class=" font-semibold text-slate-900 dark:text-slate-100">
+                            Tabel Perbandingan Paket
+                        </h3>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                            Geser ke samping di mobile untuk melihat semua kolom.
+                        </p>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full text-[12px] text-left border-collapse">
+                            <thead>
+                                <tr
+                                    class="border-b border-slate-200 dark:border-slate-700 text-[10px] uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                                    <th class="py-2 pr-4 font-semibold">Detail</th>
+                                    <th class="py-2 px-3 font-semibold">Pelajar</th>
+                                    <th class="py-2 px-3 font-semibold">Starter UMKM</th>
+                                    <th class="py-2 px-3 font-semibold">Bisnis Pro</th>
+                                    <th class="py-2 px-3 font-semibold">Enterprise</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 dark:divide-slate-700">
+                                <tr>
+                                    <td class="py-2 pr-4 text-slate-600 dark:text-slate-300">Kisaran harga</td>
+                                    <td class="py-2 px-3">Rp100k – 750k</td>
+                                    <td class="py-2 px-3">Rp1,5 – 3 jt</td>
+                                    <td class="py-2 px-3">Rp5 – 12 jt</td>
+                                    <td class="py-2 px-3">Rp15 – 40+ jt</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 pr-4 text-slate-600 dark:text-slate-300">Jenis web</td>
+                                    <td class="py-2 px-3">Web statis 1 halaman</td>
+                                    <td class="py-2 px-3">Web statis / semi-dinamis</td>
+                                    <td class="py-2 px-3">Web dinamis + dashboard</td>
+                                    <td class="py-2 px-3">Sistem custom multi-modul</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 pr-4 text-slate-600 dark:text-slate-300">Jumlah halaman</td>
+                                    <td class="py-2 px-3">1 section panjang</td>
+                                    <td class="py-2 px-3">±3–5 halaman</td>
+                                    <td class="py-2 px-3">Bisa 5+ halaman & modul</td>
+                                    <td class="py-2 px-3">Sesuai kebutuhan (banyak modul)</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 pr-4 text-slate-600 dark:text-slate-300">Integrasi pihak ketiga</td>
+                                    <td class="py-2 px-3">WhatsApp / email</td>
+                                    <td class="py-2 px-3">WA, Maps, form email</td>
+                                    <td class="py-2 px-3">Payment, email, chat, API umum</td>
+                                    <td class="py-2 px-3">Payment, logistik, ERP, SSO, dsb.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 pr-4 text-slate-600 dark:text-slate-300">CMS / Panel admin</td>
+                                    <td class="py-2 px-3">Tidak</td>
+                                    <td class="py-2 px-3">Opsional (add-on)</td>
+                                    <td class="py-2 px-3">Ya, basic panel</td>
+                                    <td class="py-2 px-3">Ya, advanced & multi-role</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 pr-4 text-slate-600 dark:text-slate-300">Estimasi waktu</td>
+                                    <td class="py-2 px-3">2–4 hari</td>
+                                    <td class="py-2 px-3">7–14 hari</td>
+                                    <td class="py-2 px-3">3–6 minggu</td>
+                                    <td class="py-2 px-3">6–12 minggu</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 pr-4 text-slate-600 dark:text-slate-300">Revisi</td>
+                                    <td class="py-2 px-3">1x minor</td>
+                                    <td class="py-2 px-3">1x mayor + 2x minor</td>
+                                    <td class="py-2 px-3">2x mayor + 3x minor</td>
+                                    <td class="py-2 px-3">Per sprint (disepakati)</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 pr-4 text-slate-600 dark:text-slate-300">Hosting tahun pertama</td>
+                                    <td class="py-2 px-3">Static hosting (GitHub/Netlify)</td>
+                                    <td class="py-2 px-3">Shared hosting opsional</td>
+                                    <td class="py-2 px-3">VPS / cloud ringan</td>
+                                    <td class="py-2 px-3">VPS / cloud dedicated</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 pr-4 text-slate-600 dark:text-slate-300">Perpanjangan hosting</td>
+                                    <td class="py-2 px-3">Domain saja (jika pakai custom)</td>
+                                    <td class="py-2 px-3">± Rp300–600k/tahun (shared)</td>
+                                    <td class="py-2 px-3">± Rp2–5jt/tahun (VPS, tergantung spesifikasi)</td>
+                                    <td class="py-2 px-3">By kontrak (sesuai kebutuhan resource)</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 pr-4 text-slate-600 dark:text-slate-300">Maintenance berkala</td>
+                                    <td class="py-2 px-3">Tidak, on-demand</td>
+                                    <td class="py-2 px-3">Opsional add-on</td>
+                                    <td class="py-2 px-3">Opsional paket bulanan</td>
+                                    <td class="py-2 px-3">Disarankan kontrak tahunan</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                        *Semua harga & waktu di atas adalah estimasi untuk membantu perencanaan.
+                        Penawaran resmi akan disesuaikan setelah diskusi kebutuhan & fitur secara detail.
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- SAAS READY APPS -->
+            <section id="saas" class="fade-section scroll-mt-32 space-y-6">
+                <div class="flex items-center justify-between gap-4 flex-wrap">
+                    <div>
+                        <p class="text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                            SaaS Siap Pakai
+                        </p>
+                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
+                            Butuh cepat? Pakai aplikasi <span class="text-gradient">siap jalan</span> saja.
+                        </h2>
+                    </div>
+                    <p class="text-xs md:text-sm text-slate-600 dark:text-slate-400 max-w-md">
+                        Untuk banyak kasus, Anda tidak perlu membangun sistem dari nol. Tinggal gunakan aplikasi SaaS
+                        yang sudah
+                        jadi, cukup bayar bulanan atau tahunan sesuai kebutuhan.
+                    </p>
+                </div>
+
+                <!-- Benefit badges -->
+                <div class="flex flex-wrap gap-2 text-[11px]">
+                    <span
+                        class="px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-200 border border-emerald-200 dark:border-emerald-400/60">
+                        Go-live lebih cepat
+                    </span>
+                    <span
+                        class="px-3 py-1 rounded-full bg-sky-50 dark:bg-sky-500/10 text-sky-700 dark:text-sky-200 border border-sky-200 dark:border-sky-400/60">
+                        Tanpa pusing server & update
+                    </span>
+                    <span
+                        class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700">
+                        Biaya lebih ringan dari full custom
+                    </span>
+                    <span
+                        class="px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-200 border border-amber-200 dark:border-amber-400/60">
+                        Bisa upgrade ke custom di kemudian hari
+                    </span>
+                </div>
+
+                <!-- SaaS Packages -->
+                <div class="grid md:grid-cols-3 gap-5 text-xs">
+
+                    <!-- Pelajar / Solo -->
+                    <article
+                        class="glass-panel p-5 flex flex-col h-full border border-slate-200 dark:border-slate-700/80 relative overflow-hidden">
+                        <div
+                            class="absolute inset-x-0 -top-6 h-16 bg-gradient-to-br from-primary-500/10 via-secondary-500/10 to-transparent pointer-events-none">
+                        </div>
+
+                        <div class="relative flex items-center justify-between mb-2">
+                            <div>
+                                <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                    SaaS Lite – Personal & Pelajar
+                                </h3>
+                                <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                    Cocok untuk personal brand, freelancer, mentor, atau pelajar.
+                                </p>
+                            </div>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-900 text-[10px] text-slate-100 dark:bg-slate-100 dark:text-slate-900">
+                                Entry
+                            </span>
+                        </div>
+
+                        <div class="relative mt-2 mb-3 space-y-1">
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                Contoh jenis aplikasi:
+                            </p>
+                            <ul class="list-disc list-inside space-y-1 text-slate-600 dark:text-slate-300">
+                                <li>Mini landing page + linktree dengan analytics ringan.</li>
+                                <li>Booking sederhana (jadwal konsultasi / kelas online).</li>
+                                <li>Portofolio online siap pakai.</li>
+                            </ul>
+                        </div>
+
+                        <div class="relative mb-3">
+                            <p class="text-[11px] font-semibold text-slate-500 dark:text-slate-300">
+                                Langganan:
+                            </p>
+                            <p class="text-sm font-semibold text-primary-700 dark:text-primary-200">
+                                Mulai ± Rp100.000 – 250.000 / bulan
+                            </p>
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                Diskon hingga 2 bulan jika pilih paket tahunan.
+                            </p>
+                        </div>
+
+                        <ul class="relative space-y-1 text-slate-600 dark:text-slate-300">
+                            <li>• Custom domain (opsional, bisa tambah biaya).</li>
+                            <li>• Basic analytics & laporan sederhana.</li>
+                            <li>• Support via WhatsApp (jam kerja).</li>
+                        </ul>
+
+                        <div class="relative mt-4 pt-3 border-t border-slate-200 dark:border-slate-700/60">
+                            <a href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20tertarik%20pakai%20SaaS%20Lite%20(Personal%20%2F%20Pelajar)."
+                                target="_blank"
+                                class="inline-flex items-center justify-center gap-2 w-full px-4 py-2 rounded-full bg-primary-600 dark:bg-primary-500 hover:bg-primary-500 text-white font-semibold text-[11px] transition">
+                                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                                Tanya contoh aplikasinya
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- UMKM / Startup -->
+                    <article
+                        class="glass-panel p-5 flex flex-col h-full border border-primary-200 dark:border-primary-500/60">
+                        <div class="flex items-center justify-between mb-2">
+                            <div>
+                                <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                    SaaS Business – UMKM & Startup
+                                </h3>
+                                <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                    Untuk bisnis yang butuh sistem lebih serius tapi tetap efisien biaya.
+                                </p>
+                            </div>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-primary-50 dark:bg-primary-500/20 border border-primary-200 dark:border-primary-400/60 text-[10px] text-primary-700 dark:text-primary-100">
+                                Paling Diminati
+                            </span>
+                        </div>
+
+                        <div class="mt-2 mb-3 space-y-1">
+                            <p class="text-[11px] text-slate-500 dark:text-slate-300">
+                                Contoh jenis aplikasi:
+                            </p>
+                            <ul class="list-disc list-inside space-y-1 text-slate-600 dark:text-slate-200">
+                                <li>Mini CRM / pengelolaan leads & follow up.</li>
+                                <li>Booking & jadwal layanan (klinik, barbershop, kursus, dsb.).</li>
+                                <li>Inventory + penjualan sederhana dengan laporan otomatis.</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <p class="text-[11px] font-semibold text-slate-500 dark:text-slate-300">
+                                Langganan:
+                            </p>
+                            <p class="text-sm font-semibold text-primary-700 dark:text-primary-200">
+                                Mulai ± Rp350.000 – 750.000 / bulan
+                            </p>
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                Paket tahunan hemat hingga ± 20% (cocok untuk budgeting jangka panjang).
+                            </p>
+                        </div>
+
+                        <ul class="space-y-1 text-slate-600 dark:text-slate-200">
+                            <li>• Multi user (admin + staff).</li>
+                            <li>• Export laporan (Excel / PDF) untuk keperluan manajemen.</li>
+                            <li>• Bisa integrasi WhatsApp, email, atau payment gateway (add-on).</li>
+                        </ul>
+
+                        <div class="mt-4 pt-3 border-t border-slate-200 dark:border-slate-700/60">
+                            <a href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20tertarik%20pakai%20SaaS%20Business%20(UMKM%20%2F%20Startup)."
+                                target="_blank"
+                                class="inline-flex items-center justify-center gap-2 w-full px-4 py-2 rounded-full bg-primary-600 dark:bg-primary-500 hover:bg-primary-500 text-white font-semibold text-[11px] transition">
+                                <i data-lucide="briefcase" class="w-4 h-4"></i>
+                                Diskusikan SaaS untuk bisnis saya
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Enterprise / Custom SaaS -->
+                    <article
+                        class="glass-panel p-5 flex flex-col h-full border border-slate-200 dark:border-slate-700/80 relative overflow-hidden">
+                        <div
+                            class="absolute inset-x-0 -top-6 h-16 bg-gradient-to-br from-amber-500/10 via-primary-500/10 to-transparent pointer-events-none">
+                        </div>
+
+                        <div class="relative flex items-center justify-between mb-2">
+                            <div>
+                                <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                    SaaS Enterprise / White-Label
+                                </h3>
+                                <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                    Untuk perusahaan yang butuh sistem siap pakai tapi dengan sentuhan enterprise.
+                                </p>
+                            </div>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-500/20 border border-amber-200 dark:border-amber-400/60 text-[10px] text-amber-700 dark:text-amber-100">
+                                Enterprise
+                            </span>
+                        </div>
+
+                        <div class="relative mt-2 mb-3 space-y-1">
+                            <p class="text-[11px] text-slate-500 dark:text-slate-300">
+                                Contoh jenis aplikasi:
+                            </p>
+                            <ul class="list-disc list-inside space-y-1 text-slate-600 dark:text-slate-300">
+                                <li>HRIS / portal karyawan versi SaaS.</li>
+                                <li>Visitor management / guard patrol / asset tracking.</li>
+                                <li>Dashboard analytics internal (sales, operasional, web analytics).</li>
+                            </ul>
+                        </div>
+
+                        <div class="relative mb-3">
+                            <p class="text-[11px] font-semibold text-slate-500 dark:text-slate-300">
+                                Langganan:
+                            </p>
+                            <p class="text-sm font-semibold text-primary-700 dark:text-primary-200">
+                                Mulai ± Rp1.500.000 – 5.000.000 / bulan
+                            </p>
+                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                Cocok untuk perusahaan yang ingin SLA, backup rutin, dan opsi private hosting/VPS.
+                            </p>
+                        </div>
+
+                        <ul class="relative space-y-1 text-slate-600 dark:text-slate-300">
+                            <li>• Opsi white-label (branding perusahaan Anda).</li>
+                            <li>• Bisa di-deploy di server/VPS perusahaan (by agreement).</li>
+                            <li>• Integrasi pihak ketiga: ERP, warehouse, payment, SSO, dll.</li>
+                        </ul>
+
+                        <div class="relative mt-4 pt-3 border-t border-slate-200 dark:border-slate-700/60">
+                            <a href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20ingin%20diskusi%20SaaS%20Enterprise%20%2F%20White-Label%20untuk%20perusahaan."
+                                target="_blank"
+                                class="inline-flex items-center justify-center gap-2 w-full px-4 py-2 rounded-full bg-white dark:bg-transparent border border-amber-500 dark:border-amber-400/70 hover:bg-amber-50 dark:hover:bg-amber-500/10 text-amber-700 dark:text-amber-100 font-semibold text-[11px] transition">
+                                <i data-lucide="shield-check" class="w-4 h-4"></i>
+                                Jadwalkan konsultasi enterprise
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Catalog SaaS Ready -->
+                <div class="mt-8 space-y-3">
+                    <div class="flex items-center justify-between gap-4 flex-wrap">
+                        <h3 class="text-sm md:text-base font-semibold text-slate-900 dark:text-slate-100">
+                            Contoh aplikasi SaaS yang bisa langsung digunakan
+                        </h3>
+                        <p class="text-[11px] text-slate-500 dark:text-slate-400 max-w-md">
+                            Nama & fitur di bawah ini adalah contoh. Kita bisa sesuaikan paket, modul aktif, dan skema
+                            langganan
+                            dengan kebutuhan bisnis Anda.
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-3 gap-4 text-[11px]">
+                        <!-- SaaS 1: Guestbook / Visitor -->
+                        <article class="glass-panel p-4 flex flex-col border border-slate-200 dark:border-slate-700/80">
+                            <div class="flex items-center justify-between mb-2">
+                                <div>
+                                    <p class="font-semibold text-slate-900 dark:text-slate-100 text-xs">
+                                        Visitor Management / Guestbook
+                                    </p>
+                                    <p class="text-[10px] text-slate-500 dark:text-slate-400">
+                                        Cocok untuk kantor, pabrik, coworking, sekolah.
+                                    </p>
+                                </div>
+                                <span
+                                    class="px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-500/15 border border-amber-200 dark:border-amber-400/60 text-[9px] text-amber-700 dark:text-amber-100">
+                                    Siap Pakai
+                                </span>
+                            </div>
+                            <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                                <li>• Registrasi tamu digital (HP / tablet).</li>
+                                <li>• Foto tamu & keperluan kunjungan.</li>
+                                <li>• Export laporan kunjungan (Excel/PDF).</li>
+                            </ul>
+                            <div
+                                class="mt-3 flex items-center justify-between text-[10px] text-slate-500 dark:text-slate-400">
+                                <span>Mulai ± Rp150.000 – 300.000 / bulan</span>
+                                <a href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20ingin%20demo%20SaaS%20Visitor%20Management."
+                                    target="_blank"
+                                    class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                    <i data-lucide="play-circle" class="w-3 h-3"></i>
+                                    <span>Request demo</span>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- SaaS 2: HRIS Lite -->
+                        <article class="glass-panel p-4 flex flex-col border border-slate-200 dark:border-slate-700/80">
+                            <div class="flex items-center justify-between mb-2">
+                                <div>
+                                    <p class="font-semibold text-slate-900 dark:text-slate-100 text-xs">
+                                        HRIS Lite & Portal Karyawan
+                                    </p>
+                                    <p class="text-[10px] text-slate-500 dark:text-slate-400">
+                                        Untuk UMKM sampai perusahaan berkembang.
+                                    </p>
+                                </div>
+                                <span
+                                    class="px-2 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-500/15 border border-indigo-200 dark:border-indigo-400/60 text-[9px] text-indigo-700 dark:text-indigo-100">
+                                    HR / People
+                                </span>
+                            </div>
+                            <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                                <li>• Data karyawan & struktur organisasi.</li>
+                                <li>• Cuti, izin, dan kehadiran sederhana.</li>
+                                <li>• Dashboard untuk HR & owner.</li>
+                            </ul>
+                            <div
+                                class="mt-3 flex items-center justify-between text-[10px] text-slate-500 dark:text-slate-400">
+                                <span>Mulai ± Rp400.000 – 900.000 / bulan</span>
+                                <a href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20ingin%20demo%20SaaS%20HRIS%20Lite."
+                                    target="_blank"
+                                    class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                    <i data-lucide="play-circle" class="w-3 h-3"></i>
+                                    <span>Lihat modul</span>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- SaaS 3: CRM / Sales -->
+                        <article class="glass-panel p-4 flex flex-col border border-slate-200 dark:border-slate-700/80">
+                            <div class="flex items-center justify-between mb-2">
+                                <div>
+                                    <p class="font-semibold text-slate-900 dark:text-slate-100 text-xs">
+                                        CRM & Sales Pipeline
+                                    </p>
+                                    <p class="text-[10px] text-slate-500 dark:text-slate-400">
+                                        Untuk tim sales yang butuh tracking rapi.
+                                    </p>
+                                </div>
+                                <span
+                                    class="px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-500/15 border border-emerald-200 dark:border-emerald-400/60 text-[9px] text-emerald-700 dark:text-emerald-100">
+                                    Growth
+                                </span>
+                            </div>
+                            <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                                <li>• Lead & customer pipeline management.</li>
+                                <li>• Activity log (call, meeting, follow up).</li>
+                                <li>• Ringkasan performa per sales / per channel.</li>
+                            </ul>
+                            <div
+                                class="mt-3 flex items-center justify-between text-[10px] text-slate-500 dark:text-slate-400">
+                                <span>Mulai ± Rp500.000 – 1.200.000 / bulan</span>
+                                <a href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20ingin%20demo%20SaaS%20CRM%20%26%20Sales%20Pipeline."
+                                    target="_blank"
+                                    class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                    <i data-lucide="play-circle" class="w-3 h-3"></i>
+                                    <span>Tanya use case</span>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- SaaS 4: Booking & Jadwal -->
+                        <article class="glass-panel p-4 flex flex-col border border-slate-200 dark:border-slate-700/80">
+                            <div class="flex items-center justify-between mb-2">
+                                <div>
+                                    <p class="font-semibold text-slate-900 dark:text-slate-100 text-xs">
+                                        Booking & Jadwal Online
+                                    </p>
+                                    <p class="text-[10px] text-slate-500 dark:text-slate-400">
+                                        Untuk klinik, barbershop, studio, kursus, dll.
+                                    </p>
+                                </div>
+                                <span
+                                    class="px-2 py-0.5 rounded-full bg-sky-50 dark:bg-sky-500/15 border border-sky-200 dark:border-sky-400/60 text-[9px] text-sky-700 dark:text-sky-100">
+                                    Web + Mobile Ready
+                                </span>
+                            </div>
+                            <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                                <li>• Booking slot jadwal terstruktur.</li>
+                                <li>• Notifikasi via email / WhatsApp (opsional).</li>
+                                <li>• Riwayat kunjungan & laporan ringkas.</li>
+                            </ul>
+                            <div
+                                class="mt-3 flex items-center justify-between text-[10px] text-slate-500 dark:text-slate-400">
+                                <span>Mulai ± Rp250.000 – 600.000 / bulan</span>
+                                <a href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20ingin%20demo%20SaaS%20Booking%20%26%20Jadwal%20Online."
+                                    target="_blank"
+                                    class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                    <i data-lucide="play-circle" class="w-3 h-3"></i>
+                                    <span>Cocok untuk saya?</span>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- SaaS 5: Analytics / Dashboard -->
+                        <article class="glass-panel p-4 flex flex-col border border-slate-200 dark:border-slate-700/80">
+                            <div class="flex items-center justify-between mb-2">
+                                <div>
+                                    <p class="font-semibold text-slate-900 dark:text-slate-100 text-xs">
+                                        Internal Analytics Dashboard
+                                    </p>
+                                    <p class="text-[10px] text-slate-500 dark:text-slate-400">
+                                        Untuk pemilik bisnis yang butuh angka ringkas.
+                                    </p>
+                                </div>
+                                <span
+                                    class="px-2 py-0.5 rounded-full bg-primary-50 dark:bg-primary-500/15 border border-primary-200 dark:border-primary-400/60 text-[9px] text-primary-700 dark:text-primary-100">
+                                    Insight
+                                </span>
+                            </div>
+                            <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                                <li>• Ringkasan penjualan & performa channel.</li>
+                                <li>• Dashboard web analytics sederhana.</li>
+                                <li>• Export laporan untuk meeting manajemen.</li>
+                            </ul>
+                            <div
+                                class="mt-3 flex items-center justify-between text-[10px] text-slate-500 dark:text-slate-400">
+                                <span>Mulai ± Rp400.000 – 1.000.000 / bulan</span>
+                                <a href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20ingin%20demo%20SaaS%20Analytics%20Dashboard."
+                                    target="_blank"
+                                    class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                    <i data-lucide="play-circle" class="w-3 h-3"></i>
+                                    <span>Lihat contoh dashboard</span>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- SaaS 6: Custom Slot / Coming Soon -->
+                        <article
+                            class="glass-panel p-4 flex flex-col border border-dashed border-slate-300 dark:border-slate-600">
+                            <div class="flex items-center justify-between mb-2">
+                                <div>
+                                    <p class="font-semibold text-slate-900 dark:text-slate-100 text-xs">
+                                        Slot SaaS Kustom / Coming Soon
+                                    </p>
+                                    <p class="text-[10px] text-slate-500 dark:text-slate-400">
+                                        Untuk ide SaaS yang benar-benar spesifik industri Anda.
+                                    </p>
+                                </div>
+                                <span
+                                    class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-[9px] text-slate-700 dark:text-slate-200">
+                                    By Request
+                                </span>
+                            </div>
+                            <p class="text-slate-600 dark:text-slate-300 mb-3">
+                                Punya ide sistem yang ingin disewakan ke banyak cabang / franchise / partner? Kita bisa
+                                rancang
+                                dari awal dengan pola SaaS.
+                            </p>
+                            <div
+                                class="mt-auto flex items-center justify-between text-[10px] text-slate-500 dark:text-slate-400">
+                                <span>Skema harga fleksibel (revenue share / flat fee).</span>
+                                <a href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20punya%20ide%20SaaS%20kustom%20dan%20ingin%20diskusi."
+                                    target="_blank"
+                                    class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                    <i data-lucide="lightbulb" class="w-3 h-3"></i>
+                                    <span>Bahas ide saya</span>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+
+                <!-- Catatan hosting & opsi upgrade -->
+                <div class="text-[11px] text-slate-500 dark:text-slate-400 mt-2 space-y-1">
+                    <p>
+                        • Semua paket SaaS sudah termasuk maintenance aplikasi & update fitur dasar. Biaya domain dan
+                        hosting
+                        khusus (misal: VPS dedicated, private cloud) dapat dinegosiasikan terpisah sesuai kebutuhan.
+                    </p>
+                    <p>
+                        • Jika di kemudian hari Anda ingin “naik kelas” dari SaaS ke solusi full custom, struktur data &
+                        alur yang
+                        dipakai akan dijadikan pondasi agar migrasi lebih efisien.
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- PORTFOLIO -->
+            <section id="portfolio" class="fade-section scroll-mt-32 space-y-6">
+                <div class="flex items-center justify-between gap-4 flex-wrap">
+                    <div>
+                        <p class="text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                            Portofolio
+                        </p>
+                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
+                            Contoh website & aplikasi yang sudah dikerjakan.
+                        </h2>
+                    </div>
+                    <p class="text-xs md:text-sm text-slate-600 dark:text-slate-400 max-w-md">
+                        Beberapa sampel project mulai dari landing page sederhana, web app internal, hingga integrasi
+                        dengan sistem pihak ketiga & mobile apps.
+                    </p>
+                </div>
+
+                <!-- Highlight kategori -->
+                <div class="flex flex-wrap gap-2 text-[11px] mb-2">
+                    <span
+                        class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700">
+                        Website Company Profile
+                    </span>
+                    <span
+                        class="px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-200 border border-emerald-200 dark:border-emerald-400/60">
+                        Toko Online / Catalog
+                    </span>
+                    <span
+                        class="px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-200 border border-indigo-200 dark:border-indigo-400/60">
+                        Web App / Dashboard
+                    </span>
+                    <span
+                        class="px-3 py-1 rounded-full bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-200 border border-amber-200 dark:border-amber-400/60">
+                        Web + Mobile Apps
+                    </span>
+                    <span
+                        class="px-3 py-1 rounded-full bg-sky-50 dark:bg-sky-500/10 text-sky-700 dark:text-sky-200 border border-sky-200 dark:border-sky-400/60">
+                        Integrasi Pihak Ketiga (Payment, ERP, dsb.)
+                    </span>
+                </div>
+
+                <!-- Grid portofolio -->
+                <div class="grid md:grid-cols-3 gap-5 text-xs">
+                    <!-- 1: E-Commerce Kopi -->
+                    <article
+                        class="glass-panel p-5 flex flex-col h-full border border-slate-200 dark:border-slate-700/80">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <p class="text-[11px] font-semibold text-emerald-700 dark:text-emerald-300">
+                                    Toko Online / Catalog
+                                </p>
+                                <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-100">
+                                    E-Commerce Kopi Premium
+                                </h3>
+                            </div>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-900 text-[10px] text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
+                                Production
+                            </span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-xs mb-3">
+                            Platform penjualan kopi dan mesin kopi dengan katalog produk lengkap, voucher, dan integrasi
+                            ongkir.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Laravel</span>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Vue.js</span>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-500/15 text-emerald-700 dark:text-emerald-200 text-[10px]">
+                                Midtrans, RajaOngkir
+                            </span>
+                        </div>
+                        <div
+                            class="mt-auto flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                            <span>Estimasi pengerjaan: ± 4–6 minggu</span>
+                            <a href="#contact"
+                                class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                <i data-lucide="external-link" class="w-3 h-3"></i>
+                                <span>Diskusi mirip ini</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 2: Company Profile Industrial -->
+                    <article
+                        class="glass-panel p-5 flex flex-col h-full border border-slate-200 dark:border-slate-700/80">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <p class="text-[11px] font-semibold text-slate-700 dark:text-slate-300">
+                                    Website Company Profile
+                                </p>
+                                <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-100">
+                                    Company Profile Industrial
+                                </h3>
+                            </div>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-500/15 text-[10px] text-blue-700 dark:text-blue-200 border border-blue-200 dark:border-blue-400/50">
+                                Corporate
+                            </span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-xs mb-3">
+                            Website profil grup perusahaan dengan beberapa lini bisnis, multi bahasa, dan halaman karir.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Laravel
+                                Blade</span>
+                            <span class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Tailwind
+                                CSS</span>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-500/15 text-[10px] text-indigo-700 dark:text-indigo-200">
+                                SEO Basic
+                            </span>
+                        </div>
+                        <div
+                            class="mt-auto flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                            <span>Estimasi pengerjaan: ± 2–3 minggu</span>
+                            <a href="#contact"
+                                class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                <i data-lucide="external-link" class="w-3 h-3"></i>
+                                <span>Request company profile</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 3: HRIS / Portal Karyawan -->
+                    <article
+                        class="glass-panel p-5 flex flex-col h-full border border-slate-200 dark:border-slate-700/80">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <p class="text-[11px] font-semibold text-indigo-700 dark:text-indigo-300">
+                                    Web App / Dashboard
+                                </p>
+                                <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-100">
+                                    HRIS & Employee Portal
+                                </h3>
+                            </div>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-indigo-50 dark:bg-indigo-500/15 text-[10px] text-indigo-700 dark:text-indigo-200 border border-indigo-200 dark:border-indigo-400/60">
+                                Internal
+                            </span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-xs mb-3">
+                            Sistem kehadiran, cuti, dan data karyawan dengan role admin, HR, dan karyawan, lengkap
+                            dengan laporan.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Laravel</span>
+                            <span class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Livewire /
+                                Vue</span>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-500/15 text-[10px] text-emerald-700 dark:text-emerald-200">
+                                Role & Permission
+                            </span>
+                        </div>
+                        <div
+                            class="mt-auto flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                            <span>Estimasi pengerjaan: ± 4–8 minggu</span>
+                            <a href="#contact"
+                                class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                <i data-lucide="external-link" class="w-3 h-3"></i>
+                                <span>Bangun HRIS serupa</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 4: Guest Book & Visitor Management -->
+                    <article
+                        class="glass-panel p-5 flex flex-col h-full border border-slate-200 dark:border-slate-700/80">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <p class="text-[11px] font-semibold text-indigo-700 dark:text-indigo-300">
+                                    Web App / Mobile Friendly
+                                </p>
+                                <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-100">
+                                    Guest Book & Visitor Management
+                                </h3>
+                            </div>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-500/15 text-[10px] text-amber-700 dark:text-amber-200 border border-amber-200 dark:border-amber-400/60">
+                                Lobby Security
+                            </span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-xs mb-3">
+                            Aplikasi pencatatan tamu digital untuk lobi kantor, bisa digunakan dari tablet/HP dengan
+                            foto & QR code.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Laravel</span>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Tailwind</span>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-sky-50 dark:bg-sky-500/15 text-[10px] text-sky-700 dark:text-sky-200">
+                                Camera Capture
+                            </span>
+                        </div>
+                        <div
+                            class="mt-auto flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                            <span>Estimasi pengerjaan: ± 3–5 minggu</span>
+                            <a href="#contact"
+                                class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                <i data-lucide="external-link" class="w-3 h-3"></i>
+                                <span>Diskusi sistem tamu</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 5: Landing Page UMKM -->
+                    <article
+                        class="glass-panel p-5 flex flex-col h-full border border-slate-200 dark:border-slate-700/80">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <p class="text-[11px] font-semibold text-slate-700 dark:text-slate-300">
+                                    Landing Page
+                                </p>
+                                <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-100">
+                                    Landing Page UMKM F&B
+                                </h3>
+                            </div>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-500/15 text-[10px] text-emerald-700 dark:text-emerald-200 border border-emerald-200 dark:border-emerald-400/60">
+                                High Conversion
+                            </span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-xs mb-3">
+                            Landing page promosi catering/resto dengan menu, testimoni, dan tombol pesan instan via
+                            WhatsApp.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">HTML</span>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Tailwind</span>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-500/15 text-[10px] text-emerald-700 dark:text-emerald-200">
+                                WA Funnel
+                            </span>
+                        </div>
+                        <div
+                            class="mt-auto flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                            <span>Estimasi pengerjaan: ± 3–7 hari</span>
+                            <a href="#contact"
+                                class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                <i data-lucide="external-link" class="w-3 h-3"></i>
+                                <span>Buat landing serupa</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 6: SaaS Booking & Mobile -->
+                    <article
+                        class="glass-panel p-5 flex flex-col h-full border border-slate-200 dark:border-slate-700/80">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <p class="text-[11px] font-semibold text-amber-700 dark:text-amber-300">
+                                    Web + Mobile Apps
+                                </p>
+                                <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-100">
+                                    SaaS Booking & Jadwal
+                                </h3>
+                            </div>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-500/15 text-[10px] text-amber-700 dark:text-amber-200 border border-amber-200 dark:border-amber-400/60">
+                                Subscription
+                            </span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-xs mb-3">
+                            Sistem booking online dengan panel admin web + aplikasi mobile untuk pengguna, sistem
+                            notifikasi, dan
+                            pembayaran online.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Laravel
+                                API</span>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Flutter</span>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-500/15 text-[10px] text-emerald-700 dark:text-emerald-200">
+                                Midtrans / Stripe
+                            </span>
+                        </div>
+                        <div
+                            class="mt-auto flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                            <span>Estimasi pengerjaan: ± 6–10 minggu</span>
+                            <a href="#contact"
+                                class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                <i data-lucide="external-link" class="w-3 h-3"></i>
+                                <span>Diskusi SaaS serupa</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- 7: Analytics / Dashboard -->
+                    <article
+                        class="glass-panel p-5 flex flex-col h-full border border-slate-200 dark:border-slate-700/80 md:col-span-2">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <p class="text-[11px] font-semibold text-indigo-700 dark:text-indigo-300">
+                                    Web App / Analytics
+                                </p>
+                                <h3 class="text-sm font-semibold text-slate-900 dark:text-slate-100">
+                                    Internal Analytics & Sales Dashboard
+                                </h3>
+                            </div>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-primary-50 dark:bg-primary-500/15 text-[10px] text-primary-700 dark:text-primary-200 border border-primary-200 dark:border-primary-400/60">
+                                Strategy Tool
+                            </span>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-300 text-xs mb-3">
+                            Dashboard internal untuk memonitor performa penjualan, traffic website, dan KPI operasional
+                            dengan grafik
+                            interaktif & filter dinamis.
+                        </p>
+                        <div class="flex flex-wrap gap-1 mb-3">
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Laravel</span>
+                            <span class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-[10px]">Vue /
+                                React</span>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-sky-50 dark:bg-sky-500/15 text-[10px] text-sky-700 dark:text-sky-200">
+                                Chart / Analytics
+                            </span>
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-500/15 text-[10px] text-emerald-700 dark:text-emerald-200">
+                                Role-based Access
+                            </span>
+                        </div>
+                        <div
+                            class="mt-auto flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                            <span>Estimasi pengerjaan: ± 4–8 minggu</span>
+                            <a href="#contact"
+                                class="inline-flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-300">
+                                <i data-lucide="external-link" class="w-3 h-3"></i>
+                                <span>Minta demo konsep</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- TESTIMONIALS -->
+            <section id="testimonials" class="fade-section scroll-mt-32 space-y-6">
+                <div class="flex items-center justify-between gap-4 flex-wrap mb-2">
+                    <div>
+                        <p class="text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                            Testimonial
+                        </p>
+                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
+                            Klien yang sudah saya bantu.
+                        </h2>
+                    </div>
+                    <p class="text-xs md:text-sm text-slate-600 dark:text-slate-400 max-w-md">
+                        Mulai dari pelajar, UMKM, hingga level perusahaan yang butuh sistem & integrasi khusus.
+                    </p>
+                </div>
+
+                <div class="relative infinite-slider">
+                    <!-- Fade gradient kiri -->
+                    <div
+                        class="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-slate-50 dark:from-slate-950 via-slate-50/40 dark:via-slate-950/40 to-transparent z-10">
+                    </div>
+                    <!-- Fade gradient kanan -->
+                    <div
+                        class="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-slate-50 dark:from-slate-950 via-slate-50/40 dark:via-slate-950/40 to-transparent z-10">
+                    </div>
+
+                    <div class="overflow-hidden">
+                        <div class="infinite-track gap-4">
+                            <!-- Grup 1 -->
+                            <div class="flex gap-4">
+                                <!-- Testi 1 -->
+                                <article class="glass-panel p-5 flex flex-col h-full testimonial-card">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center text-xs font-semibold text-white">
+                                            AR
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                                Andi Rahman
+                                            </p>
+                                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                                Owner Kedai Kopi & Roastery
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-sm flex-1">
+                                        “Awalnya cuma minta website sederhana, tapi ternyata fitur reservasi & integrasi
+                                        WhatsApp
+                                        sangat membantu kami mengurangi chat manual. Prosesnya rapi dan komunikasinya
+                                        enak.”
+                                    </p>
+                                    <div
+                                        class="mt-4 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                            <span>Website F&B</span>
+                                        </div>
+                                        <span>Go-live ± 10 hari</span>
+                                    </div>
+                                </article>
+
+                                <!-- Testi 2 -->
+                                <article class="glass-panel p-5 flex flex-col h-full testimonial-card">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-xs font-semibold text-white">
+                                            NS
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                                Nurul Syifa
+                                            </p>
+                                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                                Founder Konsultan HR
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-sm flex-1">
+                                        “Dashboard kandidat & client portal yang dibuat sangat membantu tim kami
+                                        mengurangi kerja
+                                        manual. Update progres mingguan selalu jelas dan dokumentasi teknisnya rapi.”
+                                    </p>
+                                    <div
+                                        class="mt-4 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                            <span>Web App Rekrutmen</span>
+                                        </div>
+                                        <span>Go-live ± 5 minggu</span>
+                                    </div>
+                                </article>
+
+                                <!-- Testi 3 -->
+                                <article class="glass-panel p-5 flex flex-col h-full testimonial-card">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-xs font-semibold text-white">
+                                            HF
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                                Hadi Firmansyah
+                                            </p>
+                                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                                IT Manager Perusahaan Distribusi
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-sm flex-1">
+                                        “Integrasi ke sistem inventory & sales lama cukup menantang, tapi hasil akhirnya
+                                        stabil.
+                                        Log aktivitas dan monitoring error yang dibuat sangat membantu saat audit
+                                        internal.”
+                                    </p>
+                                    <div
+                                        class="mt-4 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                            <span>Enterprise Integration</span>
+                                        </div>
+                                        <span>Go-live ± 8–10 minggu</span>
+                                    </div>
+                                </article>
+
+                                <!-- Testi 4 -->
+                                <article class="glass-panel p-5 flex flex-col h-full testimonial-card">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-500 to-purple-500 flex items-center justify-center text-xs font-semibold text-white">
+                                            DL
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                                Dini Lestari
+                                            </p>
+                                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                                Content Creator
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-sm flex-1">
+                                        “Website personal + landing e-book & kelas online bikin funnel jualan lebih
+                                        rapih.
+                                        Tinggal satu link di bio, semua penawaran sudah ngumpul di sana.”
+                                    </p>
+                                    <div
+                                        class="mt-4 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                            <span>Personal Brand Site</span>
+                                        </div>
+                                        <span>Go-live ± 7 hari</span>
+                                    </div>
+                                </article>
+
+                                <!-- Testi 5 -->
+                                <article class="glass-panel p-5 flex flex-col h-full testimonial-card">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-sky-500 to-cyan-500 flex items-center justify-center text-xs font-semibold text-white">
+                                            RF
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                                Rizky Fadillah
+                                            </p>
+                                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                                Owner Brand Fashion
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-sm flex-1">
+                                        “Store katalog + order via WhatsApp awalnya buat uji pasar, ternyata konversinya
+                                        bagus.
+                                        Desain clean dan mobile-first, jadi customer jarang tanya hal yang sama berulang
+                                        kali.”
+                                    </p>
+                                    <div
+                                        class="mt-4 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                            <span>Catalog Web + WA</span>
+                                        </div>
+                                        <span>Go-live ± 2 minggu</span>
+                                    </div>
+                                </article>
+
+                                <!-- Testi 6 -->
+                                <article class="glass-panel p-5 flex flex-col h-full testimonial-card">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-lime-500 to-emerald-500 flex items-center justify-center text-xs font-semibold text-white">
+                                            SM
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                                Satria Mahendra
+                                            </p>
+                                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                                Koordinator Komunitas Pendidikan
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-sm flex-1">
+                                        “Platform pendaftaran kelas & manajemen peserta membuat event rutin kami jauh
+                                        lebih
+                                        tertata. Laporan hadir/tidak hadir tinggal export, tanpa rekapan manual di
+                                        Excel.”
+                                    </p>
+                                    <div
+                                        class="mt-4 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                            <span>Web Pendaftaran Event</span>
+                                        </div>
+                                        <span>Go-live ± 3 minggu</span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <!-- Grup 2 (duplikat untuk efek infinite) -->
+                            <div class="flex gap-4">
+                                <!-- Copy persis 6 kartu di atas -->
+                                <!-- Testi 1 clone -->
+                                <article class="glass-panel p-5 flex flex-col h-full testimonial-card">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center text-xs font-semibold text-white">
+                                            AR
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                                Andi Rahman
+                                            </p>
+                                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                                Owner Kedai Kopi & Roastery
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-sm flex-1">
+                                        “Awalnya cuma minta website sederhana, tapi ternyata fitur reservasi & integrasi
+                                        WhatsApp
+                                        sangat membantu kami mengurangi chat manual. Prosesnya rapi dan komunikasinya
+                                        enak.”
+                                    </p>
+                                    <div
+                                        class="mt-4 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                            <span>Website F&B</span>
+                                        </div>
+                                        <span>Go-live ± 10 hari</span>
+                                    </div>
+                                </article>
+
+                                <!-- Testi 2 clone -->
+                                <article class="glass-panel p-5 flex flex-col h-full testimonial-card">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center text-xs font-semibold text-white">
+                                            NS
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                                Nurul Syifa
+                                            </p>
+                                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                                Founder Konsultan HR
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-sm flex-1">
+                                        “Dashboard kandidat & client portal yang dibuat sangat membantu tim kami
+                                        mengurangi kerja
+                                        manual. Update progres mingguan selalu jelas dan dokumentasi teknisnya rapi.”
+                                    </p>
+                                    <div
+                                        class="mt-4 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                            <span>Web App Rekrutmen</span>
+                                        </div>
+                                        <span>Go-live ± 5 minggu</span>
+                                    </div>
+                                </article>
+
+                                <!-- Testi 3 clone -->
+                                <article class="glass-panel p-5 flex flex-col h-full testimonial-card">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-500 to-orange-500 flex items-center justify-center text-xs font-semibold text-white">
+                                            HF
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                                Hadi Firmansyah
+                                            </p>
+                                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                                IT Manager Perusahaan Distribusi
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-sm flex-1">
+                                        “Integrasi ke sistem inventory & sales lama cukup menantang, tapi hasil akhirnya
+                                        stabil.
+                                        Log aktivitas dan monitoring error yang dibuat sangat membantu saat audit
+                                        internal.”
+                                    </p>
+                                    <div
+                                        class="mt-4 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                            <span>Enterprise Integration</span>
+                                        </div>
+                                        <span>Go-live ± 8–10 minggu</span>
+                                    </div>
+                                </article>
+
+                                <!-- Testi 4 clone -->
+                                <article class="glass-panel p-5 flex flex-col h-full testimonial-card">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-fuchsia-500 to-purple-500 flex items-center justify-center text-xs font-semibold text-white">
+                                            DL
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                                Dini Lestari
+                                            </p>
+                                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                                Content Creator
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-sm flex-1">
+                                        “Website personal + landing e-book & kelas online bikin funnel jualan lebih
+                                        rapih.
+                                        Tinggal satu link di bio, semua penawaran sudah ngumpul di sana.”
+                                    </p>
+                                    <div
+                                        class="mt-4 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                            <span>Personal Brand Site</span>
+                                        </div>
+                                        <span>Go-live ± 7 hari</span>
+                                    </div>
+                                </article>
+
+                                <!-- Testi 5 clone -->
+                                <article class="glass-panel p-5 flex flex-col h-full testimonial-card">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-sky-500 to-cyan-500 flex items-center justify-center text-xs font-semibold text-white">
+                                            RF
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                                Rizky Fadillah
+                                            </p>
+                                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                                Owner Brand Fashion
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-sm flex-1">
+                                        “Store katalog + order via WhatsApp awalnya buat uji pasar, ternyata konversinya
+                                        bagus.
+                                        Desain clean dan mobile-first, jadi customer jarang tanya hal yang sama berulang
+                                        kali.”
+                                    </p>
+                                    <div
+                                        class="mt-4 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                            <span>Catalog Web + WA</span>
+                                        </div>
+                                        <span>Go-live ± 2 minggu</span>
+                                    </div>
+                                </article>
+
+                                <!-- Testi 6 clone -->
+                                <article class="glass-panel p-5 flex flex-col h-full testimonial-card">
+                                    <div class="flex items-center gap-3 mb-3">
+                                        <div
+                                            class="w-10 h-10 rounded-full bg-gradient-to-br from-lime-500 to-emerald-500 flex items-center justify-center text-xs font-semibold text-white">
+                                            SM
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                                Satria Mahendra
+                                            </p>
+                                            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+                                                Komunitas Pendidikan
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-sm flex-1">
+                                        “Platform pendaftaran kelas & manajemen peserta membuat event rutin kami jauh
+                                        lebih
+                                        tertata. Laporan hadir/tidak hadir tinggal export, tanpa rekapan manual di
+                                        Excel.”
+                                    </p>
+                                    <div
+                                        class="mt-4 flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400">
+                                        <div class="flex items-center gap-1">
+                                            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i>
+                                            <span>Web Pendaftaran Event</span>
+                                        </div>
+                                        <span>Go-live ± 3 minggu</span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ -->
+            <section id="faq" class="fade-section scroll-mt-32 space-y-6">
+                <div>
+                    <p class="text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                        FAQ
+                    </p>
+                    <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
+                        Pertanyaan umum sebelum mulai project.
+                    </h2>
+                </div>
+
+                <div class="space-y-3">
+                    <!-- 1 -->
+                    <details class="glass-panel p-4 group">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="font-semibold text-slate-800 dark:text-slate-100">
+                                Apakah bisa mulai dari budget kecil (100k–an)?
+                            </span>
+                            <i data-lucide="chevron-down"
+                                class="w-4 h-4 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                            Bisa. Untuk budget sangat terbatas, kita bisa mulai dari:
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li>Landing page statis 1 halaman (CV online / portfolio / promo sederhana).</li>
+                                <li>Hosting gratis (GitHub Pages / Netlify) + domain sementara (subdomain).</li>
+                                <li>Upgrade bertahap ke paket yang lebih besar ketika bisnis sudah jalan.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- 2 -->
+                    <details class="glass-panel p-4 group">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="font-semibold text-slate-800 dark:text-slate-100">
+                                Hosting & domain disediakan siapa?
+                            </span>
+                            <i data-lucide="chevron-down"
+                                class="w-4 h-4 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                            Ada beberapa opsi:
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li><span class="font-semibold">Anda beli sendiri</span> (saya akan kirimkan rekomendasi
+                                    & spesifikasi).</li>
+                                <li><span class="font-semibold">Saya bantu belikan & setup</span>, lalu biayanya
+                                    dimasukkan ke penawaran.</li>
+                                <li>Untuk paket tertentu, bisa termasuk bantuan konfigurasi server/VPS awal.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- 3 -->
+                    <details class="glass-panel p-4 group">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="font-semibold text-slate-800 dark:text-slate-100">
+                                Apa bedanya web statis, web dinamis, dan web + mobile apps?
+                            </span>
+                            <i data-lucide="chevron-down"
+                                class="w-4 h-4 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                            <ul class="list-disc list-inside space-y-1">
+                                <li><span class="font-semibold">Web statis:</span> konten jarang berubah, tanpa
+                                    login/panel admin. Cocok untuk landing sederhana.</li>
+                                <li><span class="font-semibold">Web dinamis:</span> punya login, panel admin, bisa
+                                    kelola data sendiri (produk, user, transaksi, dsb.).</li>
+                                <li><span class="font-semibold">Web + Mobile Apps:</span> backend terpusat, user bisa
+                                    akses lewat browser & aplikasi Android/iOS.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- 4 -->
+                    <details class="glass-panel p-4 group">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="font-semibold text-slate-800 dark:text-slate-100">
+                                Apakah ada garansi setelah project selesai?
+                            </span>
+                            <i data-lucide="chevron-down"
+                                class="w-4 h-4 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                            Ada. Umumnya:
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li>Garansi bug fix 14–30 hari setelah situs/aplikasi live.</li>
+                                <li>Jika ada error yang muncul dari fitur sesuai scope awal, akan diperbaiki tanpa biaya
+                                    tambahan.</li>
+                                <li>Perubahan fitur di luar scope awal akan dihitung sebagai tambahan kerja (change
+                                    request).</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- 5 -->
+                    <details class="glass-panel p-4 group">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="font-semibold text-slate-800 dark:text-slate-100">
+                                Sistem pembayarannya seperti apa? Apakah bisa dicicil?
+                            </span>
+                            <i data-lucide="chevron-down"
+                                class="w-4 h-4 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                            Skema umum:
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li><span class="font-semibold">DP 30–50%</span> di awal sebagai tanda jadi & blok slot
+                                    waktu.</li>
+                                <li><span class="font-semibold">Pelunasan</span> saat project selesai atau menjelang
+                                    go-live.</li>
+                                <li>Untuk nilai project lebih besar, bisa dipecah menjadi beberapa termin sesuai
+                                    milestone.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- 6 -->
+                    <details class="glass-panel p-4 group">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="font-semibold text-slate-800 dark:text-slate-100">
+                                Apakah saya mendapat akses ke source code?
+                            </span>
+                            <i data-lucide="chevron-down"
+                                class="w-4 h-4 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                            Umumnya, ya:
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li>Project akan diletakkan di repository Git (GitHub/GitLab) atas nama Anda atau
+                                    organisasi Anda.</li>
+                                <li>Anda bisa menambahkan developer internal di kemudian hari untuk melanjutkan
+                                    pengembangan.</li>
+                                <li>Beberapa komponen (seperti template internal) bisa menjadi reusable component, akan
+                                    dijelaskan di awal.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- 7 -->
+                    <details class="glass-panel p-4 group">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="font-semibold text-slate-800 dark:text-slate-100">
+                                Bisakah integrasi dengan pihak ketiga (payment, marketplace, ERP, dll.)?
+                            </span>
+                            <i data-lucide="chevron-down"
+                                class="w-4 h-4 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                            Bisa, selama tersedia API / dokumentasi resmi. Contoh integrasi:
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li>Payment gateway (Midtrans, Xendit, Stripe, dll.).</li>
+                                <li>Ongkir & logistik (RajaOngkir, dsb.).</li>
+                                <li>Marketplace / internal API perusahaan / SSO.</li>
+                            </ul>
+                            Setiap integrasi akan mempengaruhi estimasi waktu & biaya karena perlu testing tambahan.
+                        </div>
+                    </details>
+
+                    <!-- 8 -->
+                    <details class="glass-panel p-4 group">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="font-semibold text-slate-800 dark:text-slate-100">
+                                Siapa yang mengelola konten setelah website jadi?
+                            </span>
+                            <i data-lucide="chevron-down"
+                                class="w-4 h-4 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                            Ada beberapa opsi:
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li>Anda mengelola sendiri via panel admin (jika paket mendukung).</li>
+                                <li>Saya siapkan dokumentasi singkat / video walkthrough untuk tim Anda.</li>
+                                <li>Jika ingin, bisa dibuatkan paket maintenance bulanan untuk update konten & minor
+                                    adjustment.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- 9 -->
+                    <details class="glass-panel p-4 group">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="font-semibold text-slate-800 dark:text-slate-100">
+                                Apakah project bisa dikerjakan full remote?
+                            </span>
+                            <i data-lucide="chevron-down"
+                                class="w-4 h-4 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                            Bisa. Workflow tipikal:
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li>Kickoff & diskusi requirement via Zoom/Google Meet/WhatsApp Call.</li>
+                                <li>Update progres rutin (mingguan) + demo berkala.</li>
+                                <li>Semua file & dokumentasi dikirimkan secara digital (GDrive, Notion, dsb.).</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <!-- 10 -->
+                    <details class="glass-panel p-4 group">
+                        <summary class="flex items-center justify-between cursor-pointer list-none">
+                            <span class="font-semibold text-slate-800 dark:text-slate-100">
+                                Kalau suatu saat traffic naik, apakah sistemnya bisa di-scale up?
+                            </span>
+                            <i data-lucide="chevron-down"
+                                class="w-4 h-4 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="mt-3 text-slate-600 dark:text-slate-300 text-sm">
+                            Bisa. Sejak awal, arsitektur akan dipertimbangkan agar:
+                            <ul class="list-disc list-inside mt-2 space-y-1">
+                                <li>Bisa pindah dari shared hosting ke VPS / cloud tanpa rewrite total.</li>
+                                <li>Bisa dipisah jadi service-service kecil (microservice) jika suatu hari dibutuhkan.
+                                </li>
+                                <li>Mudah di-monitor (logging, error reporting, analytics).</li>
+                            </ul>
+                            Hal ini akan dibahas saat planning agar sesuai dengan roadmap bisnis Anda.
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="fade-section scroll-mt-32">
+                <div
+                    class="glass-panel p-7 md:p-8 bg-gradient-to-br from-slate-100 via-white to-slate-100 dark:from-slate-900/80 dark:via-slate-900/60 dark:to-slate-900/90 border border-slate-200 dark:border-slate-700">
+                    <div class="grid md:grid-cols-[2fr,1.4fr] gap-6 items-center">
+                        <div class="space-y-4 text-sm">
+                            <p class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                                Kontak
+                            </p>
+                            <h2 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">
+                                Siap ngobrol tentang
+                                <span class="text-gradient">project Anda?</span>
+                            </h2>
+                            <p class="text-slate-600 dark:text-slate-300  md:text-sm max-w-xl">
+                                Kirim pesan singkat, ceritakan kebutuhan Anda, dan saya akan bantu breakdown solusi.
+                            </p>
+
+                            <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                                <!-- WhatsApp -->
+                                <a href="https://wa.me/6283856764585?text=Halo%20%2C%20saya%20ingin%20diskusi%20tentang%20pembuatan%20website%2Fmobile%20apps."
+                                    target="_blank"
+                                    class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-semibold shadow-md shadow-emerald-500/40 transition">
+                                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                                    WhatsApp
+                                </a>
+
+                                <!-- Telegram -->
+                                <a href="https://t.me/yourusername" target="_blank"
+                                    class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-sky-500 hover:bg-sky-400 text-white text-sm font-semibold shadow-md shadow-sky-500/40 transition">
+                                    <i data-lucide="send" class="w-5 h-5"></i>
+                                    Telegram
+                                </a>
+                            </div>
+
+                            <div class="flex flex-wrap gap-3  pt-3 text-slate-500 dark:text-slate-400">
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="mail" class="w-4 h-4"></i>
+                                    <span>danudirwan@gmail.com</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i data-lucide="map-pin" class="w-4 h-4"></i>
+                                    <span>Surabaya, ID</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick contact card -->
+                        <div
+                            class="rounded-2xl border border-slate-200 dark:border-slate-700/80 bg-white dark:bg-slate-900/80 p-5  space-y-4 shadow-sm">
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
+                                Format chat (optional):
+                            </h3>
+                            <ul class="space-y-1 text-slate-600 dark:text-slate-300">
+                                <li>1. Jenis project (Web/App)</li>
+                                <li>2. Tujuan utama</li>
+                                <li>3. Estimasi deadline</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 dark:border-slate-800/80 mt-6 bg-slate-50 dark:bg-slate-950">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 py-6 text-[11px] text-slate-500 flex flex-col md:flex-row items-center justify-between gap-3">
+            <p>
+                © <span id="year"></span> Danu Nur Irwanto.
+            </p>
+            <p class="text-slate-500">
+                Built with HTML & Tailwind CSS
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Init icons
+        lucide.createIcons();
+
+        // Year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Dark Mode Logic
+        const html = document.documentElement;
+        const themeButtons = [
+            document.getElementById('theme-toggle'),
+            document.getElementById('theme-toggle-mobile')
+        ];
+
+        // Check Local Storage or System Preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+
+        // Toggle Function
+        themeButtons.forEach(btn => {
+            if (!btn) return;
+            btn.addEventListener('click', () => {
+                html.classList.toggle('dark');
+                if (html.classList.contains('dark')) {
+                    localStorage.theme = 'dark';
+                } else {
+                    localStorage.theme = 'light';
+                }
+            });
+        });
+
+        // Mobile menu
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Smooth scroll
+        const headerOffset = 90;
+        document.querySelectorAll('a[data-scroll]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                const href = link.getAttribute('href');
+                if (!href || !href.startsWith('#')) return;
+                const targetId = href.substring(1);
+                const targetEl = document.getElementById(targetId);
+                if (!targetEl) return;
+                e.preventDefault();
+                const rect = targetEl.getBoundingClientRect();
+                const offsetTop = rect.top + window.pageYOffset - headerOffset;
+                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Intersection Observer
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.fade-section').forEach(sec => observer.observe(sec));
+    </script>
+</body>
+
+</html>
