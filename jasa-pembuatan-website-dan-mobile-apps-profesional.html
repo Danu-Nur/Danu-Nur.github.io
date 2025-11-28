@@ -259,121 +259,94 @@
     <!-- Navbar -->
     <header class="fixed top-4 left-0 right-0 z-50">
         <nav
-            class="glass-nav container mx-auto max-w-7xl px-4 sm:px-6 py-3 flex items-center justify-between gap-4 shadow-sm dark:shadow-lg/40 transition-all duration-300">
+            class="glass-nav container mx-auto max-w-7xl px-4 lg:px-6 py-3 flex items-center justify-between gap-4 shadow-sm dark:shadow-lg/40 transition-all duration-300">
             <!-- Logo -->
             <a href="#hero" data-scroll class="flex items-center gap-3 group">
                 <div
-                    class="w-10 h-10 rounded-2xl bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center text-white font-bold shadow-lg shadow-primary-500/20 group-hover:scale-105 transition-transform">
+                    class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary-500 to-secondary-500 flex items-center justify-center text-white font-bold shadow-lg shadow-primary-500/20 group-hover:scale-105 transition-transform">
                     MC
                 </div>
-                <div class="hidden sm:flex flex-col">
-                    <span class="text-sm font-medium tracking-wide text-slate-700 dark:text-slate-200">
-                        Multiverse <span class="text-gradient"> Code</span>
+                <div class="flex flex-col">
+                    <span class="text-base font-semibold tracking-wide text-slate-700 dark:text-slate-200">
+                        Multiverse <span class="text-gradient">Code</span>
                     </span>
-                    <span class="text-slate-500 dark:text-slate-400">
+                    <span class="hidden md:flex text-base text-slate-500 dark:text-slate-400">
                         Website & Mobile Apps Studio
                     </span>
                 </div>
             </a>
 
             <!-- Desktop Nav -->
-            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+            <div class="hidden xl:flex items-center gap-6 text-base font-medium">
                 <a href="#services" data-scroll
-                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
-                    Layanan
-                </a>
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">Layanan</a>
                 <a href="#saas" data-scroll
-                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
-                    SaaS Siap Pakai
-                </a>
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">SaaS
+                    Siap Pakai</a>
                 <a href="#packages" data-scroll
-                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
-                    Paket
-                </a>
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">Paket</a>
                 <a href="#portfolio" data-scroll
-                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
-                    Portofolio
-                </a>
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">Portofolio</a>
                 <a href="#testimonials" data-scroll
-                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
-                    Testimoni
-                </a>
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">Testimoni</a>
                 <a href="#faq" data-scroll
-                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
-                    FAQ
-                </a>
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">FAQ</a>
                 <a href="#contact" data-scroll
-                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">
-                    Kontak
-                </a>
+                    class="text-slate-600 hover:text-primary-600 dark:text-slate-200 dark:hover:text-primary-200 transition">Kontak</a>
 
                 <!-- Dark Mode Toggle -->
                 <button id="theme-toggle"
                     class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 transition flex items-center justify-center">
-                    <i data-lucide="moon" class="w-4 h-4 hidden dark:block"></i>
-                    <i data-lucide="sun" class="w-4 h-4 block dark:hidden"></i>
+                    <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
+                    <i data-lucide="sun" class="w-5 h-5 block dark:hidden"></i>
                 </button>
 
                 <!-- CTA -->
                 <a href="#contact" data-scroll
-                    class="inline-flex items-center gap-2 rounded-full bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-400 text-white px-4 py-2 font-semibold shadow-md shadow-primary-500/30 transition-transform hover:scale-105">
-                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    class="inline-flex items-center gap-2 rounded-full bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-400 text-white px-5 py-2.5 font-semibold shadow-md shadow-primary-500/30 transition-transform hover:scale-105">
+                    <i data-lucide="sparkles" class="w-5 h-5"></i>
                     Konsultasi Gratis
                 </a>
             </div>
 
             <!-- Mobile Buttons -->
-            <div class="flex items-center gap-2 md:hidden">
+            <div class="flex items-center gap-2 xl:hidden">
                 <button id="theme-toggle-mobile"
                     class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 transition">
-                    <i data-lucide="moon" class="w-4 h-4 hidden dark:block"></i>
-                    <i data-lucide="sun" class="w-4 h-4 block dark:hidden"></i>
+                    <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
+                    <i data-lucide="sun" class="w-5 h-5 block dark:hidden"></i>
                 </button>
                 <button id="mobile-menu-btn"
                     class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 transition">
-                    <i data-lucide="menu" class="w-5 h-5"></i>
+                    <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
         </nav>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden mt-2 container mx-auto max-w-7xl px-4 sm:px-6 hidden">
+        <div id="mobile-menu" class="xl:hidden mt-2 container mx-auto max-w-7xl px-4 lg:px-6 hidden">
             <div
-                class="glass-panel px-4 py-3 rounded-2xl bg-white/90 dark:bg-slate-900/95 border border-slate-200 dark:border-slate-700/70">
-                <div class="flex flex-col gap-3 text-sm font-medium">
+                class="glass-panel px-4 py-4 rounded-2xl bg-white/90 dark:bg-slate-900/95 border border-slate-200 dark:border-slate-700/70">
+                <div class="flex flex-col gap-3 text-base font-medium">
                     <a href="#services" data-scroll
-                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
-                        Layanan
-                    </a>
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">Layanan</a>
                     <a href="#saas" data-scroll
-                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
-                        SaaS Siap Pakai
-                    </a>
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">SaaS
+                        Siap Pakai</a>
                     <a href="#packages" data-scroll
-                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
-                        Paket
-                    </a>
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">Paket</a>
                     <a href="#portfolio" data-scroll
-                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
-                        Portofolio
-                    </a>
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">Portofolio</a>
                     <a href="#testimonials" data-scroll
-                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
-                        Testimoni
-                    </a>
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">Testimoni</a>
                     <a href="#faq" data-scroll
-                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
-                        FAQ
-                    </a>
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">FAQ</a>
                     <a href="#contact" data-scroll
-                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">
-                        Kontak
-                    </a>
+                        class="text-slate-700 dark:text-slate-200 hover:text-primary-600 dark:hover:text-primary-200 transition">Kontak</a>
                 </div>
             </div>
         </div>
     </header>
-
 
     <!-- Main -->
     <main class="pt-28 pb-16">
@@ -386,8 +359,8 @@
                     <div class="space-y-6">
                         <div
                             class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300  font-medium">
-                            <i data-lucide="shield-check" class="w-4 h-4"></i>
-                            Custom Development • Bukan Template Biasa
+                            <i data-lucide="code-xml" class="w-4 h-4"></i>
+                            Custom Development Solutions
                         </div>
 
                         <h1
@@ -405,7 +378,7 @@
                         </p>
 
                         <!-- Badges -->
-                        <div class="flex flex-wrap gap-2 text-[11px]">
+                        <div class="flex flex-wrap gap-2 text-base">
                             <span
                                 class="px-3 py-1 rounded-full bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-200 shadow-sm">
                                 Company Profile
@@ -492,10 +465,12 @@
                                     class="rounded-2xl border border-slate-200 dark:border-slate-700/70 bg-white/50 dark:bg-slate-900/60 p-4 flex flex-col gap-2">
                                     <div class="flex items-center justify-between">
                                         <span
-                                            class="inline-flex items-center gap-1 text-[11px] font-semibold text-primary-600 dark:text-primary-300">
-                                            <i data-lucide="globe-2" class="w-3 h-3"></i>
+                                            class="inline-flex items-center gap-1 text-base font-semibold text-primary-600 dark:text-primary-300">
+                                            <i data-lucide="globe-2" class="w-4 h-4"></i>
                                             Website
                                         </span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
                                         <span
                                             class="text-[10px] px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
                                             Laravel • CI • Vue • React
@@ -513,10 +488,12 @@
                                     class="rounded-2xl border border-slate-200 dark:border-slate-700/70 bg-white/50 dark:bg-slate-900/60 p-4 flex flex-col gap-2">
                                     <div class="flex items-center justify-between">
                                         <span
-                                            class="inline-flex items-center gap-1 text-[11px] font-semibold text-secondary-600 dark:text-secondary-300">
-                                            <i data-lucide="smartphone" class="w-3 h-3"></i>
+                                            class="inline-flex items-center gap-1 text-base font-semibold text-secondary-600 dark:text-secondary-300">
+                                            <i data-lucide="smartphone" class="w-4 h-4"></i>
                                             Mobile Apps
                                         </span>
+                                    </div>
+                                    <div class="flex items-center justify-between">
                                         <span
                                             class="text-[10px] px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">
                                             Flutter • Java • Kotlin
@@ -530,19 +507,36 @@
                                 </div>
                             </div>
 
-                            <div
-                                class="rounded-2xl border border-slate-200 dark:border-slate-700/70 bg-white/50 dark:bg-slate-900/60 p-4 flex flex-col gap-2 ">
-                                <div class="flex items-center gap-2">
-                                    <i data-lucide="shield" class="w-4 h-4 text-emerald-500 dark:text-emerald-300"></i>
-                                    <p class="font-semibold text-slate-900 dark:text-slate-100">
-                                        Keamanan & Maintenance
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
+                                <div
+                                    class="rounded-2xl border border-slate-200 dark:border-slate-700/70 bg-white/50 dark:bg-slate-900/60 p-4 flex flex-col gap-2 ">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="database"
+                                            class="w-4 h-4 text-emerald-500 dark:text-emerald-300"></i>
+                                        <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                            Backend Systems
+                                        </p>
+                                    </div>
+                                    <ul class="space-y-1 text-slate-600 dark:text-slate-300 mt-1 text-xs">
+                                        <li>• Perancangan arsitektur database yang rapi & scalable</li>
+                                        <li>• RESTful API untuk web & mobile apps</li>
+                                        <li>• Integrasi dengan sistem & layanan pihak ketiga</li>
+                                    </ul>
+                                </div>
+                                <div
+                                    class="rounded-2xl border border-slate-200 dark:border-slate-700/70 bg-white/50 dark:bg-slate-900/60 p-4 flex flex-col gap-2 ">
+                                    <div class="flex items-center gap-2">
+                                        <i data-lucide="shield"
+                                            class="w-4 h-4 text-emerald-500 dark:text-emerald-300"></i>
+                                        <p class="font-semibold text-slate-900 dark:text-slate-100">
+                                            Keamanan & Maintenance
+                                        </p>
+                                    </div>
+                                    <p class="text-slate-600 dark:text-slate-300 text-xs">
+                                        Best practice security (auth, proteksi endpoint), backup terjadwal,
+                                        + opsi maintenance bulanan agar sistem tetap stabil & up-to-date.
                                     </p>
                                 </div>
-                                <p class="text-slate-600 dark:text-slate-300">
-                                    Implementasi best practice keamanan (auth, proteksi basic),
-                                    backup, plus opsi maintenance bulanan agar sistem tetap
-                                    stabil & update.
-                                </p>
                             </div>
 
                             <div class="flex items-center justify-between pt-1 text-[11px]">
@@ -563,17 +557,19 @@
 
             <!-- SERVICES -->
             <section id="services" class="space-y-8 fade-section scroll-mt-28">
-                <div class="flex items-center justify-between gap-4 flex-wrap">
-                    <div>
-                        <p class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                <div class="text-center mb-12">
+                    <p
+                        class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-sm font-medium mb-4">
+                        <span class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
                             Layanan
-                        </p>
-                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
-                            Fokus ke <span class="text-gradient">hasil yang
-                                ngasih impact bisnis,</span> bukan sekadar tampil keren.
-                        </h2>
-                    </div>
-                    <p class=" md:text-sm text-slate-600 dark:text-slate-400 max-w-md">
+                            </sapn>
+                    </p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Fokus ke <span class="text-gradient">hasil
+                            yang
+                            ngasih impact bisnis,</span> bukan sekadar tampil keren.
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                         Saya bantu dari tahap ide sampai sistem live, dengan komunikasi
                         yang rapi dan dokumentasi yang jelas—jadi gampang di-maintain
                         ke depannya.
@@ -681,16 +677,17 @@
 
             <!-- PROCESS -->
             <section id="process" class="fade-section scroll-mt-32 space-y-6">
-                <div class="flex items-center justify-between gap-4 flex-wrap">
-                    <div>
-                        <p class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                <div class="text-center mb-12">
+                    <p
+                        class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-sm font-medium mb-4">
+                        <span class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
                             Alur Kerja
-                        </p>
-                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
-                            Workflow jelas, <span class="text-gradient">tanpa drama
-                                “tiba-tiba berubah”.</span>
-                        </h2>
-                    </div>
+                            </sapn>
+                    </p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Workflow jelas, <span class="text-gradient">
+                            tanpa drama “tiba-tiba berubah”.</span>
+                    </h2>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-5 ">
@@ -791,34 +788,37 @@
 
             <!-- PACKAGES -->
             <section id="packages" class="fade-section scroll-mt-32 space-y-6">
-                <div class="flex items-center justify-between gap-4 flex-wrap">
-                    <div>
-                        <p
-                            class="text-xs text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                <div class="text-center mb-12">
+                    <p
+                        class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-sm font-medium mb-4">
+                        <span class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
                             Paket & Estimasi
-                        </p>
-                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
-                            Dari <span class="text-gradient">pelajar sampai enterprise,</span> tinggal pilih levelnya.
-                        </h2>
-                    </div>
-                    <p class="text-xs md:text-sm text-slate-600 dark:text-slate-400 max-w-md">
+                            </sapn>
+                    </p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Dari <span class="text-gradient">pelajar
+                            sampai enterprise,</span> tinggal pilih levelnya.
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                         Rentang harga mulai sekitar <span class="font-semibold">Rp100.000 s/d puluhan juta</span>.
                         Angka di bawah adalah kisaran awal, bisa disesuaikan dengan fitur, kompleksitas, dan deadline.
                     </p>
                 </div>
 
                 <!-- Cards Paket -->
-                <div class="grid md:grid-cols-4 gap-5 text-xs">
+                <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-5 text-xs">
                     <!-- Pelajar / Personal -->
                     <div class="glass-panel p-5 flex flex-col border border-slate-200 dark:border-slate-700/80">
+                        <div class="flex items-center justify-between mb-2">
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">
+                                Personal / Portfolio
+                            </span>
+                        </div>
                         <div class="flex items-center justify-between mb-2">
                             <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
                                 Paket Pelajar
                             </h3>
-                            <span
-                                class="px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-[10px] text-slate-600 dark:text-slate-300">
-                                Personal / Portfolio
-                            </span>
                         </div>
                         <p class="text-slate-600 dark:text-slate-300 mb-3">
                             Cocok untuk CV online, portfolio, atau landing sederhana satu halaman.
@@ -852,13 +852,15 @@
                     <!-- Starter UMKM -->
                     <div class="glass-panel p-5 flex flex-col border border-slate-200 dark:border-slate-700/80">
                         <div class="flex items-center justify-between mb-2">
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-400/60 text-emerald-700 dark:text-emerald-200">
+                                Toko / Jasa Kecil
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between mb-2">
                             <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
                                 Paket Starter UMKM
                             </h3>
-                            <span
-                                class="px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-500/10 border border-emerald-200 dark:border-emerald-400/60 text-[10px] text-emerald-700 dark:text-emerald-200">
-                                Toko / Jasa Kecil
-                            </span>
                         </div>
                         <p class="text-slate-600 dark:text-slate-300 mb-3">
                             Company profile + halaman layanan, cocok untuk UMKM yang butuh online presence.
@@ -898,13 +900,15 @@
                         </div>
 
                         <div class="relative flex items-center justify-between mb-2">
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-primary-50 dark:bg-primary-500/20 border border-primary-200 dark:border-primary-400/60 text-primary-700 dark:text-primary-100">
+                                Paling Banyak Dipilih
+                            </span>
+                        </div>
+                        <div class="relative flex items-center justify-between mb-2">
                             <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
                                 Paket Bisnis Pro
                             </h3>
-                            <span
-                                class="px-2 py-0.5 rounded-full bg-primary-50 dark:bg-primary-500/20 border border-primary-200 dark:border-primary-400/60 text-[10px] text-primary-700 dark:text-primary-100">
-                                Paling Banyak Dipilih
-                            </span>
                         </div>
                         <p class="relative text-slate-600 dark:text-slate-300 mb-3">
                             Web dinamis dengan dashboard sederhana, cocok untuk bisnis yang butuh sistem internal
@@ -940,13 +944,15 @@
                     <!-- Enterprise -->
                     <div class="glass-panel p-5 flex flex-col border border-slate-200 dark:border-slate-700/80">
                         <div class="flex items-center justify-between mb-2">
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-500/15 border border-amber-200 dark:border-amber-400/60 text-amber-700 dark:text-amber-200">
+                                Korporasi / Integrasi Berat
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between mb-2">
                             <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
                                 Paket Enterprise
                             </h3>
-                            <span
-                                class="px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-500/15 border border-amber-200 dark:border-amber-400/60 text-[10px] text-amber-700 dark:text-amber-200">
-                                Korporasi / Integrasi Berat
-                            </span>
                         </div>
                         <p class="text-slate-600 dark:text-slate-300 mb-3">
                             Sistem custom dengan banyak modul & integrasi pihak ketiga level perusahaan.
@@ -1084,19 +1090,19 @@
                 </div>
             </section>
 
-
             <!-- SAAS READY APPS -->
             <section id="saas" class="fade-section scroll-mt-32 space-y-6">
-                <div class="flex items-center justify-between gap-4 flex-wrap">
-                    <div>
-                        <p class="text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                <div class="text-center mb-12">
+                    <p
+                        class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-sm font-medium mb-4">
+                        <span class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
                             SaaS Siap Pakai
-                        </p>
-                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
-                            Butuh cepat? Pakai aplikasi <span class="text-gradient">siap jalan</span> saja.
-                        </h2>
-                    </div>
-                    <p class="text-xs md:text-sm text-slate-600 dark:text-slate-400 max-w-md">
+                            </sapn>
+                    </p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Butuh cepat? Pakai aplikasi <span class="text-gradient">siap jalan</span> saja.
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                         Untuk banyak kasus, Anda tidak perlu membangun sistem dari nol. Tinggal gunakan aplikasi SaaS
                         yang sudah
                         jadi, cukup bayar bulanan atau tahunan sesuai kebutuhan.
@@ -1129,10 +1135,16 @@
                     <!-- Pelajar / Solo -->
                     <article
                         class="glass-panel p-5 flex flex-col h-full border border-slate-200 dark:border-slate-700/80 relative overflow-hidden">
-                        <div
+                        <!-- <div
                             class="absolute inset-x-0 -top-6 h-16 bg-gradient-to-br from-primary-500/10 via-secondary-500/10 to-transparent pointer-events-none">
-                        </div>
+                        </div> -->
 
+                        <div class="relative flex items-center justify-between mb-2">
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-slate-900 text-[10px] text-slate-100 dark:bg-slate-100 dark:text-slate-900">
+                                Entry
+                            </span>
+                        </div>
                         <div class="relative flex items-center justify-between mb-2">
                             <div>
                                 <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
@@ -1142,10 +1154,6 @@
                                     Cocok untuk personal brand, freelancer, mentor, atau pelajar.
                                 </p>
                             </div>
-                            <span
-                                class="px-2 py-0.5 rounded-full bg-slate-900 text-[10px] text-slate-100 dark:bg-slate-100 dark:text-slate-900">
-                                Entry
-                            </span>
                         </div>
 
                         <div class="relative mt-2 mb-3 space-y-1">
@@ -1191,6 +1199,12 @@
                     <article
                         class="glass-panel p-5 flex flex-col h-full border border-primary-200 dark:border-primary-500/60">
                         <div class="flex items-center justify-between mb-2">
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-primary-50 dark:bg-primary-500/20 border border-primary-200 dark:border-primary-400/60 text-[10px] text-primary-700 dark:text-primary-100">
+                                Paling Diminati
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between mb-2">
                             <div>
                                 <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
                                     SaaS Business – UMKM & Startup
@@ -1199,10 +1213,6 @@
                                     Untuk bisnis yang butuh sistem lebih serius tapi tetap efisien biaya.
                                 </p>
                             </div>
-                            <span
-                                class="px-2 py-0.5 rounded-full bg-primary-50 dark:bg-primary-500/20 border border-primary-200 dark:border-primary-400/60 text-[10px] text-primary-700 dark:text-primary-100">
-                                Paling Diminati
-                            </span>
                         </div>
 
                         <div class="mt-2 mb-3 space-y-1">
@@ -1247,10 +1257,16 @@
                     <!-- Enterprise / Custom SaaS -->
                     <article
                         class="glass-panel p-5 flex flex-col h-full border border-slate-200 dark:border-slate-700/80 relative overflow-hidden">
-                        <div
+                        <!-- <div
                             class="absolute inset-x-0 -top-6 h-16 bg-gradient-to-br from-amber-500/10 via-primary-500/10 to-transparent pointer-events-none">
-                        </div>
+                        </div> -->
 
+                        <div class="relative flex items-center justify-between mb-2">
+                            <span
+                                class="px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-500/20 border border-amber-200 dark:border-amber-400/60 text-[10px] text-amber-700 dark:text-amber-100">
+                                Enterprise
+                            </span>
+                        </div>
                         <div class="relative flex items-center justify-between mb-2">
                             <div>
                                 <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
@@ -1260,10 +1276,6 @@
                                     Untuk perusahaan yang butuh sistem siap pakai tapi dengan sentuhan enterprise.
                                 </p>
                             </div>
-                            <span
-                                class="px-2 py-0.5 rounded-full bg-amber-50 dark:bg-amber-500/20 border border-amber-200 dark:border-amber-400/60 text-[10px] text-amber-700 dark:text-amber-100">
-                                Enterprise
-                            </span>
                         </div>
 
                         <div class="relative mt-2 mb-3 space-y-1">
@@ -1540,16 +1552,17 @@
 
             <!-- PORTFOLIO -->
             <section id="portfolio" class="fade-section scroll-mt-32 space-y-6">
-                <div class="flex items-center justify-between gap-4 flex-wrap">
-                    <div>
-                        <p class="text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                <div class="text-center mb-12">
+                    <p
+                        class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-sm font-medium mb-4">
+                        <span class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
                             Portofolio
-                        </p>
-                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
-                            Contoh website & aplikasi yang sudah dikerjakan.
-                        </h2>
-                    </div>
-                    <p class="text-xs md:text-sm text-slate-600 dark:text-slate-400 max-w-md">
+                            </sapn>
+                    </p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Contoh <span class="text-gradient">website & aplikasi</span> yang sudah dikerjakan.
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                         Beberapa sampel project mulai dari landing page sederhana, web app internal, hingga integrasi
                         dengan sistem pihak ketiga & mobile apps.
                     </p>
@@ -1884,16 +1897,17 @@
 
             <!-- TESTIMONIALS -->
             <section id="testimonials" class="fade-section scroll-mt-32 space-y-6">
-                <div class="flex items-center justify-between gap-4 flex-wrap mb-2">
-                    <div>
-                        <p class="text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                <div class="text-center mb-12">
+                    <p
+                        class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-sm font-medium mb-4">
+                        <span class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
                             Testimonial
-                        </p>
-                        <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
-                            Klien yang sudah saya bantu.
-                        </h2>
-                    </div>
-                    <p class="text-xs md:text-sm text-slate-600 dark:text-slate-400 max-w-md">
+                            </sapn>
+                    </p>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Klien yang sudah kami bantu.
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                         Mulai dari pelajar, UMKM, hingga level perusahaan yang butuh sistem & integrasi khusus.
                     </p>
                 </div>
@@ -2303,12 +2317,15 @@
 
             <!-- FAQ -->
             <section id="faq" class="fade-section scroll-mt-32 space-y-6">
-                <div>
-                    <p class="text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
-                        FAQ
+                <div class="text-center mb-12">
+                    <p
+                        class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-sm font-medium mb-4">
+                        <span class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                            FAQ
+                            </sapn>
                     </p>
-                    <h2 class="text-xl md:text-2xl font-bold mt-1 text-slate-900 dark:text-white">
-                        Pertanyaan umum sebelum mulai project.
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        <span class="text-gradient">Pertanyaan umum</span> sebelum mulai project.
                     </h2>
                 </div>
 
@@ -2522,63 +2539,126 @@
             </section>
 
             <!-- CONTACT -->
-            <section id="contact" class="fade-section scroll-mt-32">
-                <div
-                    class="glass-panel p-7 md:p-8 bg-gradient-to-br from-slate-100 via-white to-slate-100 dark:from-slate-900/80 dark:via-slate-900/60 dark:to-slate-900/90 border border-slate-200 dark:border-slate-700">
-                    <div class="grid md:grid-cols-[2fr,1.4fr] gap-6 items-center">
-                        <div class="space-y-4 text-sm">
-                            <p class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
-                                Kontak
+            <section id="contact" class="fade-section scroll-mt-32 space-y-6">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Info -->
+                    <div class="space-y-4">
+                        <div class="text-start mb-8">
+                            <p
+                                class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-sm font-medium mb-4">
+                                <span
+                                    class=" text-primary-600 dark:text-primary-300 font-semibold tracking-[0.2em] uppercase">
+                                    Kontak
+                                    </sapn>
                             </p>
-                            <h2 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">
-                                Siap ngobrol tentang
-                                <span class="text-gradient">project Anda?</span>
+                            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                                Siap bahas <span class="text-gradient">kebutuhan website atau apps Anda?</span>.
                             </h2>
-                            <p class="text-slate-600 dark:text-slate-300  md:text-sm max-w-xl">
-                                Kirim pesan singkat, ceritakan kebutuhan Anda, dan saya akan bantu breakdown solusi.
+                            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                                Ceritakan saja konteks bisnis, target user, dan budget kasar. Dari sana kita bisa susun
+                                opsi
+                                terbaik dan
+                                roadmap pengembangan yang realistis.
                             </p>
-
-                            <div class="flex flex-col sm:flex-row gap-4 pt-2">
-                                <!-- WhatsApp -->
-                                <a href="https://wa.me/6283856764585?text=Halo%20%2C%20saya%20ingin%20diskusi%20tentang%20pembuatan%20website%2Fmobile%20apps."
-                                    target="_blank"
-                                    class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-semibold shadow-md shadow-emerald-500/40 transition">
-                                    <i data-lucide="message-circle" class="w-5 h-5"></i>
-                                    WhatsApp
-                                </a>
-
-                                <!-- Telegram -->
-                                <a href="https://t.me/yourusername" target="_blank"
-                                    class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-sky-500 hover:bg-sky-400 text-white text-sm font-semibold shadow-md shadow-sky-500/40 transition">
-                                    <i data-lucide="send" class="w-5 h-5"></i>
-                                    Telegram
-                                </a>
-                            </div>
-
-                            <div class="flex flex-wrap gap-3  pt-3 text-slate-500 dark:text-slate-400">
-                                <div class="flex items-center gap-2">
-                                    <i data-lucide="mail" class="w-4 h-4"></i>
-                                    <span>danudirwan@gmail.com</span>
+                        </div>
+                        <div class="glass-panel p-5 space-y-4">
+                            <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                                Hubungi langsung
+                            </h3>
+                            <div class="space-y-2 text-base text-slate-600 dark:text-slate-300">
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="phone" class="w-5 h-5 text-primary-500 mt-0.5"></i>
+                                    <div>
+                                        <p class="font-semibold text-slate-800 dark:text-slate-100">WhatsApp</p>
+                                        <a href="https://wa.me/6283856764585" target="_blank"
+                                            class="text-primary-600 dark:text-primary-300 hover:underline">
+                                            +62 838-5676-4585
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="flex items-center gap-2">
-                                    <i data-lucide="map-pin" class="w-4 h-4"></i>
-                                    <span>Surabaya, ID</span>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="mail" class="w-5 h-5 text-primary-500 mt-0.5"></i>
+                                    <div>
+                                        <p class="font-semibold text-slate-800 dark:text-slate-100">Email</p>
+                                        <a href="mailto:danu.nur.irwanto@gmail.com"
+                                            class="text-primary-600 dark:text-primary-300 hover:underline">
+                                            multiversecode@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <i data-lucide="map-pin" class="w-5 h-5 text-primary-500 mt-0.5"></i>
+                                    <div>
+                                        <p class="font-semibold text-slate-800 dark:text-slate-100">Domisili</p>
+                                        <p>Indonesia (bisa remote untuk klien seluruh Indonesia & luar negeri).</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Quick contact card -->
-                        <div
-                            class="rounded-2xl border border-slate-200 dark:border-slate-700/80 bg-white dark:bg-slate-900/80 p-5  space-y-4 shadow-sm">
-                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 text-sm">
-                                Format chat (optional):
+                        <div class="glass-panel p-5 space-y-3">
+                            <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                                Contoh informasi yang membantu
                             </h3>
-                            <ul class="space-y-1 text-slate-600 dark:text-slate-300">
-                                <li>1. Jenis project (Web/App)</li>
-                                <li>2. Tujuan utama</li>
-                                <li>3. Estimasi deadline</li>
+                            <ul class="list-disc list-inside space-y-1 text-base text-slate-600 dark:text-slate-300">
+                                <li>Jenis bisnis & target user (B2B / B2C, lokal / nasional).</li>
+                                <li>Tujuan utama (branding, lead, penjualan, efisiensi internal).</li>
+                                <li>Contoh referensi website / apps yang disukai.</li>
+                                <li>Perkiraan budget & timeline yang diharapkan.</li>
                             </ul>
                         </div>
+                    </div>
+
+                    <!-- Form (dummy / front only) -->
+                    <div class="glass-panel p-6">
+                        <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-4">
+                            Kirim brief singkat
+                        </h3>
+                        <form class="space-y-4"
+                            onsubmit="event.preventDefault(); alert('Terima kasih! Silakan kirim juga via WhatsApp agar respon lebih cepat 😊');">
+                            <div class="space-y-2">
+                                <label for="name"
+                                    class="block text-base font-medium text-slate-700 dark:text-slate-200">
+                                    Nama & Perusahaan
+                                </label>
+                                <input id="name" name="name" type="text"
+                                    class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 px-3 py-2.5 text-base text-slate-900 dark:text-slate-100 outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            <div class="space-y-2">
+                                <label for="email"
+                                    class="block text-base font-medium text-slate-700 dark:text-slate-200">
+                                    Email aktif
+                                </label>
+                                <input id="email" name="email" type="email"
+                                    class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 px-3 py-2.5 text-base text-slate-900 dark:text-slate-100 outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            <div class="space-y-2">
+                                <label for="whatsapp"
+                                    class="block text-base font-medium text-slate-700 dark:text-slate-200">
+                                    Nomor WhatsApp
+                                </label>
+                                <input id="whatsapp" name="whatsapp" type="text"
+                                    class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 px-3 py-2.5 text-base text-slate-900 dark:text-slate-100 outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            <div class="space-y-2">
+                                <label for="project"
+                                    class="block text-base font-medium text-slate-700 dark:text-slate-200">
+                                    Ceritakan singkat kebutuhan Anda
+                                </label>
+                                <textarea id="project" name="project" rows="4"
+                                    class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 px-3 py-2.5 text-base text-slate-900 dark:text-slate-100 outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                                    placeholder="Contoh: Butuh landing page untuk UMKM kuliner, target selesai 3 minggu, butuh integrasi WhatsApp & katalog menu."></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-400 text-white px-5 py-3 font-semibold text-base shadow-md shadow-primary-500/30 transition">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                                Kirim Brief (Simulasi)
+                            </button>
+                            <p class="text-base text-slate-500 dark:text-slate-400 mt-2">
+                                Setelah mengisi form, sangat disarankan juga menghubungi via WhatsApp agar respon lebih
+                                cepat.
+                            </p>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -2586,15 +2666,24 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-200 dark:border-slate-800/80 mt-6 bg-slate-50 dark:bg-slate-950">
-        <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 py-6 text-[11px] text-slate-500 flex flex-col md:flex-row items-center justify-between gap-3">
-            <p>
-                © <span id="year"></span> Danu Nur Irwanto.
-            </p>
-            <p class="text-slate-500">
-                Built with HTML & Tailwind CSS
-            </p>
+    <footer class="border-t border-slate-200 dark:border-slate-800 mt-10">
+        <div class="max-w-7xl mx-auto px-4 lg:px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="text-base text-slate-500 dark:text-slate-400">
+                © <span id="year"></span> Multiverse Code · Jasa Pembuatan Website & Mobile Apps oleh
+                <span class="font-semibold text-slate-700 dark:text-slate-200">Danu Nur Irwanto</span>
+            </div>
+            <div class="flex items-center gap-4 text-base">
+                <a href="https://github.com/danu-nur" target="_blank"
+                    class="inline-flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-300">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                    GitHub
+                </a>
+                <a href="#hero" data-scroll
+                    class="inline-flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-300">
+                    <i data-lucide="arrow-up" class="w-5 h-5"></i>
+                    Kembali ke atas
+                </a>
+            </div>
         </div>
     </footer>
 
