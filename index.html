@@ -1,1481 +1,1359 @@
 <!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Danu Nur Irwanto | Full-Stack Developer & IT Professional</title>
+    <title>Danu Nur Irwanto | Full-Stack Developer – Web, Mobile, Desktop & AI</title>
     <meta name="description"
-        content="Portofolio resmi Danu Nur Irwanto. Full-Stack Developer berpengalaman spesialis Laravel, Flutter, dan Web Development. Lihat proyek dan keahlian teknis saya.">
+        content="Portofolio Danu Nur Irwanto, Full-Stack Developer di Surabaya. Membangun aplikasi web, mobile, desktop (Tauri/Rust), integrasi AI, dan IoT. Terbuka untuk proyek freelance.">
     <meta name="keywords"
-        content="Danu Nur Irwanto, Full-Stack Developer, Laravel Developer, Flutter Developer, Web Developer Indonesia, IT Professional, Portofolio Programmer">
+        content="Danu Nur Irwanto, Full-Stack Developer, Freelance Developer Surabaya, Laravel Developer, Flutter Developer, Tauri Rust Developer, Desktop App, AI Integration, IoT ESP32, Ryuzen Labs">
     <meta name="author" content="Danu Nur Irwanto">
     <meta name="robots" content="index, follow">
-
     <link rel="canonical" href="https://danu-nur.github.io/">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://danu-nur.github.io/">
-    <meta property="og:title" content="Danu Nur Irwanto - Full-Stack Developer Portfolio">
+    <meta property="og:title" content="Danu Nur Irwanto – Full-Stack Developer (Web, Mobile, Desktop & AI)">
     <meta property="og:description"
-        content="Lihat portofolio Danu Nur Irwanto: Spesialis Laravel, Flutter, dan solusi IT modern.">
+        content="Aplikasi web, mobile, dan desktop yang dipakai bisnis sungguhan, dari e-commerce sampai sistem internal dan integrasi AI lokal.">
     <meta property="og:image" content="https://danu-nur.github.io/assets/img/DANU_NUR_IRWANTO.png">
-    <meta property="og:image:alt" content="Foto Profil Danu Nur Irwanto">
+    <meta property="og:image:alt" content="Foto profil Danu Nur Irwanto">
     <meta property="og:locale" content="id_ID">
-
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Danu Nur Irwanto | Full-Stack Developer">
     <meta name="twitter:description"
-        content="Portofolio Professional IT & Full-Stack Developer spesialis Laravel & Flutter.">
+        content="Full-Stack Developer: Laravel, Flutter, Tauri/Rust, integrasi AI, dan IoT. Terbuka untuk proyek freelance.">
     <meta name="twitter:image" content="https://danu-nur.github.io/assets/img/DANU_NUR_IRWANTO.png">
 
-    <link rel="icon" href="https://danu-nur.github.io/assets/img/DANU_NUR_IRWANTO.png" type="image/png">
-    <link rel="apple-touch-icon" href="https://danu-nur.github.io/assets/img/DANU_NUR_IRWANTO.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="assets/img/DANU_NUR_IRWANTO.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/DANU_NUR_IRWANTO.png">
+    <meta name="theme-color" content="#eceef1" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#12161d" media="(prefers-color-scheme: dark)">
 
     <script type="application/ld+json">
-            {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Danu Nur Irwanto",
-            "url": "https://danu-nur.github.io/",
-            "image": "https://danu-nur.github.io/assets/img/DANU_NUR_IRWANTO.png",
-            "jobTitle": "Full-Stack Developer",
-            "description": "Professional IT & Full-Stack Developer spesialis Laravel, Flutter, dan Web Development.",
-            "knowsAbout": ["Web Development", "Laravel", "Flutter", "PHP", "JavaScript", "IT Infrastructure"],
-            "sameAs": [
-                "https://github.com/danu-nur",
-                "https://www.linkedin.com/in/danu-nur-irwanto/" 
-                // Tambahkan link sosial media lain di sini jika ada
-            ]
-            }
-            </script>
-
-    <!-- Fonts: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Tailwind CSS (CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Lucide Icons (CDN) -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <!-- Tailwind Config for Custom Colors/Fonts -->
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        glass: {
-                            light: 'rgba(255, 255, 255, 0.65)',
-                            dark: 'rgba(15, 23, 42, 0.65)',
-                            border: 'rgba(255, 255, 255, 0.2)',
-                            borderDark: 'rgba(255, 255, 255, 0.05)',
-                        },
-                        primary: {
-                            50: '#f0f9ff',
-                            100: '#e0f2fe',
-                            200: '#bae6fd',
-                            300: '#7dd3fc',
-                            400: '#38bdf8',
-                            500: '#0ea5e9',
-                            600: '#0284c7',
-                            700: '#0369a1',
-                            800: '#075985',
-                            900: '#0c4a6e',
-                        },
-                        secondary: {
-                            50: '#f5f3ff',
-                            100: '#ede9fe',
-                            200: '#ddd6fe',
-                            300: '#c4b5fd',
-                            400: '#a78bfa',
-                            500: '#8b5cf6',
-                            600: '#7c3aed',
-                            700: '#6d28d9',
-                            800: '#5b21b6',
-                            900: '#4c1d95',
-                        }
-                    },
-                    animation: {
-                        'blob': 'blob 7s infinite',
-                    },
-                    keyframes: {
-                        blob: {
-                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
-                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
-                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
-                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
-                        }
-                    }
-                }
-            }
-        }
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Danu Nur Irwanto",
+        "url": "https://danu-nur.github.io/",
+        "image": "https://danu-nur.github.io/assets/img/DANU_NUR_IRWANTO.png",
+        "jobTitle": "Full-Stack Developer",
+        "description": "Full-Stack Developer yang membangun aplikasi web, mobile, desktop, integrasi AI, dan IoT.",
+        "address": { "@type": "PostalAddress", "addressLocality": "Surabaya", "addressCountry": "ID" },
+        "knowsAbout": ["Laravel", "Flutter", "Vue.js", "React", "TypeScript", "Rust", "Tauri", "AI Integration", "RAG", "IoT", "ESP32"],
+        "sameAs": [
+            "https://github.com/Danu-Nur",
+            "https://linkedin.com/in/danu-nur-irwanto-36a03811b"
+        ]
+    }
     </script>
 
+    <!-- Apply saved theme before paint -->
+    <script>
+        try {
+            var t = localStorage.getItem('theme');
+            if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t;
+        } catch (e) { }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Schibsted+Grotesk:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
     <style>
+        :root {
+            --paper: #eceef1;
+            --sheet: #f7f8f9;
+            --ink: #151a22;
+            --steel: #5a6472;
+            --line: #d3d8de;
+            --red: #ec3013;
+            --red-ink: #c22a0f;
+            --fill: #d42a0f;
+            --fill-hover: #b3220a;
+            --case-bg: #151a22;
+            --case-fg: #eceef1;
+            --display: "Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+            --text: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+            --wrap: 1180px;
+            --gut: clamp(16px, 4vw, 40px);
+            color-scheme: light;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root:not([data-theme="light"]) {
+                --paper: #12161d;
+                --sheet: #191e27;
+                --ink: #e7eaee;
+                --steel: #9aa3af;
+                --line: #2a313c;
+                --red: #ff5a3d;
+                --red-ink: #ff7a61;
+                --case-bg: #1e2531;
+                --case-fg: #e7eaee;
+                color-scheme: dark;
+            }
+        }
+
+        :root[data-theme="dark"] {
+            --paper: #12161d;
+            --sheet: #191e27;
+            --ink: #e7eaee;
+            --steel: #9aa3af;
+            --line: #2a313c;
+            --red: #ff5a3d;
+            --red-ink: #ff7a61;
+            --case-bg: #1e2531;
+            --case-fg: #e7eaee;
+            color-scheme: dark;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
         html {
             scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
         }
 
-        /* Glassmorphism Utilities (note: @apply hanya jalan kalau pakai build Tailwind) */
-        .glass-panel {
-            /* fallback manual kalau @apply tidak diproses */
-            background-color: rgba(255, 255, 255, 0.4);
-            border-radius: 1rem;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important;
+            }
+
+            .wall li {
+                opacity: 1 !important;
+                transform: none !important;
+            }
         }
 
-        .dark .glass-panel {
-            background-color: rgba(15, 23, 42, 0.4);
-            border-color: rgba(148, 163, 184, 0.3);
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font: 400 17px/1.6 var(--text);
+            overflow-x: hidden;
         }
 
-        .glass-nav {
-            background-color: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+        a {
+            color: inherit;
         }
 
-        .dark .glass-nav {
-            background-color: rgba(15, 23, 42, 0.7);
-            border-bottom-color: rgba(30, 64, 175, 0.4);
+        :focus-visible {
+            outline: 2px solid var(--red);
+            outline-offset: 3px;
+            border-radius: 2px;
         }
 
-        .text-gradient {
-            background-image: linear-gradient(to right, #2563eb, #4f46e5);
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
+        .wrap {
+            max-width: var(--wrap);
+            margin: 0 auto;
+            padding: 0 var(--gut);
         }
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-
-        .dark ::-webkit-scrollbar-thumb {
-            background: #475569;
-        }
-    </style>
-
-    <style>
-        .blob {
+        .skip {
             position: absolute;
-            filter: blur(60px);
-            opacity: 0.15;
-            z-index: -1;
+            left: -999px;
+        }
+
+        .skip:focus {
+            left: 16px;
+            top: 12px;
+            z-index: 10;
+            background: var(--ink);
+            color: var(--paper);
+            padding: 8px 12px;
+        }
+
+        /* ---------- Header ---------- */
+        .top {
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background: color-mix(in srgb, var(--paper) 88%, transparent);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .top .wrap {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            height: 64px;
+        }
+
+        .brand {
+            font: 800 19px/1 var(--display);
+            text-decoration: none;
+            letter-spacing: -0.01em;
+            margin-right: auto;
+            white-space: nowrap;
+        }
+
+        .brand span {
+            color: var(--red);
+        }
+
+        .nav {
+            display: flex;
+            gap: 22px;
+            font-size: 15px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: var(--steel);
+        }
+
+        .nav a:hover {
+            color: var(--ink);
+        }
+
+        .icon-btn {
+            width: 38px;
+            height: 38px;
+            flex: none;
+            display: grid;
+            place-items: center;
+            border: 1px solid var(--line);
             border-radius: 50%;
+            background: transparent;
+            color: var(--ink);
+            cursor: pointer;
         }
 
-        .glass {
-            backdrop-filter: blur(16px) saturate(180%);
-            -webkit-backdrop-filter: blur(16px) saturate(180%);
-            background-color: rgba(255, 255, 255, 0.75);
-            border: 1px solid rgba(255, 255, 255, 0.125);
+        .icon-btn svg {
+            width: 18px;
+            height: 18px;
         }
 
-        .dark .glass {
-            background-color: rgba(17, 24, 39, 0.75);
-            border: 1px solid rgba(255, 255, 255, 0.075);
-        }
-
-        .chip {
+        .btn {
             display: inline-flex;
             align-items: center;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 1rem;
-            font-weight: 500;
+            gap: 10px;
+            padding: 12px 20px;
+            border-radius: 999px;
+            font: 600 15px/1 var(--text);
+            text-decoration: none;
+            border: 1px solid var(--ink);
+            white-space: nowrap;
         }
 
-        .timeline-item:not(:last-child)::after {
-            content: '';
-            position: absolute;
-            left: 1.25rem;
-            top: 2rem;
-            height: 100%;
-            width: 2px;
-            background-color: rgb(229 231 235);
+        .btn svg {
+            width: 17px;
+            height: 17px;
+            flex: none;
         }
 
-        .dark .timeline-item:not(:last-child)::after {
-            background-color: rgb(55 65 81);
+        .btn-solid {
+            background: var(--fill);
+            border-color: var(--fill);
+            color: #fff;
+        }
+
+        .btn-solid:hover {
+            background: var(--fill-hover);
+            border-color: var(--fill-hover);
+        }
+
+        .btn-line:hover {
+            background: var(--ink);
+            color: var(--paper);
+        }
+
+        .top .btn {
+            padding: 10px 16px;
+        }
+
+        @media (max-width: 860px) {
+            .nav {
+                display: none;
+            }
+        }
+
+        @media (max-width: 440px) {
+            .top .wrap {
+                gap: 12px;
+            }
+
+            .top .btn span {
+                display: none;
+            }
+
+            .top .btn {
+                padding: 10px;
+            }
+        }
+
+        /* ---------- Hero ---------- */
+        .hero {
+            padding: clamp(40px, 6vw, 72px) 0 clamp(40px, 6vw, 72px);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+            gap: clamp(32px, 6vw, 80px);
+            align-items: start;
+        }
+
+        .who {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 28px;
+            color: var(--steel);
+            font-size: 15px;
+        }
+
+        .who img {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: var(--line);
+        }
+
+        .who strong {
+            display: block;
+            color: var(--ink);
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        h1 {
+            font: 800 clamp(40px, 5.4vw, 64px)/1 var(--display);
+            letter-spacing: -0.035em;
+            margin: 0 0 24px;
+            text-wrap: balance;
+        }
+
+        .lede {
+            font-size: clamp(17px, 1.6vw, 19px);
+            color: var(--steel);
+            max-width: 34em;
+            margin: 0 0 32px;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .avail {
+            margin: 28px 0 0;
+            font-size: 15px;
+            color: var(--steel);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .avail i {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: #22a559;
+            box-shadow: 0 0 0 4px color-mix(in srgb, #22a559 22%, transparent);
+            flex: none;
+        }
+
+        /* The domain wall: the one loud element on the page */
+        .wall {
+            border-top: 3px solid var(--ink);
+            padding-top: 14px;
+        }
+
+        .wall-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+            font-size: 14px;
+            color: var(--steel);
+            margin-bottom: 6px;
+        }
+
+        .wall-head span:last-child {
+            white-space: nowrap;
+        }
+
+        .wall ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wall li a {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 16px;
+            padding: 7px 0;
+            border-bottom: 1px solid var(--line);
+            text-decoration: none;
+        }
+
+        .wall .dom {
+            font: 600 clamp(22px, 2.6vw, 32px)/1.1 var(--display);
+            letter-spacing: -0.02em;
+            overflow-wrap: anywhere;
+        }
+
+        .wall .kind {
+            font-size: 13px;
+            color: var(--steel);
+            white-space: nowrap;
+        }
+
+        .wall li a:hover .dom {
+            color: var(--red);
+        }
+
+        .wall li {
+            opacity: 0;
+            transform: translateY(8px);
+            animation: rise .5s cubic-bezier(.2, .7, .2, 1) forwards;
+            animation-delay: calc(var(--i) * 55ms + 150ms);
+        }
+
+        @keyframes rise {
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        .wall-foot {
+            margin: 12px 0 0;
+            font-size: 14px;
+            color: var(--steel);
+        }
+
+        .wall-foot a {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ---------- Sections ---------- */
+        .sec {
+            padding: clamp(56px, 8vw, 96px) 0;
+            border-top: 1px solid var(--line);
+        }
+
+        .sec-head {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+            gap: clamp(20px, 4vw, 56px);
+            margin-bottom: clamp(28px, 4vw, 48px);
+        }
+
+        h2 {
+            font: 800 clamp(30px, 3.8vw, 44px)/1.02 var(--display);
+            letter-spacing: -0.03em;
+            margin: 0;
+        }
+
+        .sec-head p {
+            margin: 0;
+            color: var(--steel);
+            max-width: 36em;
+            align-self: end;
+        }
+
+        @media (max-width: 760px) {
+            .sec-head {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        h3 {
+            font: 600 22px/1.2 var(--display);
+            letter-spacing: -0.015em;
+            margin: 0;
+        }
+
+        /* Services: a list, not a card grid */
+        .services {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .services li {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr) minmax(0, 1fr);
+            gap: clamp(12px, 3vw, 40px);
+            padding: 22px 0;
+            border-top: 1px solid var(--line);
+            align-items: baseline;
+        }
+
+        .services li:last-child {
+            border-bottom: 1px solid var(--line);
+        }
+
+        .services p {
+            margin: 0;
+            color: var(--steel);
+        }
+
+        .stack {
+            font-size: 14px;
+            color: var(--steel);
+        }
+
+        @media (max-width: 760px) {
+            .services li {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+        }
+
+        /* Featured case */
+        .case {
+            background: var(--case-bg);
+            color: var(--case-fg);
+            border-radius: 6px;
+            padding: clamp(28px, 5vw, 56px);
+            display: grid;
+            grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+            gap: clamp(28px, 5vw, 64px);
+            margin-bottom: clamp(48px, 6vw, 72px);
+        }
+
+        .case .tag {
+            display: inline-block;
+            font-size: 13px;
+            border: 1px solid color-mix(in srgb, var(--case-fg) 35%, transparent);
+            border-radius: 999px;
+            padding: 4px 12px;
+            margin-bottom: 18px;
+        }
+
+        .case h3 {
+            font: 800 clamp(28px, 3.4vw, 40px)/1.05 var(--display);
+            letter-spacing: -0.03em;
+            margin-bottom: 16px;
+        }
+
+        .case p {
+            margin: 0 0 14px;
+            color: color-mix(in srgb, var(--case-fg) 78%, transparent);
+            max-width: 36em;
+        }
+
+        .case dl {
+            margin: 0;
+            display: grid;
+            gap: 18px;
+            align-content: start;
+        }
+
+        .case dt {
+            font-size: 13px;
+            color: color-mix(in srgb, var(--case-fg) 62%, transparent);
+            margin-bottom: 4px;
+        }
+
+        .case dd {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        @media (max-width: 860px) {
+            .case {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Project lists */
+        .lists {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: clamp(28px, 4vw, 48px);
+        }
+
+        .lists h3 {
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--ink);
+            margin-bottom: 4px;
+        }
+
+        .lists h3 small {
+            font: 400 14px var(--text);
+            color: var(--steel);
+            margin-left: 6px;
+        }
+
+        .lists ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .lists li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .lists li b {
+            font-weight: 600;
+        }
+
+        .lists li a {
+            text-decoration: none;
+        }
+
+        .lists li a:hover b {
+            color: var(--red);
+        }
+
+        .lists li span:not(.lock) {
+            display: block;
+            font-size: 14px;
+            color: var(--steel);
+        }
+
+        .lists .lock {
+            font-size: 12px;
+            color: var(--steel);
+            border: 1px solid var(--line);
+            border-radius: 4px;
+            padding: 0 6px;
+            margin-left: 8px;
+            vertical-align: 2px;
+        }
+
+        @media (max-width: 960px) {
+            .lists {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .lists {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Experience timeline: a real sequence */
+        .timeline {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .timeline>li {
+            display: grid;
+            grid-template-columns: 170px minmax(0, 1fr);
+            gap: clamp(16px, 4vw, 48px);
+            padding: 28px 0;
+            border-top: 1px solid var(--line);
+        }
+
+        .timeline .when {
+            font: 600 17px/1.3 var(--display);
+            color: var(--steel);
+        }
+
+        .timeline .now {
+            color: var(--red);
+        }
+
+        .timeline .org {
+            color: var(--steel);
+            margin: 4px 0 12px;
+        }
+
+        .timeline ul {
+            margin: 0;
+            padding-left: 18px;
+            max-width: 46em;
+        }
+
+        .timeline ul li {
+            margin-bottom: 6px;
+        }
+
+        .timeline ul li::marker {
+            color: var(--red);
+        }
+
+        @media (max-width: 680px) {
+            .timeline>li {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+        }
+
+        /* Skills */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0 clamp(28px, 5vw, 64px);
+            margin: 0;
+        }
+
+        .skills div {
+            display: grid;
+            grid-template-columns: 150px minmax(0, 1fr);
+            gap: 16px;
+            padding: 14px 0;
+            border-top: 1px solid var(--line);
+        }
+
+        .skills dt {
+            font-weight: 600;
+        }
+
+        .skills dd {
+            margin: 0;
+            color: var(--steel);
+        }
+
+        @media (max-width: 860px) {
+            .skills {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skills div {
+                grid-template-columns: 1fr;
+                gap: 2px;
+            }
+        }
+
+        /* Background */
+        .bg-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: clamp(28px, 4vw, 48px);
+        }
+
+        .bg-grid h3 {
+            font-size: 18px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--ink);
+            margin-bottom: 14px;
+        }
+
+        .bg-grid p {
+            margin: 0 0 14px;
+        }
+
+        .bg-grid .muted {
+            color: var(--steel);
+            font-size: 15px;
+        }
+
+        .certs {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+        }
+
+        .certs li {
+            padding: 6px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .certs a {
+            text-decoration: none;
+        }
+
+        .certs a:hover {
+            color: var(--red);
+        }
+
+        .certs span {
+            color: var(--steel);
+        }
+
+        @media (max-width: 860px) {
+            .bg-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Contact */
+        .contact {
+            background: var(--fill);
+            color: #fff;
+            padding: clamp(56px, 9vw, 112px) 0;
+        }
+
+        .contact h2 {
+            font-size: clamp(38px, 6vw, 72px);
+            line-height: 0.98;
+            max-width: 12em;
+            margin-bottom: 22px;
+        }
+
+        .contact p {
+            max-width: 34em;
+            margin: 0 0 32px;
+            font-size: 18px;
+            color: rgba(255, 255, 255, .92);
+        }
+
+        .contact .btn {
+            border-color: #fff;
+            color: #fff;
+        }
+
+        .contact .btn-white {
+            background: #fff;
+            color: #b8240c;
+        }
+
+        .contact .btn:hover {
+            background: #fff;
+            color: #b8240c;
+        }
+
+        .contact .btn-white:hover {
+            background: transparent;
+            color: #fff;
+        }
+
+        .contact .reach {
+            margin-top: 36px;
+            font-size: 15px;
+            color: rgba(255, 255, 255, .88);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 28px;
+        }
+
+        footer {
+            padding: 28px 0;
+            font-size: 14px;
+            color: var(--steel);
+        }
+
+        footer .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        footer nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--ink);
+        }
+
+        .ext {
+            width: 13px;
+            height: 13px;
+            vertical-align: -1px;
+            margin-left: 4px;
+            opacity: .6;
         }
     </style>
 </head>
 
-<body
-    class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 transition-colors duration-300 relative overflow-x-hidden selection:bg-indigo-500 selection:text-white">
-    <!-- <div class="blob bg-primary-400 w-64 h-64 top-20 left-10"></div>
-            <div class="blob bg-secondary-400 w-72 h-72 bottom-20 right-10"></div>
-            <div class="blob bg-primary-300 w-80 h-80 top-1/2 left-1/3"></div> -->
+<body>
+    <a class="skip" href="#main">Langsung ke konten</a>
 
-    <!-- Ambient Background Blobs -->
-    <div class="fixed inset-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
-        <div
-            class="absolute top-0 left-1/4 w-96 h-96 bg-indigo-300 dark:bg-indigo-900 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-3xl opacity-30 animate-blob">
+    <!-- Icon sprite -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="i-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 17 17 7M8 7h9v9" />
+        </symbol>
+        <symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.5-.3Z" />
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <path d="m3 7 9 6 9-6" />
+        </symbol>
+        <symbol id="i-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 4v12m-5-5 5 5 5-5M5 20h14" />
+        </symbol>
+        <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" />
+        </symbol>
+        <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+        </symbol>
+    </svg>
+
+    <header class="top">
+        <div class="wrap">
+            <a class="brand" href="#">Danu Nur Irwanto<span>.</span></a>
+            <nav class="nav" aria-label="Navigasi utama">
+                <a href="#layanan">Layanan</a>
+                <a href="#karya">Karya</a>
+                <a href="#pengalaman">Pengalaman</a>
+                <a href="#keahlian">Keahlian</a>
+            </nav>
+            <button class="icon-btn" id="theme" type="button" aria-label="Pakai tema gelap">
+                <svg aria-hidden="true">
+                    <use href="#i-moon" />
+                </svg>
+            </button>
+            <a class="btn btn-solid" href="#kontak" aria-label="Hubungi saya"><svg aria-hidden="true">
+                    <use href="#i-wa" />
+                </svg><span>Hubungi saya</span></a>
         </div>
-        <div
-            class="absolute top-0 right-1/4 w-96 h-96 bg-purple-300 dark:bg-purple-900 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-3xl opacity-30 animate-blob animation-delay-2000">
-        </div>
-        <div
-            class="absolute -bottom-32 left-1/3 w-96 h-96 bg-pink-300 dark:bg-pink-900 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-3xl opacity-30 animate-blob animation-delay-4000">
-        </div>
-    </div>
-
-    <!-- Navbar -->
-    <header class="fixed top-0 left-0 right-0 z-50">
-        <nav
-            class="glass glass-nav container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3 mt-2 rounded-2xl shadow-sm transition-all duration-300">
-            <div class="flex items-center justify-between">
-                <!-- Logo + Nama -->
-                <a href="#" class="flex items-center space-x-2">
-                    <div
-                        class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                        DN
-                    </div>
-                    <span class="hidden sm:inline-block text-xl font-semibold">
-                        Danu Nur Irwanto
-                    </span>
-                </a>
-
-                <!-- Desktop Menu (menu list TIDAK diubah) -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about"
-                        class="text-lg font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">
-                        About
-                    </a>
-                    <a href="#experience"
-                        class="text-lg font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">
-                        Experience
-                    </a>
-                    <a href="#portfolio"
-                        class="text-lg font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">
-                        Portfolio
-                    </a>
-                    <a href="#skills"
-                        class="text-lg font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">
-                        Skills
-                    </a>
-                    <a href="#achievements"
-                        class="text-lg font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">
-                        Achievements
-                    </a>
-                    <a href="#contact"
-                        class="text-lg font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">
-                        Contact
-                    </a>
-
-                    <!-- Dark Mode Toggle (Desktop) -->
-                    <button id="theme-toggle"
-                        class="p-2 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition focus:outline-none">
-                        <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
-                        <i data-lucide="sun" class="w-5 h-5 block dark:hidden"></i>
-                    </button>
-                </div>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobile-menu-btn"
-                    class="md:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 text-slate-800 dark:text-slate-200 focus:outline-none">
-                    <i data-lucide="menu" class="w-6 h-6"></i>
-                </button>
-            </div>
-
-            <!-- Mobile Menu (menu list sama seperti desktop) -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-2">
-                <div class="flex flex-col space-y-3">
-                    <a href="#about"
-                        class="text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">
-                        About
-                    </a>
-                    <a href="#experience"
-                        class="text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">
-                        Experience
-                    </a>
-                    <a href="#portfolio"
-                        class="text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">
-                        Portfolio
-                    </a>
-                    <a href="#skills"
-                        class="text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">
-                        Skills
-                    </a>
-                    <a href="#achievements"
-                        class="text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">
-                        Achievements
-                    </a>
-                    <a href="#contact"
-                        class="text-base font-medium hover:text-indigo-600 dark:hover:text-indigo-400 transition">
-                        Contact
-                    </a>
-
-                    <!-- Dark Mode Toggle (Mobile) -->
-                    <div class="flex items-center justify-between pt-2">
-                        <span class="text-lg">Dark Mode</span>
-                        <button id="theme-toggle-mobile"
-                            class="p-2 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition focus:outline-none">
-                            <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
-                            <i data-lucide="sun" class="w-5 h-5 block dark:hidden"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </nav>
     </header>
 
-
-    <!-- Main Content -->
-    <main class="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
-
-        <!-- Hero Section -->
-        <section id="hero" class="flex flex-col items-center justify-center min-h-[85vh] text-center">
-            <div class="glass-panel p-8 md:p-12 w-full max-w-4xl relative overflow-hidden group">
-                <!-- Decorative gradient inside card -->
-
-                <div class="relative z-10 flex flex-col items-center">
-                    <!-- Name & Title -->
-                    <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-2 text-slate-900 dark:text-white">
-                        Danu Nur Irwanto
-                    </h1>
-                    <h2 class="text-xl md:text-2xl font-medium text-indigo-600 dark:text-indigo-400 mb-6">
-                        Professional IT | Full-Stack Developer
-                    </h2>
-
-                    <!-- Summary -->
-                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mb-8">
-                        Fullstack Developer dengan pengalaman lebih dari 2+ tahun dalam pengembangan aplikasi web dan
-                        mobile menggunakan Laravel, Codeigniter, Node.js, Vue.js, dan Flutter. Terbiasa mengelola
-                        integrasi API, database management, deployment server, serta memastikan keamanan aplikasi.
-                    </p>
-
-                    <!-- Contact Info Row -->
-                    <div class="flex flex-wrap justify-center gap-4 text-lg text-slate-500 dark:text-slate-400 mb-8">
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="map-pin" class="w-4 h-4 text-indigo-500"></i> Sambikerep, Surabaya
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="mail" class="w-4 h-4 text-indigo-500"></i> danudirwan@gmail.com
-                        </div>
-                        <div class="flex items-center gap-2">
-                            <i data-lucide="phone" class="w-4 h-4 text-indigo-500"></i> +62 838 5676 4585
-                        </div>
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="wrap hero-grid">
+                <div>
+                    <div class="who">
+                        <img src="assets/img/DANU_NUR_IRWANTO.png" alt="Foto Danu Nur Irwanto" width="52"
+                            height="52">
+                        <div><strong>Danu Nur Irwanto</strong>Full-Stack Developer, Surabaya</div>
                     </div>
-
-                    <!-- CTAs -->
-                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                        <a href="assets/cv/CV-DANU_NUR_IRWANTO.pdf" download="CV - Danu Nur Irwanto.pdf"
-                            class="px-8 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-700 hover:to-blue-700 text-white font-semibold shadow-lg shadow-indigo-500/30 transition transform hover:-translate-y-0.5">
-                            Download CV
-                        </a>
-                        <a href="#contact"
-                            class="px-8 py-3 rounded-full bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 transition transform hover:-translate-y-0.5 font-medium">
-                            Hire Me
-                        </a>
+                    <h1>Saya membangun software yang menjalankan bisnis.</h1>
+                    <p class="lede">Toko online, sistem gudang dan SDM, aplikasi mobile, sampai aplikasi desktop
+                        dengan AI yang berjalan di server Anda sendiri. Empat tahun membangun dengan Laravel,
+                        Vue/React, Flutter, dan Tauri (Rust), dari rancangan arsitektur sampai server siap
+                        produksi.</p>
+                    <div class="actions">
+                        <a class="btn btn-solid"
+                            href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20ingin%20mendiskusikan%20sebuah%20proyek."
+                            target="_blank" rel="noopener"><svg aria-hidden="true">
+                                <use href="#i-wa" />
+                            </svg>Diskusikan proyek</a>
+                        <a class="btn btn-line" href="assets/cv/CV-DANU_NUR_IRWANTO.pdf"
+                            download="CV - Danu Nur Irwanto.pdf"><svg aria-hidden="true">
+                                <use href="#i-down" />
+                            </svg>Unduh CV</a>
                     </div>
+                    <p class="avail"><i aria-hidden="true"></i>Menerima proyek freelance dari klien di Indonesia
+                        maupun luar negeri</p>
+                </div>
 
-                    <!-- Social Chips -->
-                    <div class="flex gap-3 flex-wrap justify-center">
-                        <a href="https://danu-nur.github.io" target="_blank"
-                            class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-indigo-100 dark:hover:bg-slate-700 transition text-lg">
-                            <i data-lucide="globe" class="w-4 h-4"></i> Website
-                        </a>
-                        <a href="https://linkedin.com/in/danu-nur-irwanto-36a03811b" target="_blank"
-                            class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-blue-100 dark:hover:bg-slate-700 transition text-lg">
-                            <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
-                        </a>
-                        <a href="https://github.com/Danu-Nur" target="_blank"
-                            class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition text-lg">
-                            <i data-lucide="github" class="w-4 h-4"></i> GitHub
-                        </a>
+                <div class="wall" aria-labelledby="wall-title">
+                    <div class="wall-head">
+                        <span id="wall-title">Situs yang saya bangun dan masih online</span>
+                        <span>2023 – 2026</span>
                     </div>
+                    <ol>
+                        <li style="--i:0"><a href="https://indracostore.com" target="_blank" rel="noopener"><span
+                                    class="dom">indracostore.com</span><span class="kind">E-commerce</span></a></li>
+                        <li style="--i:1"><a href="https://supresso.co.id" target="_blank" rel="noopener"><span
+                                    class="dom">supresso.co.id</span><span class="kind">E-commerce</span></a></li>
+                        <li style="--i:2"><a href="https://supresso.com" target="_blank" rel="noopener"><span
+                                    class="dom">supresso.com</span><span class="kind">E-commerce Singapura</span></a>
+                        </li>
+                        <li style="--i:3"><a href="https://tokosda.com" target="_blank" rel="noopener"><span
+                                    class="dom">tokosda.com</span><span class="kind">Marketplace B2B</span></a></li>
+                        <li style="--i:4"><a href="https://point.indraco.com" target="_blank" rel="noopener"><span
+                                    class="dom">point.indraco.com</span><span class="kind">Program loyalti</span></a>
+                        </li>
+                        <li style="--i:5"><a href="https://sdatools.com" target="_blank" rel="noopener"><span
+                                    class="dom">sdatools.com</span><span class="kind">Katalog teknis</span></a></li>
+                        <li style="--i:6"><a href="https://sachio.com" target="_blank" rel="noopener"><span
+                                    class="dom">sachio.com</span><span class="kind">Katalog produk</span></a></li>
+                    </ol>
+                    <p class="wall-foot">Ditambah 14 situs dan sistem internal lainnya. <a href="#karya">Lihat
+                            semua karya</a></p>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="scroll-mt-24">
-            <div class="flex items-center gap-3 mb-6">
-                <div class="p-2 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
-                    <i data-lucide="user" class="w-6 h-6"></i>
+        <!-- Services -->
+        <section class="sec" id="layanan">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>Yang bisa saya kerjakan</h2>
+                    <p>Satu orang yang memegang proyek dari awal sampai akhir: memahami kebutuhan bisnis, merancang
+                        arsitektur, membangun, lalu men-deploy dan mendokumentasikan. Saya memakai workflow
+                        pengembangan berbantuan AI yang terstruktur, jadi proyek selesai lebih cepat tanpa
+                        melewatkan pengujian.</p>
                 </div>
-                <h2 class="text-2xl font-bold">Tentang Saya</h2>
-            </div>
-            <div class="glass-panel p-6 md:p-8">
-                <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
-                    Saya adalah seorang Fullstack Developer yang berdedikasi dengan latar belakang kuat dalam
-                    pengembangan aplikasi web dan mobile. Saya memiliki kebiasaan kerja yang disiplin dalam mengelola
-                    integrasi API, deployment server, serta selalu mengutamakan aspek keamanan dalam setiap baris kode
-                    yang saya tulis.
-                </p>
-                <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
-                    Selain kemampuan teknis, saya berpengalaman dalam koordinasi proyek IT, mulai dari perencanaan,
-                    manajemen vendor, hingga dokumentasi teknis. Saya terbiasa berkolaborasi lintas tim untuk memastikan
-                    solusi teknologi yang dibangun berjalan selaras dengan kebutuhan bisnis perusahaan.
-                </p>
+                <ul class="services">
+                    <li>
+                        <h3>Website &amp; e-commerce</h3>
+                        <p>Toko online dengan pembayaran dan ongkir otomatis, company profile, katalog produk, dan
+                            program loyalti pelanggan.</p>
+                        <span class="stack">Laravel, Vue, React, Midtrans, Stripe, RajaOngkir</span>
+                    </li>
+                    <li>
+                        <h3>Sistem internal</h3>
+                        <p>HRIS dan absensi, gudang (WMS), CRM, manajemen aset, buku tamu, dan dashboard KPI
+                            untuk operasional sehari-hari.</p>
+                        <span class="stack">Laravel, Filament, Inertia, PostgreSQL</span>
+                    </li>
+                    <li>
+                        <h3>Aplikasi mobile</h3>
+                        <p>Aplikasi Android dan iOS yang terhubung ke sistem web Anda lewat REST API.</p>
+                        <span class="stack">Flutter, Dart, REST API</span>
+                    </li>
+                    <li>
+                        <h3>Aplikasi desktop</h3>
+                        <p>Aplikasi Windows yang ringan dan aman, bisa berjalan offline, dengan otomasi portal web
+                            dan integrasi Microsoft 365.</p>
+                        <span class="stack">Tauri v2, Rust, React, TypeScript</span>
+                    </li>
+                    <li>
+                        <h3>Integrasi AI</h3>
+                        <p>Membaca dan mengekstrak data dari dokumen, pencarian cerdas di arsip Anda, bisa dijalankan
+                            di server sendiri agar data tidak keluar kantor.</p>
+                        <span class="stack">Claude, Gemini, Ollama, OCR, RAG</span>
+                    </li>
+                    <li>
+                        <h3>IoT &amp; perangkat</h3>
+                        <p>Purwarupa perangkat pintar berbasis mikrokontroler, dari rangkaian sampai firmware.</p>
+                        <span class="stack">ESP32, Arduino, C/C++</span>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <!-- Professional Experience Section -->
-        <section id="experience" class="scroll-mt-24">
-            <div class="flex items-center gap-3 mb-8">
-                <div class="p-2 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
-                    <i data-lucide="briefcase" class="w-6 h-6"></i>
-                </div>
-                <h2 class="text-2xl font-bold">Pengalaman Profesional</h2>
-            </div>
-
-            <div class="space-y-6 relative">
-                <!-- Vertical Line for Timeline Effect on Desktop -->
-                <div class="hidden md:block absolute left-8 top-4 bottom-4 w-0.5 bg-indigo-200 dark:bg-indigo-900/50">
+        <!-- Work -->
+        <section class="sec" id="karya">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>Karya</h2>
+                    <p>Sebagian besar dibangun untuk grup Indraco dan PT SDA Global, dipakai setiap hari oleh
+                        pelanggan dan karyawan mereka. Sistem internal hanya bisa diakses karyawan, jadi tautannya
+                        menuju halaman login.</p>
                 </div>
 
-                <!-- Job 1 -->
-                <div
-                    class="glass-panel p-6 md:ml-20 relative transition hover:border-indigo-300 dark:hover:border-indigo-700">
-                    <div
-                        class="hidden md:flex absolute -left-[3.2rem] top-6 items-center justify-center w-6 h-6 rounded-full bg-indigo-500 border-4 border-slate-50 dark:border-slate-900">
+                <article class="case">
+                    <div>
+                        <span class="tag">Proyek freelance, 2026</span>
+                        <h3>Aplikasi desktop operasional untuk firma hukum di Australia</h3>
+                        <p>Satu aplikasi untuk dokumen klien, kasus, kalender, dan email, menggantikan pekerjaan yang
+                            sebelumnya tersebar di banyak tab dan portal.</p>
+                        <p>Aturan privasi Australia membuat dokumen klien tidak boleh dikirim ke layanan AI publik.
+                            Jadi OCR, ekstraksi data, dan pencarian dokumen berjalan di server di kantor klien
+                            sendiri, dipakai bersama oleh sekitar sepuluh komputer staf lewat antrean.</p>
                     </div>
-                    <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4">
+                    <dl>
                         <div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Web Developer / Full-Stack
-                                Developer</h3>
-                            <span class="text-indigo-600 dark:text-indigo-400 font-medium">PT SDA Global,
-                                Surabaya</span>
+                            <dt>Teknologi</dt>
+                            <dd>Tauri v2, Rust, React, TypeScript, SQLite</dd>
                         </div>
-                        <span
-                            class="text-lg text-slate-500 dark:text-slate-400 mt-1 sm:mt-0 px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full">2024
-                            – Sekarang</span>
-                    </div>
-                    <ul
-                        class="list-disc list-outside ml-5 space-y-2 text-slate-600 dark:text-slate-300 text-lg md:text-base">
-                        <li>Mengembangkan sistem berbasis Laravel (e-commerce, HRIS, recruitment, REST APIs, company
-                            profile).</li>
-                        <li>Menjadi penghubung utama antara kebutuhan bisnis, tim teknis, dan vendor eksternal.</li>
-                        <li>Menyusun perencanaan proyek yang mencakup scope, timeline, risiko, dan strategi mitigasi.
-                        </li>
-                        <li>Membuat dokumentasi deployment dan melakukan handover teknis secara terstruktur.</li>
-                        <li>Memastikan compliance standar keamanan IT dan monitoring performa pasca-deployment.</li>
-                    </ul>
-                </div>
-
-                <!-- Job 2 -->
-                <div
-                    class="glass-panel p-6 md:ml-20 relative transition hover:border-indigo-300 dark:hover:border-indigo-700">
-                    <div
-                        class="hidden md:flex absolute -left-[3.2rem] top-6 items-center justify-center w-6 h-6 rounded-full bg-indigo-500 border-4 border-slate-50 dark:border-slate-900">
-                    </div>
-                    <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4">
                         <div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Web Developer / Full-Stack
-                                Developer</h3>
-                            <span class="text-indigo-600 dark:text-indigo-400 font-medium">PT Indraco Global Indonesia,
-                                Gresik</span>
+                            <dt>AI</dt>
+                            <dd>LLM dan OCR lokal via Ollama, RAG untuk pencarian dokumen</dd>
                         </div>
-                        <span
-                            class="text-lg text-slate-500 dark:text-slate-400 mt-1 sm:mt-0 px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full">2023
-                            – 2024</span>
-                    </div>
-                    <ul
-                        class="list-disc list-outside ml-5 space-y-2 text-slate-600 dark:text-slate-300 text-lg md:text-base">
-                        <li>Mengembangkan aplikasi web & mobile (Laravel & Flutter) untuk e-commerce, HRIS, dan sistem
-                            rekrutmen.</li>
-                        <li>Mengelola integrasi API pihak ketiga (Midtrans, Stripe, LOCAD, Raja Ongkir) bersama vendor.
-                        </li>
-                        <li>Implementasi keamanan aplikasi (SSL, Enkripsi, Proteksi XSS/CSRF/SQL Injection, OAuth/JWT).
-                        </li>
-                        <li>Berkoordinasi intensif dengan designer, QA, dan product manager.</li>
-                        <li>Membuat dokumentasi teknis dan laporan progres mingguan untuk manajemen.</li>
-                    </ul>
-                </div>
-
-                <!-- Job 3 -->
-                <div
-                    class="glass-panel p-6 md:ml-20 relative transition hover:border-indigo-300 dark:hover:border-indigo-700">
-                    <div
-                        class="hidden md:flex absolute -left-[3.2rem] top-6 items-center justify-center w-6 h-6 rounded-full bg-indigo-500 border-4 border-slate-50 dark:border-slate-900">
-                    </div>
-                    <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-4">
                         <div>
-                            <h3 class="text-xl font-bold text-slate-900 dark:text-white">Web Developer / IT Support</h3>
-                            <span class="text-indigo-600 dark:text-indigo-400 font-medium">PT Bumi Menara Internusa,
-                                Surabaya</span>
+                            <dt>Integrasi</dt>
+                            <dd>OneDrive, Outlook, dan Calendar via Microsoft Graph; otomasi portal dengan
+                                Playwright</dd>
                         </div>
-                        <span
-                            class="text-lg text-slate-500 dark:text-slate-400 mt-1 sm:mt-0 px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full">2022
-                            – 2023</span>
-                    </div>
-                    <ul
-                        class="list-disc list-outside ml-5 space-y-2 text-slate-600 dark:text-slate-300 text-lg md:text-base">
-                        <li>Merancang dan memodifikasi fitur pada aplikasi web internal perusahaan.</li>
-                        <li>Mengelola administrasi database serta memastikan backup data rutin berjalan lancar.</li>
-                        <li>Menyusun dokumentasi aplikasi (user manual) dan laporan bulanan proyek IT.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Portfolio Projects Section -->
-        <section id="portfolio" class="scroll-mt-24">
-            <div class="flex items-center gap-3 mb-6">
-                <div class="p-2 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
-                    <i data-lucide="folder-git-2" class="w-6 h-6"></i>
-                </div>
-                <h2 class="text-2xl font-bold">Portofolio Project</h2>
-            </div>
-
-            <!-- Filter Tabs -->
-            <div class="flex flex-wrap gap-3 mb-8">
-                <button id="btn-public"
-                    class="px-5 py-2 rounded-full border transition-all duration-300 font-medium text-lg md:text-base filter-btn-active"
-                    onclick="filterPortfolio('public')">
-                    Public Websites
-                </button>
-                <button id="btn-internal"
-                    class="px-5 py-2 rounded-full border transition-all duration-300 font-medium text-lg md:text-base filter-btn-inactive"
-                    onclick="filterPortfolio('internal')">
-                    Internal Systems
-                </button>
-            </div>
-
-            <!-- Projects Grid -->
-            <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
-                <!-- PUBLIC WEBSITES -->
-
-                <!-- 1 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full hover:border-indigo-400 transition group portfolio-item portfolio-public">
-                    <div class="flex justify-between items-start mb-3">
-                        <span
-                            class="text-xs font-semibold text-indigo-500 bg-indigo-50 dark:bg-indigo-900/30 px-2 py-1 rounded">E-Commerce</span>
-                        <i data-lucide="external-link"
-                            class="w-4 h-4 text-slate-400 group-hover:text-indigo-500 transition"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">IndracoStore</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Platform e-commerce B2C untuk penjualan ritel produk kopi premium dan mesin kopi.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://indracostore.com" target="_blank"
-                            class="text-lg font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Kunjungi
-                            Website &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 2 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full hover:border-indigo-400 transition group portfolio-item portfolio-public">
-                    <div class="flex justify-between items-start mb-3">
-                        <span
-                            class="text-xs font-semibold text-indigo-500 bg-indigo-50 dark:bg-indigo-900/30 px-2 py-1 rounded">E-Commerce</span>
-                        <i data-lucide="external-link"
-                            class="w-4 h-4 text-slate-400 group-hover:text-indigo-500 transition"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Supresso</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Toko online resmi untuk brand kopi premium Supresso dengan pengalaman belanja modern.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://supresso.co.id" target="_blank"
-                            class="text-lg font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Kunjungi
-                            Website &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 3 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full hover:border-indigo-400 transition group portfolio-item portfolio-public">
-                    <div class="flex justify-between items-start mb-3">
-                        <span
-                            class="text-xs font-semibold text-teal-600 bg-teal-50 dark:bg-teal-900/30 px-2 py-1 rounded">Loyalty</span>
-                        <i data-lucide="external-link"
-                            class="w-4 h-4 text-slate-400 group-hover:text-indigo-500 transition"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Indraco Point</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Sistem manajemen loyalitas pelanggan untuk pengumpulan dan penukaran poin reward.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://point.indraco.com" target="_blank"
-                            class="text-lg font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Kunjungi
-                            Website &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 4 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full hover:border-indigo-400 transition group portfolio-item portfolio-public">
-                    <div class="flex justify-between items-start mb-3">
-                        <span
-                            class="text-xs font-semibold text-slate-600 bg-slate-100 dark:bg-slate-700 dark:text-slate-100 px-2 py-1 rounded">Company
-                            Profile</span>
-                        <i data-lucide="external-link"
-                            class="w-4 h-4 text-slate-400 group-hover:text-indigo-500 transition"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Indraco</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Website profil perusahaan Indraco Global Indonesia yang menampilkan portofolio bisnis korporat.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://indraco.com" target="_blank"
-                            class="text-lg font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Kunjungi
-                            Website &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 5 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full hover:border-indigo-400 transition group portfolio-item portfolio-public">
-                    <div class="flex justify-between items-start mb-3">
-                        <span
-                            class="text-xs font-semibold text-indigo-500 bg-indigo-50 dark:bg-indigo-900/30 px-2 py-1 rounded">E-Commerce</span>
-                        <i data-lucide="external-link"
-                            class="w-4 h-4 text-slate-400 group-hover:text-indigo-500 transition"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Supresso Singapore</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Platform e-commerce khusus untuk menjangkau pasar internasional (Singapura).
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://supresso.com" target="_blank"
-                            class="text-lg font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Kunjungi
-                            Website &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 6 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full hover:border-indigo-400 transition group portfolio-item portfolio-public">
-                    <div class="flex justify-between items-start mb-3">
-                        <span
-                            class="text-xs font-semibold text-orange-600 bg-orange-50 dark:bg-orange-900/30 px-2 py-1 rounded">B2B
-                            / B2C</span>
-                        <i data-lucide="external-link"
-                            class="w-4 h-4 text-slate-400 group-hover:text-indigo-500 transition"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Toko SDA</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Marketplace B2B/B2C untuk pengadaan produk tools, hardware, dan kebutuhan industri.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://tokosda.com" target="_blank"
-                            class="text-lg font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Kunjungi
-                            Website &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 7 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full hover:border-indigo-400 transition group portfolio-item portfolio-public">
-                    <div class="flex justify-between items-start mb-3">
-                        <span
-                            class="text-xs font-semibold text-slate-600 bg-slate-100 dark:bg-slate-700 dark:text-slate-100 px-2 py-1 rounded">Company
-                            Profile</span>
-                        <i data-lucide="external-link"
-                            class="w-4 h-4 text-slate-400 group-hover:text-indigo-500 transition"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">SDA Global</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Website korporat SDA Global sebagai pusat informasi layanan dan lini bisnis perusahaan.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://sda.co.id" target="_blank"
-                            class="text-lg font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Kunjungi
-                            Website &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 8 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full hover:border-indigo-400 transition group portfolio-item portfolio-public">
-                    <div class="flex justify-between items-start mb-3">
-                        <span
-                            class="text-xs font-semibold text-pink-600 bg-pink-50 dark:bg-pink-900/30 px-2 py-1 rounded">F&B</span>
-                        <i data-lucide="external-link"
-                            class="w-4 h-4 text-slate-400 group-hover:text-indigo-500 transition"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Dapur Inti Rasa</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Landing page promosi yang menarik untuk bisnis katering dan Food & Beverage.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://dapurintirasa.com" target="_blank"
-                            class="text-lg font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Kunjungi
-                            Website &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 9 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full hover:border-indigo-400 transition group portfolio-item portfolio-public">
-                    <div class="flex justify-between items-start mb-3">
-                        <span
-                            class="text-xs font-semibold text-blue-600 bg-blue-50 dark:bg-blue-900/30 px-2 py-1 rounded">Catalog</span>
-                        <i data-lucide="external-link"
-                            class="w-4 h-4 text-slate-400 group-hover:text-indigo-500 transition"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Sachio</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Katalog produk digital untuk brand komponen hidrolik dan kebutuhan mesin industri.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://sachio.com" target="_blank"
-                            class="text-lg font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Kunjungi
-                            Website &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 10 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full hover:border-indigo-400 transition group portfolio-item portfolio-public">
-                    <div class="flex justify-between items-start mb-3">
-                        <span
-                            class="text-xs font-semibold text-blue-600 bg-blue-50 dark:bg-blue-900/30 px-2 py-1 rounded">Microsite</span>
-                        <i data-lucide="external-link"
-                            class="w-4 h-4 text-slate-400 group-hover:text-indigo-500 transition"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Metaquiphose</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Microsite informatif untuk spesifikasi produk selang industri (hose) dan fiturnya.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://metaquiphose.com" target="_blank"
-                            class="text-lg font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Kunjungi
-                            Website &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 11 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full hover:border-indigo-400 transition group portfolio-item portfolio-public">
-                    <div class="flex justify-between items-start mb-3">
-                        <span
-                            class="text-xs font-semibold text-orange-600 bg-orange-50 dark:bg-orange-900/30 px-2 py-1 rounded">Portal</span>
-                        <i data-lucide="external-link"
-                            class="w-4 h-4 text-slate-400 group-hover:text-indigo-500 transition"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">SDA Tools</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Portal informasi teknis dan katalog lengkap untuk berbagai alat-alat teknik profesional.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://sdatools.com" target="_blank"
-                            class="text-lg font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Kunjungi
-                            Website &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 12 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full hover:border-indigo-400 transition group portfolio-item portfolio-public">
-                    <div class="flex justify-between items-start mb-3">
-                        <span
-                            class="text-xs font-semibold text-slate-600 bg-slate-100 dark:bg-slate-700 dark:text-slate-100 px-2 py-1 rounded">Branding</span>
-                        <i data-lucide="external-link"
-                            class="w-4 h-4 text-slate-400 group-hover:text-indigo-500 transition"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Sang Bumi</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Website branding dan profil korporat untuk membangun kredibilitas perusahaan.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://sangbumi.com" target="_blank"
-                            class="text-lg font-medium text-indigo-600 dark:text-indigo-400 hover:underline">Kunjungi
-                            Website &rarr;</a>
-                    </div>
-                </div>
-
-
-                <!-- INTERNAL SYSTEMS (Hidden by default or managed via JS) -->
-
-                <!-- 13 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full border-l-4 border-l-purple-500 hover:border-indigo-400 transition group portfolio-item portfolio-internal hidden">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-2">
-                            <span
-                                class="text-xs font-semibold text-purple-600 bg-purple-50 dark:bg-purple-900/30 px-2 py-1 rounded">HRIS</span>
-                            <span
-                                class="text-xs font-semibold text-slate-500 border border-slate-200 dark:border-slate-700 px-2 py-1 rounded">Internal</span>
+                        <div>
+                            <dt>Status</dt>
+                            <dd>Dalam pengembangan aktif. Detail klien di bawah NDA.</dd>
                         </div>
-                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">SIDAR</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Sistem Informasi SDM terintegrasi untuk manajemen data karyawan, absensi, dan payroll.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://sidar.sda.id" target="_blank"
-                            class="text-lg font-medium text-slate-500 hover:text-indigo-600 transition">Login Page
-                            &rarr;</a>
-                    </div>
-                </div>
+                    </dl>
+                </article>
 
-                <!-- 14 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full border-l-4 border-l-purple-500 hover:border-indigo-400 transition group portfolio-item portfolio-internal hidden">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-2">
-                            <span
-                                class="text-xs font-semibold text-purple-600 bg-purple-50 dark:bg-purple-900/30 px-2 py-1 rounded">Visitor
-                                Mgmt</span>
-                            <span
-                                class="text-xs font-semibold text-slate-500 border border-slate-200 dark:border-slate-700 px-2 py-1 rounded">Internal</span>
-                        </div>
-                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">SDA Guest Book</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Aplikasi digital pencatatan dan manajemen tamu perusahaan untuk keamanan lobi.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://guestbook.sda.id/login" target="_blank"
-                            class="text-lg font-medium text-slate-500 hover:text-indigo-600 transition">Login Page
-                            &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 15 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full border-l-4 border-l-purple-500 hover:border-indigo-400 transition group portfolio-item portfolio-internal hidden">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-2">
-                            <span
-                                class="text-xs font-semibold text-purple-600 bg-purple-50 dark:bg-purple-900/30 px-2 py-1 rounded">Analytics</span>
-                            <span
-                                class="text-xs font-semibold text-slate-500 border border-slate-200 dark:border-slate-700 px-2 py-1 rounded">Internal</span>
-                        </div>
-                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">PRISM SDA</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Portal analitik data internal untuk monitoring KPI bisnis dan performa operasional real-time.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://prism.sda.id/" target="_blank"
-                            class="text-lg font-medium text-slate-500 hover:text-indigo-600 transition">Login Page
-                            &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 16 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full border-l-4 border-l-purple-500 hover:border-indigo-400 transition group portfolio-item portfolio-internal hidden">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-2">
-                            <span
-                                class="text-xs font-semibold text-purple-600 bg-purple-50 dark:bg-purple-900/30 px-2 py-1 rounded">CRM</span>
-                            <span
-                                class="text-xs font-semibold text-slate-500 border border-slate-200 dark:border-slate-700 px-2 py-1 rounded">Internal</span>
-                        </div>
-                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">SDA Crimson</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Aplikasi CRM untuk manajemen hubungan pelanggan, pipeline sales, dan tracking leads.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://crimson.sda.id/" target="_blank"
-                            class="text-lg font-medium text-slate-500 hover:text-indigo-600 transition">Login Page
-                            &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 17 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full border-l-4 border-l-purple-500 hover:border-indigo-400 transition group portfolio-item portfolio-internal hidden">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-2">
-                            <span
-                                class="text-xs font-semibold text-purple-600 bg-purple-50 dark:bg-purple-900/30 px-2 py-1 rounded">Asset
-                                Mgmt</span>
-                            <span
-                                class="text-xs font-semibold text-slate-500 border border-slate-200 dark:border-slate-700 px-2 py-1 rounded">Internal</span>
-                        </div>
-                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">SIAMOI</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Sistem Informasi Asset Management Online untuk tracking inventaris dan jadwal maintenance.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://sda.id/siamoi/" target="_blank"
-                            class="text-lg font-medium text-slate-500 hover:text-indigo-600 transition">Login Page
-                            &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 18 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full border-l-4 border-l-purple-500 hover:border-indigo-400 transition group portfolio-item portfolio-internal hidden">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-2">
-                            <span
-                                class="text-xs font-semibold text-purple-600 bg-purple-50 dark:bg-purple-900/30 px-2 py-1 rounded">Security</span>
-                            <span
-                                class="text-xs font-semibold text-slate-500 border border-slate-200 dark:border-slate-700 px-2 py-1 rounded">Internal</span>
-                        </div>
-                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Guard Patrol</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Aplikasi monitoring digital untuk jadwal dan tracking patroli keamanan oleh tim sekuriti.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://patrol.sda.id/person" target="_blank"
-                            class="text-lg font-medium text-slate-500 hover:text-indigo-600 transition">Login Page
-                            &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 19 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full border-l-4 border-l-purple-500 hover:border-indigo-400 transition group portfolio-item portfolio-internal hidden">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-2">
-                            <span
-                                class="text-xs font-semibold text-purple-600 bg-purple-50 dark:bg-purple-900/30 px-2 py-1 rounded">Warehouse</span>
-                            <span
-                                class="text-xs font-semibold text-slate-500 border border-slate-200 dark:border-slate-700 px-2 py-1 rounded">Internal</span>
-                        </div>
-                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">WMS SDA</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Warehouse Management System untuk kontrol stok, inbound, outbound, dan opname.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://wms.sda.id/" target="_blank"
-                            class="text-lg font-medium text-slate-500 hover:text-indigo-600 transition">Login Page
-                            &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 20 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full border-l-4 border-l-purple-500 hover:border-indigo-400 transition group portfolio-item portfolio-internal hidden">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-2">
-                            <span
-                                class="text-xs font-semibold text-purple-600 bg-purple-50 dark:bg-purple-900/30 px-2 py-1 rounded">Portal</span>
-                            <span
-                                class="text-xs font-semibold text-slate-500 border border-slate-200 dark:border-slate-700 px-2 py-1 rounded">Internal</span>
-                        </div>
-                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">SDA “V” Portal</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Portal satu pintu untuk akses berbagai aplikasi internal dan kebutuhan operasional karyawan.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://sda.id/v/" target="_blank"
-                            class="text-lg font-medium text-slate-500 hover:text-indigo-600 transition">Login Page
-                            &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- 21 -->
-                <div
-                    class="glass-panel p-5 flex flex-col h-full border-l-4 border-l-purple-500 hover:border-indigo-400 transition group portfolio-item portfolio-internal hidden">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="flex gap-2">
-                            <span
-                                class="text-xs font-semibold text-purple-600 bg-purple-50 dark:bg-purple-900/30 px-2 py-1 rounded">Backoffice</span>
-                            <span
-                                class="text-xs font-semibold text-slate-500 border border-slate-200 dark:border-slate-700 px-2 py-1 rounded">Internal</span>
-                        </div>
-                        <i data-lucide="lock" class="w-4 h-4 text-slate-400"></i>
-                    </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">SDA Dashboard</h3>
-                    <p class="text-lg text-slate-500 dark:text-slate-400 mb-4 line-clamp-2 min-h-[40px]">
-                        Dashboard backoffice terpusat untuk administrasi, pelaporan, dan manajemen data.
-                    </p>
-                    <div class="mt-auto">
-                        <a href="https://sda.co.id/dashboard" target="_blank"
-                            class="text-lg font-medium text-slate-500 hover:text-indigo-600 transition">Login Page
-                            &rarr;</a>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="scroll-mt-24">
-            <div class="flex items-center gap-3 mb-6">
-                <div class="p-2 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
-                    <i data-lucide="graduation-cap" class="w-6 h-6"></i>
-                </div>
-                <h2 class="text-2xl font-bold">Pendidikan</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="glass-panel p-6 hover:shadow-2xl transition">
-                    <h3 class="text-lg font-bold">Universitas Wijaya Putra, Surabaya</h3>
-                    <p class="text-indigo-600 dark:text-indigo-400 font-medium">S1 Teknik Informatika</p>
-                    <p class="text-lg text-slate-500 mt-1">2017 – 2021</p>
-                    <div
-                        class="mt-3 inline-block px-3 py-1 rounded bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-lg font-semibold">
-                        IPK: 3,46 / 4.00</div>
-                </div>
-                <div class="glass-panel p-6 hover:shadow-2xl transition">
-                    <h3 class="text-lg font-bold">SMA Negeri 22, Surabaya</h3>
-                    <p class="text-indigo-600 dark:text-indigo-400 font-medium">Jurusan IPA</p>
-                    <p class="text-lg text-slate-500 mt-1">2013 – 2016</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Achievements Section -->
-        <section id="achievements" class="scroll-mt-24">
-            <div class="flex items-center gap-3 mb-6">
-                <div class="p-2 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
-                    <i data-lucide="trophy" class="w-6 h-6"></i>
-                </div>
-                <h2 class="text-2xl font-bold">Pencapaian</h2>
-            </div>
-            <div class="glass-panel p-8 border-l-4 border-indigo-500">
-                <h3 class="text-xl font-bold mb-2">Innovillage 2021 – Telkom Indonesia</h3>
-                <p class="text-lg text-slate-500 mb-4">2021</p>
-                <p class="text-slate-600 dark:text-slate-300">
-                    Berhasil lolos pendanaan nasional dengan mengajukan ide proyek sosial berbasis teknologi. Saya
-                    berperan dalam pengembangan teknis aplikasi sekaligus melakukan koordinasi tim, mulai dari fase
-                    proposal hingga mendapatkan pendanaan resmi untuk implementasi di masyarakat.
-                </p>
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="scroll-mt-24">
-            <div class="flex items-center gap-3 mb-6">
-                <div class="p-2 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
-                    <i data-lucide="award" class="w-6 h-6"></i>
-                </div>
-                <h2 class="text-2xl font-bold">Kursus & Sertifikasi</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Cert 1 -->
-                <a href="https://tinyurl.com/3y96wvb5" target="_blank"
-                    class="glass-panel p-4 flex items-start gap-3 hover:bg-white/60 dark:hover:bg-slate-800/60 transition group">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"></i>
+                <div class="lists">
                     <div>
-                        <h4 class="font-semibold group-hover:text-indigo-600 transition">Responsive Web Design</h4>
-                        <p class="text-xs text-slate-500">FreeCodeCamp</p>
+                        <h3>Situs publik <small>12</small></h3>
+                        <ul>
+                            <li><a href="https://indracostore.com" target="_blank" rel="noopener"><b>IndracoStore</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>E-commerce kopi dan mesin kopi</span></a></li>
+                            <li><a href="https://supresso.co.id" target="_blank" rel="noopener"><b>Supresso</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>Toko online brand kopi premium</span></a></li>
+                            <li><a href="https://supresso.com" target="_blank" rel="noopener"><b>Supresso Singapore</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>E-commerce untuk pasar Singapura</span></a></li>
+                            <li><a href="https://tokosda.com" target="_blank" rel="noopener"><b>Toko SDA</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>Marketplace B2B/B2C alat dan hardware</span></a></li>
+                            <li><a href="https://point.indraco.com" target="_blank" rel="noopener"><b>Indraco Point</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>Kumpul dan tukar poin pelanggan</span></a></li>
+                            <li><a href="https://indraco.com" target="_blank" rel="noopener"><b>Indraco</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>Profil perusahaan grup</span></a></li>
+                            <li><a href="https://sda.co.id" target="_blank" rel="noopener"><b>SDA Global</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>Profil perusahaan dan lini bisnis</span></a></li>
+                            <li><a href="https://sdatools.com" target="_blank" rel="noopener"><b>SDA Tools</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>Katalog dan info teknis alat profesional</span></a></li>
+                            <li><a href="https://sachio.com" target="_blank" rel="noopener"><b>Sachio</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>Katalog komponen hidrolik</span></a></li>
+                            <li><a href="https://metaquiphose.com" target="_blank" rel="noopener"><b>Metaquiphose</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>Microsite selang industri</span></a></li>
+                            <li><a href="https://dapurintirasa.com" target="_blank" rel="noopener"><b>Dapur Inti Rasa</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>Landing page katering</span></a></li>
+                            <li><a href="https://sangbumi.com" target="_blank" rel="noopener"><b>Sang Bumi</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>Website branding korporat</span></a></li>
+                        </ul>
                     </div>
-                </a>
-                <!-- Cert 2 -->
-                <a href="https://tinyurl.com/3ay4ewpr" target="_blank"
-                    class="glass-panel p-4 flex items-start gap-3 hover:bg-white/60 dark:hover:bg-slate-800/60 transition group">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"></i>
                     <div>
-                        <h4 class="font-semibold group-hover:text-indigo-600 transition">JavaScript Algorithms & Data
-                            Structures</h4>
-                        <p class="text-xs text-slate-500">FreeCodeCamp</p>
+                        <h3>Sistem internal <small>9</small></h3>
+                        <ul>
+                            <li><a href="https://sidar.sda.id" target="_blank" rel="noopener"><b>SIDAR</b><span class="lock">login</span><span>HRIS: data karyawan, absensi, payroll</span></a></li>
+                            <li><a href="https://wms.sda.id/" target="_blank" rel="noopener"><b>WMS SDA</b><span class="lock">login</span><span>Gudang: stok, inbound, outbound, opname</span></a></li>
+                            <li><a href="https://crimson.sda.id/" target="_blank" rel="noopener"><b>SDA Crimson</b><span class="lock">login</span><span>CRM: pipeline sales dan leads</span></a></li>
+                            <li><a href="https://prism.sda.id/" target="_blank" rel="noopener"><b>PRISM SDA</b><span class="lock">login</span><span>Monitoring KPI dan performa operasional</span></a></li>
+                            <li><a href="https://sda.id/siamoi/" target="_blank" rel="noopener"><b>SIAMOI</b><span class="lock">login</span><span>Aset: inventaris dan jadwal maintenance</span></a></li>
+                            <li><a href="https://patrol.sda.id/person" target="_blank" rel="noopener"><b>Guard Patrol</b><span class="lock">login</span><span>Jadwal dan tracking patroli sekuriti</span></a></li>
+                            <li><a href="https://guestbook.sda.id/login" target="_blank" rel="noopener"><b>SDA Guest Book</b><span class="lock">login</span><span>Pencatatan tamu di lobi</span></a></li>
+                            <li><a href="https://sda.id/v/" target="_blank" rel="noopener"><b>SDA “V” Portal</b><span class="lock">login</span><span>Satu pintu ke semua aplikasi internal</span></a></li>
+                            <li><a href="https://sda.co.id/dashboard" target="_blank" rel="noopener"><b>SDA Dashboard</b><span class="lock">login</span><span>Backoffice administrasi dan laporan</span></a></li>
+                        </ul>
                     </div>
-                </a>
-                <!-- Cert 3 -->
-                <a href="https://tinyurl.com/2saxev4b" target="_blank"
-                    class="glass-panel p-4 flex items-start gap-3 hover:bg-white/60 dark:hover:bg-slate-800/60 transition group">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"></i>
                     <div>
-                        <h4 class="font-semibold group-hover:text-indigo-600 transition">Introduction to Dart
-                            Programming</h4>
-                        <p class="text-xs text-slate-500">Dicoding</p>
-                    </div>
-                </a>
-                <!-- Cert 4 -->
-                <a href="https://tinyurl.com/bc6wuccu" target="_blank"
-                    class="glass-panel p-4 flex items-start gap-3 hover:bg-white/60 dark:hover:bg-slate-800/60 transition group">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"></i>
-                    <div>
-                        <h4 class="font-semibold group-hover:text-indigo-600 transition">Laravel 10 – Multi Vendor
-                            E-commerce</h4>
-                        <p class="text-xs text-slate-500">Udemy</p>
-                    </div>
-                </a>
-                <!-- Cert 5 -->
-                <a href="https://tinyurl.com/6hdzdz7t" target="_blank"
-                    class="glass-panel p-4 flex items-start gap-3 hover:bg-white/60 dark:hover:bg-slate-800/60 transition group">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"></i>
-                    <div>
-                        <h4 class="font-semibold group-hover:text-indigo-600 transition">The Complete Android 14
-                            Developer Course</h4>
-                        <p class="text-xs text-slate-500">Udemy</p>
-                    </div>
-                </a>
-                <!-- Cert 6 -->
-                <a href="https://tinyurl.com/asnufsjx" target="_blank"
-                    class="glass-panel p-4 flex items-start gap-3 hover:bg-white/60 dark:hover:bg-slate-800/60 transition group">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"></i>
-                    <div>
-                        <h4 class="font-semibold group-hover:text-indigo-600 transition">NodeJS – The Complete Guide
-                        </h4>
-                        <p class="text-xs text-slate-500">Udemy</p>
-                    </div>
-                </a>
-                <!-- Cert 7 -->
-                <a href="https://tinyurl.com/mtvwx9bs" target="_blank"
-                    class="glass-panel p-4 flex items-start gap-3 hover:bg-white/60 dark:hover:bg-slate-800/60 transition group">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"></i>
-                    <div>
-                        <h4 class="font-semibold group-hover:text-indigo-600 transition">Flutter & Dart – Complete Guide
-                        </h4>
-                        <p class="text-xs text-slate-500">Udemy</p>
-                    </div>
-                </a>
-                <!-- Cert 8 -->
-                <a href="https://tinyurl.com/43trkh4s" target="_blank"
-                    class="glass-panel p-4 flex items-start gap-3 hover:bg-white/60 dark:hover:bg-slate-800/60 transition group">
-                    <i data-lucide="check-circle" class="w-5 h-5 text-green-500 mt-1 flex-shrink-0"></i>
-                    <div>
-                        <h4 class="font-semibold group-hover:text-indigo-600 transition">Filament Admin Panel (Laravel)
-                        </h4>
-                        <p class="text-xs text-slate-500">Udemy</p>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <!-- Technical Skills Section -->
-        <section id="skills" class="scroll-mt-24">
-            <div class="flex items-center gap-3 mb-6">
-                <div class="p-2 rounded-lg bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400">
-                    <i data-lucide="cpu" class="w-6 h-6"></i>
-                </div>
-                <h2 class="text-2xl font-bold">Keahlian Teknis</h2>
-            </div>
-
-            <div class="space-y-4">
-                <!-- Group 1: Project & Collaboration -->
-                <div class="glass-panel p-5">
-                    <h3 class="text-lg font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-3">
-                        Manajemen Proyek & Kolaborasi
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span
-                            class="px-3 py-1 rounded-full bg-blue-100/50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-lg font-medium">
-                            Project Planning & Roadmap
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-blue-100/50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-lg font-medium">
-                            Requirement & Technical Documentation
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium">
-                            Git & GitHub Collaboration
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Group 2: Programming & Frameworks -->
-                <div class="glass-panel p-5">
-                    <h3 class="text-lg font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-3">
-                        Backend, Frontend & SaaS Development
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <!-- Backend / Core -->
-                        <span
-                            class="px-3 py-1 rounded-full bg-red-100/50 dark:bg-red-900/30 text-red-700 dark:text-red-300 text-lg font-medium">
-                            PHP OOP
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-red-100/50 dark:bg-red-900/30 text-red-700 dark:text-red-300 text-lg font-medium">
-                            Laravel
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-green-100/50 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-lg font-medium">
-                            Node.js & Express
-                        </span>
-
-                        <!-- Frontend stack -->
-                        <span
-                            class="px-3 py-1 rounded-full bg-cyan-100/50 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 text-lg font-medium">
-                            JavaScript (ES6+)
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-cyan-100/50 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 text-lg font-medium">
-                            Vue.js 3
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-cyan-100/50 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 text-lg font-medium">
-                            React & Next.js
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-green-100/50 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-lg font-medium">
-                            Inertia.js & SPA Pattern
-                        </span>
-
-                        <!-- UI / Styling -->
-                        <span
-                            class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium">
-                            Tailwind CSS Design System
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium">
-                            Bootstrap 5
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-lg font-medium">
-                            Blade Templates & Component-Based UI
-                        </span>
-
-                        <!-- Domain spesifik -->
-                        <span
-                            class="px-3 py-1 rounded-full bg-emerald-100/50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 text-lg font-medium">
-                            SaaS & Multi-Module Architecture
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-emerald-100/50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 text-lg font-medium">
-                            Web Analytics & Event Tracking
-                        </span>
-                    </div>
-                </div>
-
-                <!-- Group 3: Infrastruktur & Database -->
-                <div class="glass-panel p-5">
-                    <h3 class="text-lg font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-3">
-                        Infrastruktur, DevOps & Database
-                    </h3>
-                    <div class="flex flex-wrap gap-2">
-                        <!-- Database -->
-                        <span
-                            class="px-3 py-1 rounded-full bg-purple-100/50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-lg font-medium">
-                            MySQL
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-purple-100/50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-lg font-medium">
-                            PostgreSQL
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-purple-100/50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-lg font-medium">
-                            Database Design & Query Optimization
-                        </span>
-
-                        <!-- Server & DevOps -->
-                        <span
-                            class="px-3 py-1 rounded-full bg-orange-100/50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-lg font-medium">
-                            Linux Server (Ubuntu) Administration
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-orange-100/50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-lg font-medium">
-                            Docker & Podman Containerization
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-orange-100/50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-lg font-medium">
-                            Docker Compose / Podman Compose
-                        </span>
-                        <span
-                            class="px-3 py-1 rounded-full bg-orange-100/50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-lg font-medium">
-                            Cloudflare (DNS, Proxy, SSL)
-                        </span>
+                        <h3>Proyek sendiri <small>3</small></h3>
+                        <ul>
+                            <li><b>Ryuzen Suite</b><span>Platform bisnis modular dengan satu akun: inventory, POS, CRM,
+                                    omnichat, arsip digital, booking hotel. Sedang dikembangkan.</span></li>
+                            <li><b>Robot meja animasi</b><span>Robot kecil dengan animasi mata di layar OLED, berbasis
+                                    ESP32-C3. Akan tersedia sebagai unit jadi dan kit DIY.</span></li>
+                            <li><a href="https://github.com/Danu-Nur" target="_blank" rel="noopener"><b>Repositori
+                                        showcase</b><svg class="ext" aria-hidden="true"><use href="#i-ext" /></svg><span>Versi ringkas pola yang saya pakai di proyek nyata: Tauri/Rust,
+                                        integrasi AI, Flutter, dan IoT.</span></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Soft Skills & Languages -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <section id="soft-skills">
-                <div class="glass-panel p-6 h-full">
-                    <div class="flex items-center gap-2 mb-4">
-                        <i data-lucide="heart-handshake" class="w-5 h-5 text-pink-500"></i>
-                        <h3 class="text-lg font-bold">Soft Skills</h3>
-                    </div>
-                    <div class="flex flex-wrap gap-2">
-                        <span
-                            class="px-3 py-1 rounded-md border border-slate-200 dark:border-slate-700 text-lg">Jujur</span>
-                        <span
-                            class="px-3 py-1 rounded-md border border-slate-200 dark:border-slate-700 text-lg">Disiplin</span>
-                        <span
-                            class="px-3 py-1 rounded-md border border-slate-200 dark:border-slate-700 text-lg">Mandiri</span>
-                        <span
-                            class="px-3 py-1 rounded-md border border-slate-200 dark:border-slate-700 text-lg">Bertanggung
-                            Jawab</span>
-                        <span class="px-3 py-1 rounded-md border border-slate-200 dark:border-slate-700 text-lg">Team
-                            Work</span>
-                        <span class="px-3 py-1 rounded-md border border-slate-200 dark:border-slate-700 text-lg">Problem
-                            Solving</span>
-                    </div>
+        <!-- Experience -->
+        <section class="sec" id="pengalaman">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>Pengalaman</h2>
+                    <p>Bekerja penuh waktu di grup Indraco sejak 2023, dan menangani proyek freelance lewat Ryuzen
+                        Labs, studio independen saya.</p>
                 </div>
-            </section>
-
-            <section id="languages">
-                <div class="glass-panel p-6 h-full">
-                    <div class="flex items-center gap-2 mb-4">
-                        <i data-lucide="languages" class="w-5 h-5 text-pink-500"></i>
-                        <h3 class="text-lg font-bold">Bahasa</h3>
-                    </div>
-                    <ul class="space-y-2">
-                        <li class="flex justify-between items-center">
-                            <span>Bahasa Indonesia</span>
-                            <span class="text-lg font-medium text-green-600 dark:text-green-400">Aktif (Native)</span>
-                        </li>
-                        <li class="w-full h-px bg-slate-200 dark:bg-slate-700"></li>
-                        <li class="flex justify-between items-center">
-                            <span>Inggris</span>
-                            <span class="text-lg font-medium text-indigo-600 dark:text-indigo-400">Working
-                                Proficiency</span>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-
-        <!-- Contact Footer Section -->
-        <section id="contact" class="scroll-mt-24">
-            <div
-                class="glass-panel p-8 text-center bg-gradient-to-br from-white/50 to-indigo-50/50 dark:from-slate-800/50 dark:to-indigo-900/20">
-                <h2 class="text-3xl font-bold mb-4">Ayo Bekerja Sama</h2>
-                <p class="text-slate-600 dark:text-slate-300 max-w-xl mx-auto mb-8">
-                    Saya terbuka untuk peluang kerja baik remote maupun onsite sebagai Full-Stack Developer atau Web
-                    Developer. Mari diskusikan bagaimana saya bisa membantu bisnis Anda.
-                </p>
-                <!-- GANTI BAGIAN INI DI DALAM SECTION #contact -->
-
-                <div class="flex flex-col sm:flex-row justify-center gap-6">
-                    <a href="mailto:danudirwan@gmail.com"
-                        class="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium transition">
-                        <i data-lucide="mail" class="w-5 h-5"></i> Email
-                    </a>
-
-                    <!-- WA + Telepon -->
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <!-- WhatsApp -->
-                        <a href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20tertarik%20dengan%20profil%20Anda."
-                            class="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-medium transition">
-                            <i data-lucide="message-circle" class="w-5 h-5"></i>
-                            WhatsApp
-                        </a>
-
-                        <!-- Telegram -->
-                        <a href="https://t.me/yourusername"
-                            class="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-sky-500 hover:bg-sky-600 text-white font-medium transition">
-                            <i data-lucide="send" class="w-5 h-5"></i>
-                            Telegram
-                        </a>
-                    </div>
-                </div>
-
+                <ol class="timeline">
+                    <li>
+                        <div class="when"><span class="now">2026 – sekarang</span></div>
+                        <div>
+                            <h3>Freelance Full-Stack Developer</h3>
+                            <p class="org">Ryuzen Labs, remote. Paralel dengan pekerjaan utama.</p>
+                            <ul>
+                                <li>Membangun aplikasi desktop operasional untuk firma hukum di Australia dengan Tauri
+                                    v2 (Rust + React/TypeScript).</li>
+                                <li>Merancang pipeline AI lokal (OCR, ekstraksi data, RAG) via Ollama di server milik
+                                    klien, sesuai aturan privasi data Australia.</li>
+                                <li>Mengotomasi portal online dengan Playwright, serta integrasi OneDrive, Outlook, dan
+                                    Calendar lewat Microsoft Graph (OAuth PKCE).</li>
+                                <li>Mengembangkan Ryuzen Suite dan perangkat IoT berbasis ESP32.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="when"><span class="now">2023 – sekarang</span></div>
+                        <div>
+                            <h3>Full-Stack Developer</h3>
+                            <p class="org">PT Indraco Global Indonesia, termasuk penugasan di PT SDA Global. Gresik
+                                dan Surabaya.</p>
+                            <ul>
+                                <li>Membangun dan memelihara 20+ website dan sistem internal grup: e-commerce
+                                    Indonesia dan Singapura, HRIS, WMS, CRM, manajemen aset, dan dashboard KPI.</li>
+                                <li>Mengembangkan aplikasi web dan mobile dengan Laravel dan Flutter, termasuk REST
+                                    API.</li>
+                                <li>Mengintegrasikan Midtrans, Stripe, LOCAD, dan RajaOngkir bersama vendor.</li>
+                                <li>Menerapkan keamanan aplikasi (SSL, enkripsi, proteksi XSS/CSRF/SQL Injection,
+                                    OAuth/JWT) dan memantau performa setelah rilis.</li>
+                                <li>Menyusun scope, timeline, dan mitigasi risiko; membuat dokumentasi deployment dan
+                                    handover.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="when">2022 – 2023</div>
+                        <div>
+                            <h3>Web Developer / IT Support</h3>
+                            <p class="org">PT Bumi Menara Internusa, Surabaya</p>
+                            <ul>
+                                <li>Merancang dan memodifikasi fitur aplikasi web internal.</li>
+                                <li>Mengelola administrasi database dan backup rutin.</li>
+                                <li>Menyusun user manual dan laporan bulanan proyek IT.</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </section>
 
+        <!-- Skills -->
+        <section class="sec" id="keahlian">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>Keahlian</h2>
+                    <p>Alat yang saya pakai sehari-hari. Pilihannya mengikuti kebutuhan proyek, bukan sebaliknya.</p>
+                </div>
+                <dl class="skills">
+                    <div>
+                        <dt>Backend</dt>
+                        <dd>PHP (Laravel, CodeIgniter, Filament), Node.js &amp; Express, REST API, Rust</dd>
+                    </div>
+                    <div>
+                        <dt>Frontend</dt>
+                        <dd>JavaScript, TypeScript, Vue 3, React &amp; Next.js, Inertia, Tailwind CSS, Livewire</dd>
+                    </div>
+                    <div>
+                        <dt>Mobile &amp; desktop</dt>
+                        <dd>Flutter &amp; Dart, Tauri v2, Android (Kotlin/Java)</dd>
+                    </div>
+                    <div>
+                        <dt>AI &amp; otomasi</dt>
+                        <dd>Claude, Gemini, Ollama, OCR, RAG, Playwright</dd>
+                    </div>
+                    <div>
+                        <dt>Integrasi</dt>
+                        <dd>Midtrans, Stripe, RajaOngkir, LOCAD, Microsoft Graph, OAuth 2.0 / JWT</dd>
+                    </div>
+                    <div>
+                        <dt>Database</dt>
+                        <dd>MySQL, PostgreSQL, SQLite, SQL Server, Firebase</dd>
+                    </div>
+                    <div>
+                        <dt>Server</dt>
+                        <dd>Linux (Ubuntu), Docker &amp; Podman, Cloudflare, Git &amp; GitHub</dd>
+                    </div>
+                    <div>
+                        <dt>IoT</dt>
+                        <dd>ESP32, Arduino, C/C++</dd>
+                    </div>
+                    <div>
+                        <dt>Proyek</dt>
+                        <dd>Perencanaan scope dan timeline, dokumentasi teknis, koordinasi vendor</dd>
+                    </div>
+                    <div>
+                        <dt>Bahasa</dt>
+                        <dd>Indonesia (native), Inggris (working proficiency)</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Background -->
+        <section class="sec" id="latar">
+            <div class="wrap">
+                <div class="sec-head">
+                    <h2>Latar belakang</h2>
+                </div>
+                <div class="bg-grid">
+                    <div>
+                        <h3>Pendidikan</h3>
+                        <p><b>S1 Teknik Informatika</b><br>Universitas Wijaya Putra, Surabaya<br><span
+                                class="muted">2017 – 2021, IPK 3,46</span></p>
+                        <p><b>SMA Negeri 22 Surabaya</b><br><span class="muted">Jurusan IPA, 2013 – 2016</span></p>
+                    </div>
+                    <div>
+                        <h3>Pencapaian</h3>
+                        <p><b>Innovillage 2021, Telkom Indonesia</b></p>
+                        <p class="muted">Lolos pendanaan nasional untuk proyek sosial berbasis teknologi. Saya
+                            mengerjakan pengembangan aplikasinya sekaligus mengoordinasi tim, dari proposal sampai
+                            pendanaan cair.</p>
+                    </div>
+                    <div>
+                        <h3>Kursus &amp; sertifikasi</h3>
+                        <ul class="certs">
+                            <li><a href="https://tinyurl.com/3y96wvb5" target="_blank" rel="noopener">Responsive Web
+                                    Design</a> <span>FreeCodeCamp</span></li>
+                            <li><a href="https://tinyurl.com/3ay4ewpr" target="_blank" rel="noopener">JavaScript
+                                    Algorithms &amp; Data Structures</a> <span>FreeCodeCamp</span></li>
+                            <li><a href="https://tinyurl.com/2saxev4b" target="_blank" rel="noopener">Introduction to
+                                    Dart</a> <span>Dicoding</span></li>
+                            <li><a href="https://tinyurl.com/bc6wuccu" target="_blank" rel="noopener">Laravel 10 Multi
+                                    Vendor E-commerce</a> <span>Udemy</span></li>
+                            <li><a href="https://tinyurl.com/6hdzdz7t" target="_blank" rel="noopener">Complete Android
+                                    14 Developer</a> <span>Udemy</span></li>
+                            <li><a href="https://tinyurl.com/asnufsjx" target="_blank" rel="noopener">NodeJS, The
+                                    Complete Guide</a> <span>Udemy</span></li>
+                            <li><a href="https://tinyurl.com/mtvwx9bs" target="_blank" rel="noopener">Flutter &amp;
+                                    Dart, The Complete Guide</a> <span>Udemy</span></li>
+                            <li><a href="https://tinyurl.com/43trkh4s" target="_blank" rel="noopener">Filament Admin
+                                    Panel</a> <span>Udemy</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="kontak">
+            <div class="wrap">
+                <h2>Punya proyek? Ceritakan kebutuhan Anda.</h2>
+                <p>Ide aplikasi baru, sistem internal yang perlu dibenahi, atau tim yang butuh tambahan developer.
+                    Kirim gambaran singkatnya, kita diskusikan solusi dan perkiraan waktunya.</p>
+                <div class="actions">
+                    <a class="btn btn-white"
+                        href="https://wa.me/6283856764585?text=Halo%20Mas%20Danu%2C%20saya%20ingin%20mendiskusikan%20sebuah%20proyek."
+                        target="_blank" rel="noopener"><svg aria-hidden="true">
+                            <use href="#i-wa" />
+                        </svg>Chat di WhatsApp</a>
+                    <a class="btn" href="mailto:danudirwan@gmail.com"><svg aria-hidden="true">
+                            <use href="#i-mail" />
+                        </svg>Kirim email</a>
+                </div>
+                <div class="reach">
+                    <span>danudirwan@gmail.com</span>
+                    <span>+62 838 5676 4585</span>
+                    <span>Sambikerep, Surabaya</span>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="text-center py-8 text-slate-500 dark:text-slate-400 text-lg">
-        <p class="mb-2">© <span id="year"></span> Danu Nur Irwanto. All rights reserved.</p>
-        <!-- <p class="text-xs opacity-70">Built with HTML, Tailwind CSS, and soft glassmorphism design.</p> -->
+    <footer>
+        <div class="wrap">
+            <span>© <span id="year">2026</span> Danu Nur Irwanto</span>
+            <nav aria-label="Tautan profil">
+                <a href="https://github.com/Danu-Nur" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://linkedin.com/in/danu-nur-irwanto-36a03811b" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="assets/cv/CV-DANU_NUR_IRWANTO.pdf" download="CV - Danu Nur Irwanto.pdf">Unduh CV</a>
+            </nav>
+        </div>
     </footer>
 
-    <!-- Scripts -->
     <script>
-        // Initialize Icons
-        lucide.createIcons();
-
-        // Dynamic Year
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Dark Mode Logic
-        const themeToggleBtns = [document.getElementById('theme-toggle'), document.getElementById('theme-toggle-mobile')];
-        const html = document.documentElement;
-
-        // Check Saved Theme
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            html.classList.add('dark');
-        } else {
-            html.classList.remove('dark');
-        }
-
-        // Toggle Function
-        themeToggleBtns.forEach(btn => {
-            if (btn) {
-                btn.addEventListener('click', () => {
-                    html.classList.toggle('dark');
-                    if (html.classList.contains('dark')) {
-                        localStorage.theme = 'dark';
-                    } else {
-                        localStorage.theme = 'light';
-                    }
-                });
+        (function () {
+            var root = document.documentElement;
+            var btn = document.getElementById('theme');
+            var use = btn.querySelector('use');
+            function isDark() {
+                var t = root.dataset.theme;
+                if (t) return t === 'dark';
+                return window.matchMedia('(prefers-color-scheme: dark)').matches;
             }
-        });
-
-        // Mobile Menu Logic
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        if (menuBtn && mobileMenu) {
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            // Close menu when clicking a link
-            mobileMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
-        }
-
-        // Portfolio Filter Logic
-        function filterPortfolio(category) {
-            const btnPublic = document.getElementById('btn-public');
-            const btnInternal = document.getElementById('btn-internal');
-            const items = document.querySelectorAll('.portfolio-item');
-
-            // Toggle Button Styles
-            if (category === 'public') {
-                btnPublic.classList.remove('filter-btn-inactive');
-                btnPublic.classList.add('filter-btn-active');
-
-                btnInternal.classList.remove('filter-btn-active');
-                btnInternal.classList.add('filter-btn-inactive');
-            } else {
-                btnInternal.classList.remove('filter-btn-inactive');
-                btnInternal.classList.add('filter-btn-active');
-
-                btnPublic.classList.remove('filter-btn-active');
-                btnPublic.classList.add('filter-btn-inactive');
+            function sync() {
+                use.setAttribute('href', isDark() ? '#i-sun' : '#i-moon');
+                btn.setAttribute('aria-label', isDark() ? 'Pakai tema terang' : 'Pakai tema gelap');
             }
-
-            // Show/Hide Items
-            items.forEach(item => {
-                if (item.classList.contains(`portfolio-${category}`)) {
-                    item.classList.remove('hidden');
-                    // Add fade-in animation
-                    item.animate([
-                        { opacity: 0, transform: 'scale(0.95)' },
-                        { opacity: 1, transform: 'scale(1)' }
-                    ], {
-                        duration: 300,
-                        easing: 'ease-out'
-                    });
-                } else {
-                    item.classList.add('hidden');
-                }
+            btn.addEventListener('click', function () {
+                var next = isDark() ? 'light' : 'dark';
+                root.dataset.theme = next;
+                try { localStorage.setItem('theme', next); } catch (e) { }
+                sync();
             });
-        }
+            sync();
+        })();
     </script>
 </body>
 
